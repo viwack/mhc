@@ -3,7 +3,6 @@ from shiny import reactive
 from shinywidgets import output_widget, render_widget
 #from shiny.express import render
 #from ipywidgets import Label
-from great_tables import GT
 import ipyleaflet as L
 from ipywidgets import Layout
 from ipyleaflet import GeoJSON, LayersControl, WidgetControl, CircleMarker, LayerGroup
@@ -17,7 +16,6 @@ import geopandas as gpd
 #from geopy.geocoders import Nominatim
 import numpy as np
 import io
-
 here = pathlib.Path(__file__)
 
 # Step 1: Geocoding the address using OpenStreetMap's Nominatim
@@ -56,15 +54,15 @@ def check_legislative_district(lat, lng, districts_geojson):
 # path2folder = r"./data/" # fill in the path to your folder here.
 # assert len(path2folder) > 0
 
-mhvillage_df = pd.read_csv(Path(__file__).parent / "data/MHVillageDec7_Legislative1.csv")
+mhvillage_df = pd.read_csv(Path(__file__).parent / "MHVillageDec7_Legislative1.csv")
 mhvillage_df['Sites'] = pd.to_numeric(mhvillage_df['Sites'], downcast='integer')
-lara_df = pd.read_csv(Path(__file__).parent / "data/LARA_with_coord_and_legislativedistrict1.csv")
+lara_df = pd.read_csv(Path(__file__).parent / "LARA_with_coord_and_legislativedistrict1.csv")
 lara_df['County'] = lara_df['County'].str.title()
 
 
 # Path to your legislative districts GeoJSON file
-house_districts_geojson_path = r"./data/" + r"Michigan_State_House_Districts_2021.json"
-senate_districts_geojson_path = r"./data/" + r"Michigan_State_Senate_Districts_2021.json"
+house_districts_geojson_path = r"Michigan_State_House_Districts_2021.json"
+senate_districts_geojson_path = r"Michigan_State_Senate_Districts_2021.json"
 #tracts_shapefile = gpd.read_file(path2folder+r"tl_2019_26_tract.shp")
 
 circlelist_lara = []
@@ -539,7 +537,7 @@ def server(input, output, session):
         df.to_csv(output, index=False)
         summary_df.to_csv(output, index=False)
         output.seek(0)
-        return output.getvalue()
+        return output.getvalue(), "text.csv"
 
 
 
