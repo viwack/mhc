@@ -1,0 +1,866 @@
+,Unnamed: 0.1,Name,Url,County,Sites,Average_rent,Unnamed: 0,FullstreetAddress,Latitude,Longitude,latitude,longitude
+0,0,Pridnia's Mobile Home Park,https://www.mhvillage.com/parks/15755, Alcona ,,,0,"116 West Church, Harrisville, MI, 48740",44.68205,-83.39782,44.6593946,-83.2946486
+1,1,Ausable Mobile Home Village,https://www.mhvillage.com/parks/15815, Iosco ,15.0,,465,"331 First Street, Oscoda, MI, 48750",44.43481,-83.50601,44.41112469999999,-83.33100209999999
+2,2,Ossineke Mobile Home Park,https://www.mhvillage.com/parks/15757, Montmorency ,12.0,,815,"Block 1, Old Ossineke Road, Ossineke, MI, 49766",44.9352,-83.43083,44.916832,-83.434601
+3,3,Rose Lane Trailer Court,https://www.mhvillage.com/parks/15818, Iosco ,35.0,,468,"4263 Bissionette, Oscoda, MI, 48750",44.43481,-83.50601,44.439577,-83.34919599999999
+4,4,Van Ettan Village,https://www.mhvillage.com/parks/569, Iosco ,32.0,,469,"4385 Van Ettan Dam Road, Oscoda, MI, 48750",44.43481,-83.50601,44.4496292,-83.3390178
+5,5,Hubbard Lake Trailer Park,https://www.mhvillage.com/parks/541, Oscoda ,,,938,"7298 Hurbert Road, Hubbard Lake, MI, 49747",44.85834,-83.6389,44.8595656,-83.5952386
+6,6,Oscoda Mobile Home Park,https://www.mhvillage.com/parks/15819, Iosco ,,,470,"6445 Seminole Street, Oscoda, MI, 48750",44.43481,-83.50601,44.4666388,-83.32996949999999
+7,7,Riverview Mobile Home Park,https://www.mhvillage.com/parks/15949, Montmorency ,,,828,"13021 Us 23 South, Ossineke, MI, 49766",44.88774,-83.43127,37.5362261,-82.628303
+8,8,Village Court,https://www.mhvillage.com/parks/15760, Montmorency ,,,831,"2300 Papin Street, Ossineke, MI, 49766",44.9352,-83.43083,44.9001598,-83.440872
+9,9,Island View Estates,https://www.mhvillage.com/parks/15753, Luce ,37.0,,643,"801 Prospect Street, Munising, MI, 49862",46.40564,-86.61539,46.4032834,-86.6466014
+10,10,Pioneer Village,https://www.mhvillage.com/parks/15829, Marquette ,90.0,,690,"777 Pioneer Road, Site 169, Marquette, MI, 49855",46.52561,-87.41541,46.527053,-87.40835
+11,11,Silver Creek Estates,https://www.mhvillage.com/parks/15832, Marquette ,90.0,230.0,691,"627 Willow Road, Marquette, MI, 49855",46.56109,-87.36552,46.48871949999999,-87.36030769999999
+12,12,Brier's Mobile Home Court,https://www.mhvillage.com/parks/556, Delta ,10.0,,269,"8467 P5 Road, Gladstone, MI, 49837",45.88084,-87.1059,45.8527435,-87.02180489999999
+13,13,Oak Bluff Estates,https://www.mhvillage.com/parks/15908, Delta ,175.0,,270,"2722 South Hill Road, Gladstone, MI, 49837",45.88084,-87.1059,45.8407969,-87.046036
+14,14,Birch Grove Mobile Home Community,https://www.mhvillage.com/parks/15838, Marquette ,80.0,,693,"500 Pioneer Road, Marquette, MI, 49855",46.56109,-87.36552,46.5282286,-87.40205449999999
+15,15,NorthernAir Mobile Estates,https://www.mhvillage.com/parks/15841, Marquette ,150.0,,694,"642 South Mackinac Lane, Gwinn, MI, 49841",46.32394,-87.49016,46.252037,-87.382009
+16,16,Whispering Pines Mobile Home Park,https://www.mhvillage.com/parks/15787, Delta ,,,272,"8741 0.8 Lane, Gladstone, MI, 49837",45.88084,-87.1059,45.8643142,-87.0641111
+17,17,553 Mobile Estates,https://www.mhvillage.com/parks/15828, Marquette ,,,696,"Box 100 Star Route, Gwinn, MI, 49841",46.32394,-87.49016,46.28105559999999,-87.4409718
+18,18,Lake Bluff Retirement Village,https://www.mhvillage.com/parks/100639, Delta ,,,273,"401 Kenneally Blvd., Gladstone, MI, 49837",45.88084,-87.1059,45.83543179999999,-87.0520023
+19,19,Pine Acres Trailer Court,https://www.mhvillage.com/parks/15830, Marquette ,,,697,"3000 Us 41 South, Marquette, MI, 49855",46.55131,-87.45097,46.55131249999999,-87.4509712
+20,20,Whitefish Hill Trailer Court,https://www.mhvillage.com/parks/15786, Delta ,,,275,"8455 Us Highway 2, Rapid River, MI, 49878",45.92293,-86.93786,45.9219704,-86.9370522
+21,21,Hunters Glen,https://www.mhvillage.com/parks/29480, Allegan ,280.0,,21,"1132 Hunters Glen Boulevard, Wayland, MI, 49348",42.6919,-85.62058,42.7319567,-85.6579549
+22,22,Dover Farms,https://www.mhvillage.com/parks/30327, Allegan ,60.0,435.0,23,"1590 Dover Drive, Martin, MI, 49070",42.54385,-85.62228,42.5363147,-85.65707689999999
+23,23,Dumont Creek Estates,https://www.mhvillage.com/parks/15115, Allegan ,75.0,300.0,33,"1925 Laura Street, Allegan, MI, 49010",42.56072,-85.88961,42.560021,-85.8887086
+24,24,Gun Lake Manufactured Home Community,https://www.mhvillage.com/parks/104895, Allegan ,59.0,,24,"19985 Marsh Road, Shelbyville, MI, 49344",42.5897,-85.53932,42.5897529,-85.54125049999999
+25,25,Country Meadows,https://www.mhvillage.com/parks/516, Wayne ,577.0,,1162,"3211 Will Carleton Road, Flat Rock, MI, 48134",42.09412,-83.32407,42.0977342,-83.3241592
+26,26,Windsor Woods Village,https://www.mhvillage.com/parks/15869, Allegan ,314.0,377.0,22,"1135 West Superior Street, Wayland, MI, 49348",42.6919,-85.62058,42.6778467,-85.6582892
+27,27,Rabbit River ,https://www.mhvillage.com/parks/15125, Allegan ,102.0,,26,"3471 Homer Drive, Wayland, MI, 49348",42.6919,-85.62058,42.6723421,-85.62097190000001
+28,28,Yankee Springs Meadows,https://www.mhvillage.com/parks/456, Allegan ,284.0,,27,"1330 North Patterson Road, Wayland, MI, 49348",42.6919,-85.62058,42.6716951,-85.5415259
+29,29,Watson Mobile Home Community,https://www.mhvillage.com/parks/427, Allegan ,176.0,327.0,28,"1362 East M-89, Otsego, MI, 49078",42.47605,-85.72572,42.4473553,-85.6787513
+30,30,Circle Inn Mobile Park,https://www.mhvillage.com/parks/452, Allegan ,20.0,,29,"11985 Marsh Road, Shelbyville, MI, 49344",42.5926,-85.58797,42.587762,-85.52320689999999
+31,31,Country Acres Mobile Home Park,https://www.mhvillage.com/parks/240, Ottawa ,100.0,,974,"A-5904 142nd Avenue, Holland, MI, 49423",42.72504,-86.12528,42.7248901,-86.1267142
+32,32,Dogwood Manor,https://www.mhvillage.com/parks/15114, Allegan ,76.0,,31,"5289 124th Avenue, Fennville, MI, 49408",42.59484,-86.06449,42.5948416,-86.0645049
+33,33,Douglas Estates,https://www.mhvillage.com/parks/242, Allegan ,175.0,405.0,32,"2734 Blue Star Highway, Fennville, MI, 49408",42.6191,-86.21173,42.6166608,-86.2152133
+34,34,Dunlop's Orchard Mobile Home Park,https://www.mhvillage.com/parks/15565, Allegan ,22.0,460.0,34,"12703 Pine Lake Rd, Plainwell, MI, 49080",42.50233,-85.53583,42.5023259,-85.535834
+35,36,Lake Park Trailer Resort,https://www.mhvillage.com/parks/15121, Allegan ,60.0,,36,"2126 Lakeshore Drive, Fennville, MI, 49408",42.5766,-86.11992,42.5724427,-86.22922580000001
+36,37,Maple Grove Estates,https://www.mhvillage.com/parks/15916, Lapeer ,210.0,415.0,574,"2070 South Almont Road, Imlay City, MI, 48444",43.06429,-83.04903,43.0049901,-83.07698769999999
+37,38,Orchard Hills Village,https://www.mhvillage.com/parks/15903, Allegan ,167.0,380.0,38,"2400 56th Street, Fennville, MI, 49408",42.59692,-86.09719,42.5969397,-86.0972235
+38,40,Pine Crest Mobile Villa,https://www.mhvillage.com/parks/15126, Allegan ,82.0,,40,"1160 West Bridge Street, Plainwell, MI, 49080",42.47683,-85.57617,42.4423429,-85.6574339
+39,41,Pine Ridge Community,https://www.mhvillage.com/parks/15957, Allegan ,49.0,225.0,41,"4629 134th Avenue, Hamilton, MI, 49419",42.66761,-85.9991,42.6675748,-85.999021
+40,42,Riverside Estates Mobile Home Community,https://www.mhvillage.com/parks/58541, Allegan ,41.0,445.0,42,"6200 Arrowhead Drive, Fennville, MI, 49408",42.5766,-86.11992,42.6294555,-86.1506118
+41,67,Huron Lake Estates,https://www.mhvillage.com/parks/15989, Presque Isle ,36.0,,981,"1121 Bare Point Road, Alpena, MI, 49707",45.07332,-83.47292,45.0326609,-83.4595358
+42,68,Lake Shore Estates,https://www.mhvillage.com/parks/538, Presque Isle ,58.0,,983,"8924 West Long Lake Road, Alpena, MI, 49707",45.07332,-83.47292,45.1764266,-83.45721089999999
+43,69,Alpena Mobile Home Court,https://www.mhvillage.com/parks/15759, Presque Isle ,,,984,"624 Ripley Boulevard, Alpena, MI, 49707",45.07332,-83.47292,45.0589248,-83.4523865
+44,70,Long Lake Trailer Court,https://www.mhvillage.com/parks/15758, Presque Isle ,,,987,"10080 Us 23 North, Alpena, MI, 49707",45.1942,-83.43574,45.1942028,-83.4357375
+45,71,Mancelona Chamber Park,https://www.mhvillage.com/parks/15939, Otsego ,15.0,160.0,952,"Franklin Street, Mancelona, MI, 49659",44.923,-85.02892,44.9061264,-85.053322
+46,72,Vacation Village Mobile Home Park,https://www.mhvillage.com/parks/15761, Leelanau ,65.0,417.0,593,"601 Shadywood, Elk Rapids, MI, 49629",44.90162,-85.39481,44.9016236,-85.39480689999999
+47,73,Evergreen MHP,https://www.mhvillage.com/parks/548, Otsego ,70.0,,953,"707 State Street, East Jordan, MI, 49727",45.14116,-85.06066,45.1508338,-85.1129086
+48,74,Chain O' Lakes Campground & Mobile Home Park,https://www.mhvillage.com/parks/15762, Kalkaska ,15.0,,543,"7231 S M 88 Highway, Bellaire, MI, 49615",44.96394,-85.20269,45.034508,-85.2524007
+49,75,Town and Country,https://www.mhvillage.com/parks/15709, Leelanau ,192.0,398.0,587,"849 Manor Lane, Traverse City, MI, 49686",44.80961,-85.48382,44.7415472,-85.6029926
+50,76,Fox Run,https://www.mhvillage.com/parks/128022, Otsego ,140.0,,954,"141 Fox Run Street, Boyne City, MI, 49712",45.22139,-85.00857,45.222632,-85.00682599999999
+51,77,Lakeview Village Mobile Home Park,https://www.mhvillage.com/parks/15769, Otsego ,152.0,250.0,951,"526 North Lake Street, Boyne City, MI, 49712",45.19724,-85.01066,45.2228329,-85.0153789
+52,78,Woodcreek,https://www.mhvillage.com/parks/15992, Leelanau ,219.0,500.0,594,"501 Woodcreek Boulevard, Traverse City, MI, 49686",44.80961,-85.48382,44.7319822,-85.56566749999999
+53,79,Valley Mobile Home Park,https://www.mhvillage.com/parks/15942, Kalkaska ,10.0,,538,"1268 Wood Road, Rapid City, MI, 49676",44.86895,-85.28593,44.7926376,-85.1986652
+54,80,Cherryland Mobile Home Park,https://www.mhvillage.com/parks/15723, Leelanau ,52.0,,596,"3011 North Garfield, Traverse City, MI, 49686",44.80961,-85.48382,44.7310459,-85.5962575
+55,81,Valleywood Cove,https://www.mhvillage.com/parks/92821, Leelanau ,,,598,"996 Garfield Woods Drive Suite D, Traverse City, MI, 49686",44.80961,-85.48382,44.7241791,-85.5948025
+56,82,O & M Mobile Home Park,https://www.mhvillage.com/parks/15616, Ogemaw ,40.0,,908,"1090 Michigan 76, Alger, MI, 48610",44.14528,-84.19386,44.12562570000001,-84.1208666
+57,83,Au Gres Harbor Mobile Court,https://www.mhvillage.com/parks/15617, Arenac ,,,63,"330 South Main Street, Au Gres, MI, 48703",44.05829,-83.66189,44.0464028,-83.68668799999999
+58,84,Lakeshore Village,https://www.mhvillage.com/parks/15612, Gladwin ,29.0,,346,"4061 Lakeshore Drive, Gladwin, MI, 48624",44.07468,-84.45566,44.083056,-84.317296
+59,85,Lakefront Estates,https://www.mhvillage.com/parks/483, Gladwin ,68.0,,347,"385 West Brown Street, Beaverton, MI, 48612",43.88426,-84.45606,43.880663,-84.5016
+60,86,Pleasant Beach Mobile Home Resort,https://www.mhvillage.com/parks/15582, Gladwin ,101.0,280.0,348,"4991 Wixom Road, Beaverton, MI, 48612",43.88426,-84.45606,43.8437431,-84.3356246
+61,87,Westgate Trails,https://www.mhvillage.com/parks/15448, Bay ,50.0,250.0,101,"Lawrence & Horn Roads, Pinconning, MI, 48650",43.8457,-84.02266,43.8606442,-83.97177860000001
+62,88,Greenbriar Village,https://www.mhvillage.com/parks/15611, Gladwin ,69.0,,349,"1305 North Springs Street, Gladwin, MI, 48624",44.07468,-84.45566,43.9925057,-84.49732
+63,89,Tawas River Trailer Park,https://www.mhvillage.com/parks/15816, Iosco ,65.0,,466,"560 East M-55, Tawas City, MI, 48763",44.2254,-83.61976,44.2796455,-83.5176208
+64,90,Twin Pines Mobile Home Park,https://www.mhvillage.com/parks/15849, Oscoda ,30.0,,934,"1766 Rau Road, West Branch, MI, 48661",44.34144,-84.20302,44.2337823,-84.1967111
+65,91,Wixom Waters,https://www.mhvillage.com/parks/16041, Midland ,51.0,,747,"Po Box 222, Edenville, MI, 48620",43.80626,-84.3796,43.8095442,-84.3844304
+66,92,Country Village Estates,https://www.mhvillage.com/parks/15848, Oscoda ,53.0,,936,"2522 Woodlawn Drive, West Branch, MI, 48661",44.34144,-84.20302,44.2615953,-84.21681919999999
+67,93,Riverview Mobile Park,https://www.mhvillage.com/parks/15613, Gladwin ,48.0,,350,"2577 Lake Shore Drive, Gladwin, MI, 48624",44.07468,-84.45566,44.04044950000001,-84.33777549999999
+68,94,Gladwin Village,https://www.mhvillage.com/parks/15614, Gladwin ,,,351,"805 North Bowery Avenue, Gladwin, MI, 48624",44.07468,-84.45566,43.9871876,-84.4902719
+69,95,Key Mobile Home Court,https://www.mhvillage.com/parks/15615, Gladwin ,,,352,"221 North Lakeview Drive, Gladwin, MI, 48624",44.07468,-84.45566,43.9850277,-84.3563204
+70,96,L'anse Mobile Home Court,https://www.mhvillage.com/parks/15763, Houghton ,40.0,,400,"99 Kelly Street, L Anse, MI, 49946",46.77943,-88.24087,46.7448981,-88.4420701
+71,97,Sunnyside & Forest Lane MHC,https://www.mhvillage.com/parks/15840, Marquette ,134.0,,692,"728 N. Lake Dr, Ishpeming, MI, 49849",46.48779,-87.70757,46.4878571,-87.7076428
+72,98,Forest Lane Mobile Park,https://www.mhvillage.com/parks/15837, Marquette ,20.0,,695,"3310 County Road 496, Ishpeming, MI, 49849",46.50624,-87.72879,46.488477,-87.761275
+73,99,Beachview Mobile Court,https://www.mhvillage.com/parks/15804, Ontonagon ,20.0,,913,"1845 Jasberg Street, Hancock, MI, 49930",47.18742,-88.54504,47.1299383,-88.61445650000002
+74,100,Birch Grove,https://www.mhvillage.com/parks/65356, Ontonagon ,31.0,,914,"400 Elevation St, Hancock, MI, 49930",47.18742,-88.54504,47.1272157,-88.59515739999999
+75,101,Fob's Shady Acres,https://www.mhvillage.com/parks/571, Iron ,,,472,"1501 Us 2 West, Crystal Falls, MI, 49920",46.09401,-88.3695,46.0533019,-88.33808499999999
+76,102,Hiawatha Country Estates,https://www.mhvillage.com/parks/15820, Ontonagon ,,,917,"220 Hiawatha Drive, Iron River, MI, 49935",46.20261,-88.7372,46.0731162,-88.6448698
+77,103,US 41 Trailer Court,https://www.mhvillage.com/parks/15833, Marquette ,,,698,"140 Midway Drive, Negaunee, MI, 49866",46.46324,-87.57237,46.539027,-87.522412
+78,104,Meadowstone Manufactured Home Community,https://www.mhvillage.com/parks/15986, Barry ,231.0,400.0,85,"1812 Lavender Dr, Hastings, MI, 49058",42.63246,-85.27397,42.63245730000001,-85.2739742
+79,105,Cider Mill Village,https://www.mhvillage.com/parks/15891, Barry ,258.0,,84,"425 Cider Mill Drive, Middleville, MI, 49333",42.72148,-85.46037,42.7216877,-85.4601174
+80,106,Thornapple Lake Estates,https://www.mhvillage.com/parks/448, Barry ,215.0,295.0,86,"6335 Thornapple Lake Road, Nashville, MI, 49073",42.57761,-85.14295,42.6254149,-85.16969
+81,107,Baltimore Terrace Mobile Home Park,https://www.mhvillage.com/parks/15564, Barry ,62.0,,87,"1485 Sandy Circle, Hastings, MI, 49058",42.63877,-85.32057,42.580795,-85.265715
+82,108,Merlinos Hidden Valley Estates,https://www.mhvillage.com/parks/454, Barry ,78.0,,88,"4777 Barber Road, Hastings, MI, 49058",42.63877,-85.32057,42.7233404,-85.2637381
+83,109,Pine Haven Subdivision,https://www.mhvillage.com/parks/16031, Barry ,,,89,"Pinedale, Hastings, MI, 49058",42.63877,-85.32057,42.6766565,-85.4081535
+84,110,Barry's Resort,https://www.mhvillage.com/parks/15566, Barry ,50.0,,90,"2875 South Charlton Park Road, Hastings, MI, 49058",42.63877,-85.32057,42.6148406,-85.21127849999999
+85,112,Westshore Estates,https://www.mhvillage.com/parks/15356, Bay ,110.0,,92,"3201 South Euclid Avenue, Bay City, MI, 48706",43.60941,-83.94517,43.5679605,-83.91586149999999
+86,113,Alpine Village Mobile Home Park,https://www.mhvillage.com/parks/15457, Bay ,120.0,380.0,93,"2959 East Alpine Boulevard, Bay City, MI, 48706",43.60941,-83.94517,43.631615,-83.93680049999999
+87,114,White Birch Estates,https://www.mhvillage.com/parks/482, Osceola ,50.0,,920,"411 Dailey Drive, Reed City, MI, 49677",43.88709,-85.50842,43.879193,-85.526569
+88,115,Westwood Village,https://www.mhvillage.com/parks/349, Bay ,240.0,400.0,95,"2904 Stratford, Bay City, MI, 48706",43.64101,-83.9348,43.64088599999999,-83.93440319999999
+89,116,Fairfield Manor,https://www.mhvillage.com/parks/430, Bay ,137.0,315.0,96,"1016 Parkside Boulevard, Bay City, MI, 48706",43.60941,-83.94517,43.6025019,-84.0117451
+90,117,Saginaw Bay Estates,https://www.mhvillage.com/parks/364, Bay ,309.0,310.0,97,"1760 Saginaw Bay Estates Dr, Essexville, MI, 48732",43.61837,-83.77667,43.618683,-83.7768621
+91,118,Brentwood Estates,https://www.mhvillage.com/parks/15352, Bay ,150.0,,98,"3278 Brentwood Drive, Bay City, MI, 48706",43.60941,-83.94517,43.6409509,-83.9234756
+92,120,Wenona Beach Estates,https://www.mhvillage.com/parks/15449, Bay ,184.0,310.0,100,"4444 National Avenue, Bay City, MI, 48706",43.60941,-83.94517,43.6538714,-83.87447
+93,121,Willow Tree Village,https://www.mhvillage.com/parks/16027, Bay ,78.0,,102,"3840 Riata Dr, Bay City, MI, 48706",43.63473,-83.89947,43.6349704,-83.90096439999999
+94,122,Bay Village Mobile Home Estates,https://www.mhvillage.com/parks/33824, Bay ,102.0,280.0,103,"1274 West Hampton Road, Essexville, MI, 48732",43.60686,-83.77368,43.6179428,-83.8275491
+95,123,Bayco Mobile Home Park,https://www.mhvillage.com/parks/15447, Bay ,61.0,,104,"2836 East Biscayne Drive, Bay City, MI, 48706",43.60941,-83.94517,43.6461828,-83.9371858
+96,125,Pines Trailer Park,https://www.mhvillage.com/parks/15452, Bay ,29.0,,106,"2080 South Huron Road, Kawkawlin, MI, 48631",43.68189,-84.00666,43.678665,-83.959463
+97,126,Shady Rest Mobile Home Park,https://www.mhvillage.com/parks/15355, Bay ,129.0,,107,"3612 East Shod Street, Bay City, MI, 48706",43.60941,-83.94517,43.6425235,-83.9092357
+98,127,Linwood Mobile Home Park,https://www.mhvillage.com/parks/15454, Bay ,,,109,"1815 Pamela Drive, Linwood, MI, 48634",43.75989,-84.0515,43.7386598,-83.9647009
+99,128,Mulberry Place,https://www.mhvillage.com/parks/15453, Bay ,,,110,"2627 Broadway, Bay City, MI, 48708",43.56721,-83.82227,43.5618397,-83.8929655
+100,129,Harbor Village Community,https://www.mhvillage.com/parks/15766, Manistee ,17.0,,684,"1208 Elm Street, Frankfort, MI, 49635",44.62474,-86.1894,44.638539,-86.224654
+101,130,Crystal Lake Mobile Home Park,https://www.mhvillage.com/parks/545, Manistee ,47.0,,687,"6695 Spruce Drive, Benzonia, MI, 49616",44.578,-86.05958,44.6244048,-86.1047103
+102,131,Hillside Mobile Home Park,https://www.mhvillage.com/parks/543, Manistee ,,,689,"857 Glenn Avenue, Elberta, MI, 49628",44.61843,-86.22682,44.616149,-86.229958
+103,132,Meadow Lane,https://www.mhvillage.com/parks/512, Leelanau ,483.0,774.0,589,"4310 Meadowlane Drive, Traverse City, MI, 49684",44.78319,-85.72485,44.6980181,-85.6624787
+104,133,Suburban Estates Mobile Home Park,https://www.mhvillage.com/parks/15706, Leelanau ,75.0,365.0,588,"7230 Suburban Drive, Traverse City, MI, 49684",44.78319,-85.72485,44.7457345,-85.71896129999999
+105,134,"Burke Silver Lake View, LLC",https://www.mhvillage.com/parks/15748, Leelanau ,49.0,300.0,590,"5099 Silver Lake View Road, Traverse City, MI, 49684",44.78319,-85.72485,44.7021032,-85.6800939
+106,135,Dorsey's on Glen Lake,https://www.mhvillage.com/parks/15822, Leelanau ,54.0,,585,"8648 South Dorsey Park Road, Empire, MI, 49630",44.83906,-86.03016,44.856198,-86.01289899999999
+107,136,First Point Mobile Home Court,https://www.mhvillage.com/parks/33826, Leelanau ,53.0,,591,"7903 Birchpoint Drive, Traverse City, MI, 49684",44.78319,-85.72485,44.84500200000001,-85.700396
+108,137,Silver Shores Manufactured Home Community,https://www.mhvillage.com/parks/15749, Wexford ,200.0,415.0,1188,"1257 Overlook Drive, Traverse City, MI, 49685",44.67299,-85.68222,44.6731578,-85.6821703
+109,138,Buena Vista Estates,https://www.mhvillage.com/parks/15765, Wexford ,68.0,,1189,"17426 Honor Highway, Interlochen, MI, 49643",44.63341,-85.84129,44.6596851,-85.8900731
+110,139,Kampvilla RV Park,https://www.mhvillage.com/parks/15827, Manistee ,40.0,,683,"16632 Pleasanton Highway, Bear Lake, MI, 49614",44.48312,-86.11764,44.48301,-86.1176
+111,140,Pat's Place,https://www.mhvillage.com/parks/15740, Wexford ,20.0,,1185,"2951 North 7 Road, Mesick, MI, 49668",44.41834,-85.69718,44.380061,-85.76078
+112,141,White Pines Mobile Home Park,https://www.mhvillage.com/parks/15752, Wexford ,33.0,,1186,"Paul Drive, Mesick, MI, 49668",44.41834,-85.69718,44.409668,-85.710618
+113,142,R & R Chervenka,https://www.mhvillage.com/parks/15823, Leelanau ,,,597,"9640 Crain Hill Road, Traverse City, MI, 49684",44.78319,-85.72485,44.835399,-85.657271
+114,143,Warren Dunes Village,https://www.mhvillage.com/parks/15882, Berrien ,314.0,,127,"11159 Red Arrow Highway, Bridgman, MI, 49106",41.93932,-86.56886,41.9130739,-86.5795381
+115,144,Pleasant View Estates,https://www.mhvillage.com/parks/15363, Van Buren ,209.0,420.0,1108,"7604 Red Arrow Highway, Watervliet, MI, 49098",42.17555,-86.2514,42.1827437,-86.27436929999999
+116,145,Silverbrook,https://www.mhvillage.com/parks/15964, Berrien ,176.0,400.0,129,"1000 West Wildflower, Niles, MI, 49120",41.84367,-86.25133,41.812754,-86.22714599999999
+117,146,North Shore Estates,https://www.mhvillage.com/parks/15362, Berrien ,97.0,,130,"1565 M 63 North, Benton Harbor, MI, 49022",42.12681,-86.33201,42.1426633,-86.4509896
+118,147,Hills Haven,https://www.mhvillage.com/parks/15470, Berrien ,94.0,,126,"4205 Hills Haven Rd., Buchanan, MI, 49107",41.8788,-86.35676,41.8789212,-86.3576593
+119,148,Lakewood Estates,https://www.mhvillage.com/parks/15687, Ionia ,89.0,,455,"1615 Tupperlake Street, Lake Odessa, MI, 48849",42.80836,-85.14312,42.7850377,-85.1298857
+120,149,Sand Hill Community,https://www.mhvillage.com/parks/15463, Berrien ,80.0,,132,"5080 Saint Joseph Avenue, Stevensville, MI, 49127",42.00946,-86.51171,42.0251735,-86.516181
+121,150,Riverside Estates,https://www.mhvillage.com/parks/414, Berrien ,87.0,,133,"14566 North Red Bud Trail, Buchanan, MI, 49107",41.8549,-86.3692,41.85489680000001,-86.3691971
+122,151,Birchcrest Estates,https://www.mhvillage.com/parks/15475, Berrien ,110.0,,134,"2330 East Main Street, Niles, MI, 49120",41.84367,-86.25133,41.8088122,-86.22735279999999
+123,152,Shawnee Community,https://www.mhvillage.com/parks/15344, Berrien ,161.0,,135,"1558 West Shawnee Road, Baroda, MI, 49101",41.94965,-86.48023,41.9416589,-86.4936692
+124,153,Baroda Estates,https://www.mhvillage.com/parks/15476, Berrien ,151.0,,136,"8836 Stevensville Baroda Road, Baroda, MI, 49101",41.94965,-86.48023,41.9592888,-86.4887747
+125,154,Country Acres Manufactured Home Community,https://www.mhvillage.com/parks/15465, Berrien ,64.0,,137,"2615 Old Us 31, Niles, MI, 49120",41.87435,-86.28344,41.8965515,-86.317593
+126,155,Franklin Woods,https://www.mhvillage.com/parks/15358, Berrien ,268.0,,138,"1950 South 13th Street, Niles, MI, 49120",41.79377,-86.24637,41.7965565,-86.2457144
+127,156,Glen Aire Mobile Home Park,https://www.mhvillage.com/parks/15359, Berrien ,130.0,,139,"1153 West Glenlord Road, Saint Joseph, MI, 49085",42.0621,-86.45045,42.0453464,-86.4815386
+128,157,Indian Lake Woods,https://www.mhvillage.com/parks/32642, Berrien ,14.0,435.0,140,"54750 Highland Dr, Eau Claire, MI, 49111",42.0012,-86.21993,42.0011951,-86.2199253
+129,158,Lakeshore Estates,https://www.mhvillage.com/parks/15360, Berrien ,98.0,320.0,141,"3017 Johnson Road, Stevensville, MI, 49127",42.00946,-86.51171,42.0073584,-86.5213613
+130,159,Lakeside Cabins Resort,https://www.mhvillage.com/parks/90505, Berrien ,225.0,304.0,142,"7650 Warren Woods Rd, Three Oaks, MI, 49128",41.81761,-86.6127,41.8362576,-86.63909430000001
+131,160,Niles Pines Mobile Estates,https://www.mhvillage.com/parks/15672, Berrien ,80.0,350.0,143,"900 Mobile Boulevard, Niles, MI, 49120",41.84367,-86.25133,41.8222234,-86.20662829999999
+132,161,Ontario Place,https://www.mhvillage.com/parks/411, Berrien ,130.0,407.0,144,"2006 Ontario Road, Niles, MI, 49120",41.84367,-86.25133,41.7669833,-86.2301337
+133,162,Ravine View Estates,https://www.mhvillage.com/parks/15461, Berrien ,158.0,,145,"5100 Little Paw Paw Lake Road 6A, Coloma, MI, 49038",42.21045,-86.33474,42.211301,-86.33444779999999
+134,163,Ravines Mobile Home Park,https://www.mhvillage.com/parks/15364, Berrien ,225.0,,146,"2088 East Empire Avenue, Benton Harbor, MI, 49022",42.12681,-86.33201,42.0975244,-86.40774030000001
+135,164,River Springs Estates,https://www.mhvillage.com/parks/15466, Berrien ,198.0,360.0,147,"9387 Us Highway 31, Berrien Springs, MI, 49103",41.95442,-86.33053,41.8965515,-86.317593
+136,178,Tallgrass an FR Community,https://www.mhvillage.com/parks/15577, Branch ,239.0,275.0,148,"260 East Garfield Avenue, Coldwater, MI, 49036",41.92576,-84.99497,41.9266051,-84.99478529999999
+137,179,North Trail Village,https://www.mhvillage.com/parks/16005, Branch ,42.0,225.0,149,"100 North Main Street, Quincy, MI, 49082",41.94902,-84.90112,41.95058,-84.882886
+138,180,Grand Village Mobile Home Park,https://www.mhvillage.com/parks/15572, Branch ,25.0,220.0,150,"598 Union City Road, Coldwater, MI, 49036",41.90647,-85.04304,42.0092241,-85.0208437
+139,181,Love's Lazy Lagoon,https://www.mhvillage.com/parks/84109, Branch ,61.0,116.0,151,"622 N Union City Rd, Coldwater, MI, 49036",41.90647,-85.04304,41.972653,-85.023804
+140,182,Raymond's Landing,https://www.mhvillage.com/parks/84111, Branch ,70.0,152.0,152,"259 Earl Helen Dr, Coldwater, MI, 49036",41.90647,-85.04304,41.96617639999999,-85.02703489999999
+141,183,Somerset Mobile Home Park,https://www.mhvillage.com/parks/15569, Branch ,56.0,255.0,153,"117 Burch Road, Coldwater, MI, 49036",41.90647,-85.04304,41.9709693,-85.05450309999999
+142,184,Trail Tree Village,https://www.mhvillage.com/parks/15933, Branch ,143.0,309.0,154,"175 North Michigan Avenue, Coldwater, MI, 49036",41.90647,-85.04304,41.94626640000001,-84.9816219
+143,185,Lakecrest Mobile Court,https://www.mhvillage.com/parks/15568, Branch ,23.0,,155,"645 Lakecrest Drive, Coldwater, MI, 49036",41.90647,-85.04304,41.9760849,-85.0395755
+144,186,Turtle Lake,https://www.mhvillage.com/parks/42054, Branch ,,,156,"2101 9 Mile Road, Union City, MI, 49094",42.05908,-85.11405,42.1030752,-85.1189508
+145,187,Avra Estates II,https://www.mhvillage.com/parks/15718, Branch ,30.0,,157,"27 West Garfield Avenue, Coldwater, MI, 49036",41.90647,-85.04304,41.9270897,-85.00674649999999
+146,188,Mobile Manor Park,https://www.mhvillage.com/parks/15570, Branch ,29.0,,158,"104 First Street, Bronson, MI, 49028",41.87237,-85.15701,41.8663759,-85.19512209999999
+147,189,Apollo XI Mobile Home Park,https://www.mhvillage.com/parks/15578, Branch ,72.0,,159,"550 East Chicago Street, Coldwater, MI, 49036",41.90647,-85.04304,41.9368995,-84.9794682
+148,190,Cambridge Village,https://www.mhvillage.com/parks/15571, Branch ,32.0,,160,"748 Lott Road, Coldwater, MI, 49036",41.90647,-85.04304,41.93441199999999,-84.9393594
+149,191,Countryside Mobile Court,https://www.mhvillage.com/parks/15576, Branch ,24.0,,161,"191 North Fillmore Court, Coldwater, MI, 49036",41.90647,-85.04304,41.9114269,-85.0217608
+150,192,Avra Estates,https://www.mhvillage.com/parks/15573, Branch ,143.0,294.0,162,"11 West Garfield Avenue, Coldwater, MI, 49036",41.90647,-85.04304,41.9266245,-85.00731929999999
+151,193,Kinsley Mobile Home Park,https://www.mhvillage.com/parks/460, Branch ,20.0,,163,"587 Marshall Road, Coldwater, MI, 49036",41.90647,-85.04304,41.9689224,-85.000884
+152,194,Cole's Chippewa Circle Mobile Home Park,https://www.mhvillage.com/parks/52245, Branch ,,,164,"356 Chippewa Drive, Sherwood, MI, 49089",42.00683,-85.21925,42.0538,-85.257705
+153,195,Green Acres Mobile Home Park,https://www.mhvillage.com/parks/52246, Branch ,,,165,"151 Wheatfield Drive, Sherwood, MI, 49089",42.00683,-85.21925,42.0424958,-85.2422404
+154,196,Indian Cove Mobile Home Park,https://www.mhvillage.com/parks/15575, Branch ,,,166,"2928 Matteson Lake, Bronson, MI, 49028",41.87237,-85.15701,41.9285189,-85.2031832
+155,197,Northmoor Estates,https://www.mhvillage.com/parks/37959, Branch ,,,167,"228 North Moor Drive, Coldwater, MI, 49036",41.90647,-85.04304,41.963294,-85.0402313
+156,198,Thunderbird Village,https://www.mhvillage.com/parks/15524, Calhoun ,8.0,,175,"1145 Harmonia, Springfield, MI, 49015",42.26167,-85.23882,42.3329921,-85.2457871
+157,199,Hickory Hills Village,https://www.mhvillage.com/parks/15515, Calhoun ,283.0,380.0,168,"10450 Six Mile Road, Battle Creek, MI, 49014",42.30294,-85.10537,42.2264206,-85.1748686
+158,200,Bedford Hills,https://www.mhvillage.com/parks/15311, Calhoun ,339.0,,169,"110 Bejac Circle Drive, Battle Creek, MI, 49017",42.36071,-85.22936,42.3606307,-85.2289342
+159,201,Avenue A Mobile Home Park,https://www.mhvillage.com/parks/15365, Calhoun ,145.0,,170,"1267 Avenue A, Springfield, MI, 49015",42.26167,-85.23882,42.3255984,-85.2518158
+160,202,Creek Valley Mobile Home Park,https://www.mhvillage.com/parks/434, Calhoun ,166.0,,171,"79 Creek Valley Circle, Battle Creek, MI, 49017",42.39115,-85.19663,42.3633872,-85.240919
+161,203,Glenmoor Village,https://www.mhvillage.com/parks/32836, Calhoun ,139.0,317.0,172,"3971 Capital Avenue SW #1, Battle Creek, MI, 49015",42.24515,-85.19336,42.2449073,-85.19486859999999
+162,204,Wildflower Crossing,https://www.mhvillage.com/parks/126426, Calhoun ,344.0,350.0,173,"1642 Alyssum Court, Albion, MI, 49224",42.26455,-84.77493,42.2646903,-84.7749489
+163,205,New Village Estates,https://www.mhvillage.com/parks/15733, Calhoun ,130.0,275.0,174,"430 South Byron, Homer, MI, 49245",42.15145,-84.82623,42.1409919,-84.79907039999999
+164,206,Avonwood Mobile Home Park,https://www.mhvillage.com/parks/15522, Calhoun ,55.0,,176,"953 East Michigan Avenue, Battle Creek, MI, 49017",42.39115,-85.19663,42.3109304,-85.1419347
+165,207,Birchwood Place Mobile Home Park,https://www.mhvillage.com/parks/15518, Calhoun ,70.0,295.0,177,"3500 Q Drive South, Athens, MI, 49011",42.10945,-85.22203,42.128459,-85.2240013
+166,208,Lighthouse On The Lake,https://www.mhvillage.com/parks/38053, Calhoun ,788.0,,178,"1001 24 Mile Road, Homer, MI, 49245",42.15145,-84.82623,42.0930385,-84.8228278
+167,209,The Community of Rolling Hills,https://www.mhvillage.com/parks/15745, Calhoun ,343.0,349.0,179,"300 Morgan Road, Battle Creek, MI, 49017",42.39115,-85.19663,42.3534843,-85.215452
+168,210,Twin Pines MHC,https://www.mhvillage.com/parks/15517, Calhoun ,73.0,,180,"2701 Calhoun Road, Albion, MI, 49224",42.2941,-84.78798,42.269343,-84.7182057
+169,211,Twin Valley Mobile Home Village,https://www.mhvillage.com/parks/15523, Calhoun ,36.0,,181,"16555 F Drive South, Marshall, MI, 49068",42.26184,-84.94424,42.2051779,-84.9704859
+170,212,Spruce Tree Mobile Home Community,https://www.mhvillage.com/parks/15885, Calhoun ,80.0,288.0,182,"14200 - 18 1/2 Mile Road, Marshall, MI, 49068",42.26184,-84.94424,42.2808073,-84.9352311
+171,213,Bakers Mobile Home Park,https://www.mhvillage.com/parks/15310, Calhoun ,120.0,,183,"1030 East Columbia Avenue, Battle Creek, MI, 49015",42.26167,-85.23882,42.2981682,-85.1669532
+172,214,Valley Garden Trailer Park,https://www.mhvillage.com/parks/15525, Calhoun ,38.0,700.0,184,"897 East Michigan, Battle Creek, MI, 49017",42.39115,-85.19663,42.3118115,-85.1456936
+173,215,Evergreen Oak Forest,https://www.mhvillage.com/parks/15516, Calhoun ,103.0,,185,"20 Powell Street, Battle Creek, MI, 49014",42.30294,-85.10537,42.324456,-85.1307843
+174,216,Sunrise Mobile Home Court,https://www.mhvillage.com/parks/431, Calhoun ,33.0,,186,"15011 West Michigan Avenue, Marshall, MI, 49068",42.26184,-84.94424,42.2704313,-85.0023812
+175,217,Harper Commons MHC,https://www.mhvillage.com/parks/126502, Calhoun ,,,187,"993 East Michigan Avenue, Battle Creek, MI, 49014",42.3109,-85.13804,42.3114345,-85.1383412
+176,218,Rainbow Estates Mobile Park,https://www.mhvillage.com/parks/15520, Calhoun ,,,188,"875 East Michigan Avenue, Marshall, MI, 49068",42.26184,-84.94424,42.2740911,-84.94384149999999
+177,219,Edwardsburg Estates,https://www.mhvillage.com/parks/15585, Cass ,109.0,,193,"69425 M-62, Edwardsburg, MI, 49112",41.7906,-86.08514,41.7903717,-86.0837402
+178,220,Colonial Acres Mobile Home Park,https://www.mhvillage.com/parks/15676, Cass ,108.0,370.0,189,"69205 Garver Lake, Edwardsburg, MI, 49112",41.7965,-86.04734,41.7961063,-86.0472994
+179,221,Beech Grove,https://www.mhvillage.com/parks/90393, Cass ,,,190,"51439 Michigan 40, Marcellus, MI, 49067",42.03379,-85.80274,42.0497536,-85.8245053
+180,222,Bluegill Lake MHP,https://www.mhvillage.com/parks/15730, Cass ,39.0,385.0,191,"400 East South Street, Marcellus, MI, 49067",42.03379,-85.80274,42.0220517,-85.80752590000002
+181,223,C&M Park,https://www.mhvillage.com/parks/15670, Cass ,26.0,,192,"70710 Elkhart Rd., Edwardsburg, MI, 49112",41.77132,-86.05088,41.7713165,-86.050882
+182,224,Rustic Acres Mobile Home Park,https://www.mhvillage.com/parks/15746, Cass ,70.0,,194,"19250 Stateline Road, Edwardsburg, MI, 49112",41.81851,-86.01239,41.7635973,-85.94006569999999
+183,225,Wildwood Resort,https://www.mhvillage.com/parks/37442, Cass ,163.0,167.0,195,"23040 Phillips Road, Edwardsburg, MI, 49112",41.81851,-86.01239,41.79560379999999,-86.08083839999999
+184,226,Simmons Mobile Home Park,https://www.mhvillage.com/parks/15681, Cass ,,,196,"19311 Us Highway 12, Edwardsburg, MI, 49112",41.76878,-85.9411,41.7686926,-85.9410516
+185,227,Maple Grove Trailer Court,https://www.mhvillage.com/parks/15678, Cass ,75.0,,197,"59733 Decatur Road, Cassopolis, MI, 49031",41.90053,-85.99293,41.9292212,-85.9721964
+186,228,North Wayne Estates,https://www.mhvillage.com/parks/15917, Cass ,10.0,,198,"27139 Corwin Street, Dowagiac, MI, 49047",41.98832,-86.10795,42.0631682,-86.08487029999999
+187,229,Rema Mobile Home Park,https://www.mhvillage.com/parks/15679, Cass ,92.0,,199,"24050 North Shore Drive, Edwardsburg, MI, 49112",41.81851,-86.01239,41.809223,-86.0308877
+188,230,Linden Mobile Home Park,https://www.mhvillage.com/parks/15673, Cass ,,,200,"19350 State Line Road, Edwardsburg, MI, 49112",41.81851,-86.01239,41.76017239999999,-85.9418821
+189,231,Bay Shore Estates Mobile Home Park,https://www.mhvillage.com/parks/15795, Emmet ,83.0,400.0,308,"7463 Old Us Highway 31, Lot 24, Petoskey, MI, 49770",45.34226,-84.9135,45.3966317,-84.8917142
+190,232,Charlevoix Estates,https://www.mhvillage.com/parks/15897, Charlevoix ,189.0,,203,"6685 M 66 North, Charlevoix, MI, 49720",45.27139,-85.2327,45.296538,-85.2589484
+191,233,Lake Michigan Heights,https://www.mhvillage.com/parks/547, Charlevoix ,108.0,,204,"7400 Lakeview Drive, Charlevoix, MI, 49720",45.27139,-85.2327,45.3695163,-85.12741319999999
+192,235,Sun Outdoors Petoskey Bay Harbor,https://www.mhvillage.com/parks/126054, Emmet ,78.0,,310,"5505 Charlevoix Avenue, Petoskey, MI, 49770",45.35816,-85.05439,45.3581558,-85.0543891
+193,236,Petoskey KOA,https://www.mhvillage.com/parks/105759, Emmet ,,,312,"1800 North Us 31, Petoskey, MI, 49770",45.39633,-84.89247,45.3950953,-84.8940051
+194,237,Harbor Springs Estates,https://www.mhvillage.com/parks/558, Emmet ,68.0,,313,"629 East Lake Street, Harbor Springs, MI, 49740",45.544,-84.99149,45.435576,-84.97886079999999
+195,238,Mountain View Estates,https://www.mhvillage.com/parks/15767, Otsego ,42.0,,955,"2225 Center Street, Boyne Falls, MI, 49713",45.20527,-84.8555,45.1723181,-84.9118096
+196,239,Radio City Village,https://www.mhvillage.com/parks/15793, Emmet ,44.0,,314,"1121 Lears Road, Petoskey, MI, 49770",45.34226,-84.9135,45.34849029999999,-84.9653995
+197,240,Chalet Estates,https://www.mhvillage.com/parks/15794, Emmet ,41.0,,315,"5669 Pickerel Lake Road, Petoskey, MI, 49770",45.34226,-84.9135,45.39357500000001,-84.85552799999999
+198,241,Huron Estates,https://www.mhvillage.com/parks/15184, Wayne ,806.0,629.0,1170,"22000 Inkster Road, Romulus, MI, 48174",42.20291,-83.34416,42.1448393,-83.31006
+199,242,Town & Country Mobile Home Park,https://www.mhvillage.com/parks/15775, Presque Isle ,,,982,"2653 Vanyea Road, Cheboygan, MI, 49721",45.5755,-84.46807,45.6263379,-84.440613
+200,243,Indian River Mobile Home Park,https://www.mhvillage.com/parks/15771, Cheboygan ,,,217,"5144 South Straits Highway, Indian River, MI, 49749",45.4228,-84.56745,45.3873493,-84.62914409999999
+201,244,Indian Village Park,https://www.mhvillage.com/parks/15988, Cheboygan ,,,218,"4726 Lanai Drive, Indian River, MI, 49749",45.4228,-84.56745,45.409669,-84.58373519999999
+202,245,Larry's Trailer Court,https://www.mhvillage.com/parks/15773, Presque Isle ,,,986,"10692 North Black River Road, Cheboygan, MI, 49721",45.5755,-84.46807,45.6121857,-84.4466032
+203,246,Conway Commons,https://www.mhvillage.com/parks/128334, Emmet ,90.0,1200.0,306,"2959 Oden Rd, Alanson, MI, 49706",45.42702,-84.85377,45.4246331,-84.8555472
+204,247,Conway Commons,https://www.mhvillage.com/parks/128334, Emmet ,90.0,1200.0,309,"8523 Park Way, Alanson, MI, 49706",45.44418,-84.78671,45.427326,-84.85577409999999
+205,248,Alanson Estates Noble Homes,https://www.mhvillage.com/parks/15797, Emmet ,30.0,,307,"6760 Us 31 North, Alanson, MI, 49706",45.4558,-84.78367,45.4216612,-84.862567
+206,249,El Rancho Alanson RV Resort,https://www.mhvillage.com/parks/126084, Emmet ,137.0,,311,"6712 San Juan, Alanson, MI, 49706",45.44001,-84.77692,45.4399886,-84.7769209
+207,250,Shady Grove Village,https://www.mhvillage.com/parks/15855, Presque Isle ,,,979,"4128 Michigan, Onaway, MI, 49765",45.34678,-84.25729,45.3517697,-84.23412789999999
+208,251,Lake Superior Estates,https://www.mhvillage.com/parks/15780, Luce ,225.0,,640,"102 East 25th Avenue, Sault Sainte Marie, MI, 49783",46.4698,-84.34852,46.4690779,-84.3533506
+209,252,Blair Hastings Park Lake Superior State,https://www.mhvillage.com/parks/15779, Mackinac ,,,650,"1000 College Drive, Sault Sainte Marie, MI, 49783",46.37568,-84.30145,46.4944706,-84.3597571
+210,253,L & M Trailer Court,https://www.mhvillage.com/parks/550, Luce ,133.0,,644,"1804 West 18th Street, Sault Sainte Marie, MI, 49783",46.48215,-84.40096,46.4831325,-84.4042441
+211,254,Riverside Mobile Home Village,https://www.mhvillage.com/parks/15777, Mackinac ,60.0,,651,"2210 Riverside Drive, Sault Sainte Marie, MI, 49783",46.37568,-84.30145,46.4689892,-84.2996831
+212,255,Fornicola Trailer Park,https://www.mhvillage.com/parks/15778, Mackinac ,,,652,"2501 Ashmun Street, Sault Sainte Marie, MI, 49783",46.37568,-84.30145,46.4774159,-84.3540046
+213,257,Great Northern Mobile Home Park,https://www.mhvillage.com/parks/15824, Luce ,,,639,"M-28 Highway, Newberry, MI, 49868",46.45669,-85.41102,46.4925837,-87.1467716
+214,258,Meadows of Farwell,https://www.mhvillage.com/parks/15603, Clare ,48.0,340.0,232,"551 Grace Street, Farwell, MI, 48622",43.8212,-84.87874,43.8388383,-84.8627705
+215,259,Pleasant Valley Mobile Home Park,https://www.mhvillage.com/parks/15608, Clare ,,362.0,233,"600 West 5th Street, Clare, MI, 48617",43.82236,-84.78176,43.8224327,-84.7817081
+216,260,Cedar Shores,https://www.mhvillage.com/parks/16059, Missaukee ,,,753,"5916 Cedar Shores, Harrison, MI, 48625",44.03111,-84.84619,44.02784330000001,-84.7317185
+217,261,Hidden Hill Family Campground,https://www.mhvillage.com/parks/15727, Missaukee ,55.0,,754,"300 North Clare, Harrison, MI, 48625",44.03111,-84.84619,43.991733,-84.77883299999999
+218,262,Harrison Estates,https://www.mhvillage.com/parks/15606, Missaukee ,50.0,,755,"2600 Mostetler Road, Harrison, MI, 48625",44.03111,-84.84619,44.009485,-84.795737
+219,263,Beech Tree Estates,https://www.mhvillage.com/parks/16044, Clare ,,,237,"7413 North Nottawa Road, Farwell, MI, 48622",43.8212,-84.87874,43.7473974,-84.8690409
+220,264,Loomis Resort,https://www.mhvillage.com/parks/15605, Osceola ,,,929,"10585 Rock Road, Lake, MI, 48632",43.83909,-85.015,43.8354141,-85.0566451
+221,265,Luke's Trailer Park,https://www.mhvillage.com/parks/15607, Clare ,,,239,"705 S Rainbow Dr, Clare, MI, 48617",43.85808,-84.72783,43.8189792,-84.75614709999999
+222,266,Parkers Trailer Park,https://www.mhvillage.com/parks/15604, Missaukee ,,,761,"3100 Long Lake Road, Harrison, MI, 48625",44.03111,-84.84619,44.1033029,-84.7864012
+223,267,Ruby's Mobile Home Park,https://www.mhvillage.com/parks/15609, Clare ,,,241,"10600 South Clare Avenue, Clare, MI, 48617",43.85808,-84.72783,43.8332233,-84.76845
+224,268,Withii Trailer Park,https://www.mhvillage.com/parks/15610, Missaukee ,,,763,"1820 Hampton Road, Harrison, MI, 48625",44.03111,-84.84619,44.0348891,-84.81358259999999
+225,269,King Arthur's Court,https://www.mhvillage.com/parks/15064, Clinton ,425.0,599.0,243,"2201 East State Road, Lansing, MI, 48906",42.78265,-84.57672,42.78550000000001,-84.5188563
+226,270,Capital Crossings,https://www.mhvillage.com/parks/34271, Clinton ,275.0,,244,"13531 Declaration Court, Eagle, MI, 48822",42.83725,-84.75913,42.8187951,-84.7916778
+227,271,Cadgewith Farms,https://www.mhvillage.com/parks/15721, Clinton ,228.0,480.0,245,"2300 East State Road, Lansing, MI, 48906",42.78265,-84.57672,42.7823852,-84.5170668
+228,272,Valley Estates,https://www.mhvillage.com/parks/15101, Ingham ,148.0,310.0,435,"16751 Turner Road, Lansing, MI, 48906",42.77352,-84.551,42.77347470000001,-84.5510225
+229,273,The Meadows of St Johns,https://www.mhvillage.com/parks/15106, Clinton ,216.0,,246,"2265 W Parks Rd - Lot #1, Saint Johns, MI, 48879",43.00047,-84.58266,42.9691679,-84.5671036
+230,274,Quiet Cove,https://www.mhvillage.com/parks/15408, Shiawassee ,43.0,,1076,"12675 Colby Lake Road, Laingsburg, MI, 48848",42.87317,-84.38924,42.8093989,-84.32119999999999
+231,275,Kristana Mobile Home Park,https://www.mhvillage.com/parks/15213, Clinton ,165.0,396.0,248,"1110 East Coleman Road, Lansing, MI, 48906",42.78265,-84.57672,42.7723291,-84.4814436
+232,276,Maple Leaf Community,https://www.mhvillage.com/parks/32680, Shiawassee ,76.0,300.0,1082,"8701 East M-21, Ovid, MI, 48866",42.99048,-84.35524,42.999768,-83.9927967
+233,277,Saint Johns Estates,https://www.mhvillage.com/parks/15105, Clinton ,112.0,,251,"609 North Morton Street, Saint Johns, MI, 48879",43.00047,-84.58266,43.0085941,-84.56702229999999
+234,278,Moon Lake Mobile Home Park,https://www.mhvillage.com/parks/15325, Shiawassee ,92.0,,1089,"12700 South Colby Lake Road, Laingsburg, MI, 48848",42.87317,-84.38924,42.8095881,-84.3265483
+235,279,Maple Valley Subdivision,https://www.mhvillage.com/parks/605, Shiawassee ,35.0,,1090,"Meridian Road - Po Box 135, Ovid, MI, 48866",42.99048,-84.35524,42.9340676,-84.3655009
+236,280,Westphalia Mobile Home Court,https://www.mhvillage.com/parks/15216, Clinton ,8.0,,254,"13606 Jason Rd, Westphalia, MI, 48894",42.91526,-84.79072,42.9150395,-84.7900093
+237,281,Park Lake Mobile Home Court,https://www.mhvillage.com/parks/15214, Clinton ,48.0,,255,"6335 Park Lake Road, Bath, MI, 48808",42.82693,-84.44378,42.7621864,-84.44961789999999
+238,282,Crosswinds Mobile Home Park,https://www.mhvillage.com/parks/15212, Clinton ,90.0,,256,"14073 South Us Highway 27, Dewitt, MI, 48820",42.81211,-84.54134,42.812123,-84.54133999999999
+239,284,Hartwick Pines Mobile Home Estates,https://www.mhvillage.com/parks/15925, Oscoda ,52.0,,933,"4869 Brighton Circle, Grayling, MI, 49738",44.71357,-84.65051,44.709562,-84.7038202
+240,285,Grayling Mobile Home Estates,https://www.mhvillage.com/parks/15906, Oscoda ,163.0,,937,"North Down River Road, Grayling, MI, 49738",44.71357,-84.65051,44.6709242,-84.7068193
+241,286,Timberly Village,https://www.mhvillage.com/parks/15783, Oscoda ,,,944,"243 Woodlawn Boulevard, Grayling, MI, 49738",44.71357,-84.65051,44.6827039,-84.7159028
+242,287,Aspen Village,https://www.mhvillage.com/parks/595, Otsego ,204.0,303.0,947,"204 Aspen Commons Drive, Gaylord, MI, 49735",44.99125,-84.6518,45.011646,-84.67194599999999
+243,288,Nottingham Forest,https://www.mhvillage.com/parks/15851, Otsego ,74.0,480.0,948,"1665 West M-32, Gaylord, MI, 49735",44.99125,-84.6518,45.0272075,-84.70757499999999
+244,289,Sunset Estates of Gaylord LLC,https://www.mhvillage.com/parks/15853, Otsego ,20.0,550.0,949,"7346 Old 27 Hwy South, Vanderbilt, MI, 49795",44.9141,-84.69544,45.1305231,-84.6640498
+245,290,Higgins Lake East Campground and Mobile Home Park,https://www.mhvillage.com/parks/15860, Roscommon ,,,992,"2380 West Burdell Road, Roscommon, MI, 48653",44.48037,-84.61296,44.47910359999999,-84.6636305
+246,291,Higgins Lake Hide-a-way Mobile Home Park,https://www.mhvillage.com/parks/15857, Roscommon ,,,993,"6059 West Higgins Lake Drive, Higgins Lake, MI, 48627",44.46121,-84.7481,44.4610527,-84.7473713
+247,292,Log Haven Mobile Home Park,https://www.mhvillage.com/parks/15852, Otsego ,,,950,"273 Randolph Street, Gaylord, MI, 49735",44.99125,-84.6518,44.9918521,-84.672449
+248,294,Wagon Wheel Estates,https://www.mhvillage.com/parks/15863, Roscommon ,,,999,"2720 West Higgins Lake Road, Roscommon, MI, 48653",44.48037,-84.61296,44.44786,-84.708308
+249,295,Woodland Estates,https://www.mhvillage.com/parks/345, Kalamazoo ,348.0,515.0,531,"4797 South 4th Street, Kalamazoo, MI, 49009",42.24645,-85.72582,42.24644809999999,-85.72581509999999
+250,296,Fair View Estates,https://www.mhvillage.com/parks/15785, Delta ,,,274,"1401 North 23rd Street, Escanaba, MI, 49829",45.76411,-87.07968,45.7641432,-87.079836
+251,297,White Birch Village,https://www.mhvillage.com/parks/15789, Iron ,249.0,250.0,474,"W8079 S Us Hwy 2/141, Iron Mountain, MI, 49801",45.80907,-88.03536,45.8098189,-88.02892299999999
+252,298,Park Ridge,https://www.mhvillage.com/parks/15791, Iron ,94.0,,475,"1300 Michigan Avenue, Office, Iron Mountain, MI, 49801",45.80987,-88.04959,45.8111955,-88.04881139999999
+253,299,Rivers Bend Mobile Park,https://www.mhvillage.com/parks/15792, Iron ,51.0,,476,"N3905 Pine Mountain Rd, Iron Mountain, MI, 49801",45.94478,-87.96643,45.8370608,-88.0932459
+254,300,Keyes Lake Mobile Home Park,https://www.mhvillage.com/parks/127988, Iron ,,,477,"4909 John Bradley Lane, Florence, WI, 54121",45.90715,-88.30915,45.9071522,-88.3091499
+255,301,White Birch Trailer Court,https://www.mhvillage.com/parks/27193, Dickinson ,,,283,"W 11258 White Birch, Dunbar, WI, 54119",45.63086,-88.14059,45.6414858,-88.1559419
+256,302,Kensington Meadows,https://www.mhvillage.com/parks/15873, Ingham ,290.0,,422,"4245 West Jolly Road, Lansing, MI, 48911",42.68314,-84.60191,42.6815381,-84.608764
+257,303,Windsor Estates,https://www.mhvillage.com/parks/16025, Eaton ,470.0,390.0,287,"6661 Canal Road, Dimondale, MI, 48821",42.63992,-84.65103,42.6636922,-84.6621736
+258,304,Eaton Pine Village,https://www.mhvillage.com/parks/15956, Eaton ,147.0,396.0,285,"458 Eaton Pines Blvd, Eaton Rapids, MI, 48827",42.50937,-84.669,42.5019107,-84.6635518
+259,305,Butternut Creek,https://www.mhvillage.com/parks/27918, Eaton ,30.0,370.0,286,"801 Packard Highway, Charlotte, MI, 48813",42.56686,-84.819,42.583524,-84.8191308
+260,306,Grand Ledge Ravines,https://www.mhvillage.com/parks/15217, Eaton ,218.0,363.0,288,"855 West Jefferson Street, Grand Ledge, MI, 48837",42.74847,-84.76911,42.752733,-84.7600971
+261,307,Park Terrace MHC,https://www.mhvillage.com/parks/15226, Eaton ,158.0,,289,"3435 West Saint Joseph Street, Lansing, MI, 48917",42.71887,-84.63234,42.724506,-84.5982484
+262,308,Century Park,https://www.mhvillage.com/parks/15222, Eaton ,230.0,435.0,290,"215 North Canal Road, Lansing, MI, 48917",42.71887,-84.63234,42.7341578,-84.6629823
+263,309,Maple Knoll Mobile Home Community,https://www.mhvillage.com/parks/15241, Eaton ,49.0,385.0,291,"1716 E Lansing Road, Charlotte, MI, 48813",42.58416,-84.80285,42.5845758,-84.8040851
+264,310,Mill Pond an FR Community,https://www.mhvillage.com/parks/15076, Ingham ,356.0,435.0,431,"1500 Old Mill Lane, Lansing, MI, 48911",42.68109,-84.55825,42.6567049,-84.53139320000001
+265,311,Stonegate,https://www.mhvillage.com/parks/15109, Ingham ,278.0,,432,"2700 Eaton Rapids, Lansing, MI, 48911",42.65876,-84.59355,42.6566037,-84.5954249
+266,312,Country Village,https://www.mhvillage.com/parks/15240, Eaton ,100.0,,294,"7781 West Grand River Highway, Grand Ledge, MI, 48837",42.74847,-84.76911,42.7827036,-84.67734949999999
+267,313,Grand Oaks Village,https://www.mhvillage.com/parks/15061, Eaton ,168.0,,295,"817 North Clinton Street, Grand Ledge, MI, 48837",42.74847,-84.76911,42.7610471,-84.7400598
+268,314,Hi-Way Mobile Haven,https://www.mhvillage.com/parks/15219, Eaton ,67.0,,296,"2600 Lansing Road, Charlotte, MI, 48813",42.56686,-84.819,42.6023972,-84.77201720000001
+269,315,Independence Commons,https://www.mhvillage.com/parks/15911, Eaton ,340.0,,297,"1776 Constitution Circle, Potterville, MI, 48876",42.6437,-84.73949,42.6275868,-84.7511019
+270,316,Meadows Mobile Home Park,https://www.mhvillage.com/parks/15660, Gratiot ,93.0,,389,"411 South Grover Street, Alma, MI, 48801",43.37908,-84.65708,43.3695771,-84.6412826
+271,317,Valley Springs Mobile Home Park,https://www.mhvillage.com/parks/15220, Eaton ,81.0,350.0,299,"4723 Hartel Road, Potterville, MI, 48876",42.6437,-84.73949,42.6359058,-84.73912
+272,318,Belle Vista Mobile Home Park,https://www.mhvillage.com/parks/21576, Eaton ,206.0,,300,"509 Belle Vista Drive, Bellevue, MI, 49021",42.42874,-85.09764,42.4484297,-85.01230819999999
+273,319,Bellevue Mobile Home Park,https://www.mhvillage.com/parks/15519, Eaton ,76.0,,301,"23951 15 Mile Road, Bellevue, MI, 49021",42.42874,-85.09764,42.4195007,-85.0067881
+274,320,Hickory Haven Mobile Home Park,https://www.mhvillage.com/parks/15218, Eaton ,27.0,,302,"420 Haven Street, Eaton Rapids, MI, 48827",42.50937,-84.669,42.5014931,-84.6523783
+275,321,Lawrence Manor Mobile Home Park,https://www.mhvillage.com/parks/280, Eaton ,30.0,,304,"629 West Lawrence Avenue, Charlotte, MI, 48813",42.56686,-84.819,42.562963,-84.84522299999999
+276,322,Riverwood,https://www.mhvillage.com/parks/106664, Eaton ,,,305,"501 South Jefferson St, Bellevue, MI, 49021",42.44934,-85.01063,42.449333,-85.010723
+277,323,Pineview Estates,https://www.mhvillage.com/parks/15742, Genesee ,1011.0,400.0,316,"6152 N. Genesee Rd., Flint, MI, 48506",43.06496,-83.62216,43.0944998,-83.6095653
+278,324,Broadview Estates,https://www.mhvillage.com/parks/289, Genesee ,497.0,,317,"4250 North State Road, Davison, MI, 48423",43.04208,-83.52223,43.0697702,-83.51368409999999
+279,325,Cider Mill Crossings,https://www.mhvillage.com/parks/34419, Genesee ,327.0,,318,"9900 Townsquare Boulevard, Fenton, MI, 48430",42.77042,-83.74655,42.6945303,-83.7628064
+280,326,Maple Run,https://www.mhvillage.com/parks/15991, Genesee ,145.0,,320,"2000 Maple Run Boulevard, Clio, MI, 48420",43.16502,-83.71659,43.1650177,-83.71659269999999
+281,327,Fisherman's Cove,https://www.mhvillage.com/parks/15532, Genesee ,162.0,,321,"4441 Jena Lane, Flint, MI, 48507",42.95973,-83.7225,42.96420519999999,-83.7227041
+282,328,Pine Ridge,https://www.mhvillage.com/parks/15741, Genesee ,195.0,,323,"9348 Silver Lake Road, Linden, MI, 48451",42.79415,-83.82942,42.7982441,-83.8573832
+283,329,Tyrone Woods Manufactured Home Community,https://www.mhvillage.com/parks/67222, Genesee ,403.0,450.0,325,"8378 Hogan Rd, Fenton, MI, 48430",42.77042,-83.74655,42.750251,-83.7970806
+284,330,Creek Wood,https://www.mhvillage.com/parks/15970, Genesee ,336.0,,326,"3440 Creekside Boulevard, Burton, MI, 48519",42.97788,-83.62682,42.97928880000001,-83.62553129999999
+285,331,Green Briar Community,https://www.mhvillage.com/parks/15968, Genesee ,345.0,350.0,342,"4070 Green Briar Boulevard, Burton, MI, 48529",42.97458,-83.66285,42.9685711,-83.683374
+286,332,Timber Heights,https://www.mhvillage.com/parks/15924, Genesee ,221.0,,328,"1168 N. Oak Rd., Davison, MI, 48423",43.0264,-83.49335,43.0264519,-83.49338399999999
+287,333,Hawaiian Gardens/Holly Village,https://www.mhvillage.com/parks/15549, Oakland ,233.0,,895,"4261 Grange Hall Road Site 1B, Holly, MI, 48442",42.8111,-83.6147,42.8084909,-83.6192423
+288,335,Swartz Creek Estates,https://www.mhvillage.com/parks/15998, Genesee ,176.0,549.0,333,"73 Ashley Circle, Swartz Creek, MI, 48473",42.96219,-83.84656,42.96143319999999,-83.8477221
+289,337,Grand Blanc Crossing,https://www.mhvillage.com/parks/15910, Genesee ,478.0,,335,"8225 Embury Road, Grand Blanc, MI, 48439",42.92103,-83.64743,42.9105467,-83.64215829999999
+290,338,Lake Fenton Estates,https://www.mhvillage.com/parks/37972, Genesee ,135.0,320.0,337,"11429 Harbor Cove Drive, Fenton, MI, 48430",42.85895,-83.71818,42.859773,-83.7178831
+291,339,South Valley Estates,https://www.mhvillage.com/parks/437, Genesee ,116.0,305.0,339,"37 Bellwood Drive, Swartz Creek, MI, 48473",42.96076,-83.81032,42.9607647,-83.81031879999999
+292,340,Highlands Estates,https://www.mhvillage.com/parks/15370, Genesee ,635.0,437.0,340,"2197 East Mount Morris Road, Mount Morris, MI, 48458",43.12576,-83.68609,43.1237814,-83.6674851
+293,341,Flushing Estates,https://www.mhvillage.com/parks/313, Genesee ,279.0,,343,"7416 Gillette Road, Flushing, MI, 48433",43.08096,-83.86068,43.1142419,-83.85796739999999
+294,342,Linden Place,https://www.mhvillage.com/parks/15333, Genesee ,162.0,,344,"4192 South Linden Road, Flint, MI, 48507",42.96585,-83.77672,42.9672813,-83.7723105
+295,343,Swartz Creek Meadows,https://www.mhvillage.com/parks/359, Genesee ,584.0,412.0,345,"4101 Sheridan Road, Lennon, MI, 48449",42.99756,-83.94851,42.9672634,-83.92803699999999
+296,360,Marshall's Crossing,https://www.mhvillage.com/parks/16009, Saginaw ,200.0,375.0,1009,"12050 Trident Boulevard, Montrose, MI, 48457",43.21973,-83.93292,43.1787397,-83.8413042
+297,361,Meadowbrook Manor Estates,https://www.mhvillage.com/parks/300, Genesee ,401.0,370.0,341,"7280 West Mt. Morris Road, Flushing, MI, 48433",43.08096,-83.86068,43.1226619,-83.82542529999999
+298,377,Camelot Villa,https://www.mhvillage.com/parks/15094, Macomb ,712.0,,661,"17111 Hall Road, Macomb, MI, 48044",42.62826,-82.95044,42.6286895,-82.9503433
+299,414,Cloverland Mobile Home Park,https://www.mhvillage.com/parks/15801, Ontonagon ,,,915,"601 Garvey Street, Ironwood, MI, 49938",46.48946,-90.204,46.4645383,-90.161354
+300,415,Ironwood Estates Mobile Home Community,https://www.mhvillage.com/parks/111034, Ontonagon ,,,918,"N10356 Lake Rd, Ironwood, MI, 49938",46.47251,-90.15612,46.4725148,-90.1561177
+301,416,Kristella's Mobile Home Park,https://www.mhvillage.com/parks/15800, Ontonagon ,,,919,"402 Sunday Lake, Wakefield, MI, 49968",46.5147,-89.89452,46.4745032,-89.9408361
+302,418,Maple Grove of Mercer,https://www.mhvillage.com/parks/29108, Ontonagon ,28.0,250.0,912,"1998 W Green Meadows Lane, Mercer, WI, 54547",46.16688,-90.06327,46.149383,-90.0264181
+303,419,Hidden Acres Mobile Park,https://www.mhvillage.com/parks/27038, Gogebic ,,,358,"Av10750 Madson Rd, Woodruff, WI, 54568",45.95527,-89.69507,45.9076993,-89.6740884
+304,420,Northland Mobile Homes,https://www.mhvillage.com/parks/36294, Gogebic ,55.0,,359,"4251 Spruce Ln, Eagle River, WI, 54521",45.95139,-89.26006,45.8917583,-89.220135
+305,421,Tuscobia Terrace Estates,https://www.mhvillage.com/parks/27293, Gogebic ,24.0,,360,"100 7th Ave S, Park Falls, WI, 54552",45.93374,-90.45693,45.93283719999999,-90.4557715
+306,422,Evergreen Estates,https://www.mhvillage.com/parks/15639, Tuscola ,92.0,319.0,1094,"2115 East Evergreen Dr., Caro, MI, 48723",43.49228,-83.38507,43.46252519999999,-83.4330568
+307,423,Kathan Lake Estates,https://www.mhvillage.com/parks/78529, Gogebic ,12.0,,362,"8595 Peninsula Road, Eagle River, WI, 54521",45.95139,-89.26006,45.9171763,-89.2442988
+308,424,Cloverland Construction Inc,https://www.mhvillage.com/parks/26965, Gogebic ,,,363,"4935 State Highway 70 W, Eagle River, WI, 54521",45.95139,-89.26006,45.9037382,-89.2945066
+309,425,Eagle River Mobile Home Park,https://www.mhvillage.com/parks/27107, Gogebic ,,,364,"2030 Us Highway 45 North, Eagle River, WI, 54521",45.95114,-89.23996,45.95114,-89.2399642
+310,426,Eagles Landing,https://www.mhvillage.com/parks/102825, Ontonagon ,,,916,"6888 Helen Creek Road, Land O Lakes, WI, 54540",46.15513,-89.35823,46.1895979,-89.401403
+311,427,Pipers Mobile Village,https://www.mhvillage.com/parks/573, Ontonagon ,,,911,"Trailer Court Road, White Pine, MI, 49971",46.72666,-89.54651,46.7639596,-89.5763414
+312,428,King's Court,https://www.mhvillage.com/parks/521, Leelanau ,639.0,,586,"1585 Ray Blvd., Traverse City, MI, 49686",44.72831,-85.60562,44.7281957,-85.60896439999999
+313,429,Cherrywood Village Farms,https://www.mhvillage.com/parks/15884, Wexford ,193.0,210.0,1187,"2451 M-113 East, Kingsley, MI, 49649",44.56662,-85.53485,44.5848944,-85.5274422
+314,430,Timber Ridge,https://www.mhvillage.com/parks/127472, Leelanau ,31.0,358.0,595,"4050 E Hammond Rd, Traverse City, MI, 49686",44.71424,-85.49447,44.7142348,-85.4944874
+315,431,Evergreen Village,https://www.mhvillage.com/parks/15580, Gratiot ,183.0,,384,"21 Evergreen Drive, Saint Louis, MI, 48880",43.39773,-84.62352,43.397003,-84.62604809999999
+316,432,Alma Mobile Home Park,https://www.mhvillage.com/parks/15659, Gratiot ,46.0,,382,"315 Linwood Avenue, Alma, MI, 48801",43.37808,-84.63972,43.378488,-84.6386836
+317,433,Breckenridge Mobile Home Park,https://www.mhvillage.com/parks/15658, Gratiot ,46.0,,383,"452 Elm Street, Breckenridge, MI, 48615",43.43056,-84.46877,43.4149744,-84.4867871
+318,434,Nesen's Countryside Park,https://www.mhvillage.com/parks/15948, Gratiot ,77.0,300.0,385,"600 Cheesman Road, Saint Louis, MI, 48880",43.45166,-84.56312,43.4024899,-84.6190847
+319,435,Scotsdale Estates,https://www.mhvillage.com/parks/519, Gratiot ,189.0,427.0,386,"3382 Alma Drive, Alma, MI, 48801",43.37908,-84.65708,43.3977026,-84.67437869999999
+320,436,Timber Country MHP,https://www.mhvillage.com/parks/15662, Gratiot ,32.0,,387,"10401 West Monroe Road, Elwell, MI, 48832",43.40705,-84.81317,43.4060995,-84.8151204
+321,437,Meadow Lane Estates,https://www.mhvillage.com/parks/15661, Gratiot ,128.0,,388,"401 South Saint Johns Street, Ithaca, MI, 48847",43.27706,-84.56826,43.2871214,-84.59963020000001
+322,438,Woodcrest Mobile Home Park,https://www.mhvillage.com/parks/15663, Gratiot ,34.0,,390,"953 East Monroe Road, Saint Louis, MI, 48880",43.45166,-84.56312,43.4079475,-84.5896977
+323,439,Riley's Mobile Home Court,https://www.mhvillage.com/parks/15665, Hillsdale ,50.0,325.0,391,"3700 North Hillsdale Road, Hillsdale, MI, 49242",41.86512,-84.60385,41.9526648,-84.63167609999999
+324,440,Hillsdale,https://www.mhvillage.com/parks/475, Hillsdale ,170.0,,393,"2856 Carleton Road, Hillsdale, MI, 49242",41.93985,-84.64735,41.9398517,-84.6473606
+325,441,Hillside Acres MHC,https://www.mhvillage.com/parks/494, Hillsdale ,42.0,250.0,394,"5200 Bankers Road, Reading, MI, 49274",41.84686,-84.7284,41.8839546,-84.7129707
+326,442,Somerset Centre Estates,https://www.mhvillage.com/parks/496, Hillsdale ,310.0,365.0,395,"12851 East Chicago Road, Somerset Center, MI, 49282",42.0406,-84.39641,42.0488126,-84.40441369999999
+327,443,Southern Belle Mobile Community,https://www.mhvillage.com/parks/37607, Hillsdale ,14.0,185.0,396,"2722 West Card Road, Hillsdale, MI, 49242",41.86512,-84.60385,41.8560469,-84.664692
+328,444,West Village Mobile Home Park,https://www.mhvillage.com/parks/37796, Hillsdale ,16.0,,397,"8800 Market Street, Pittsford, MI, 49271",41.85495,-84.45733,41.8626553,-84.4789469
+329,445,Saint Joe Mobile Park,https://www.mhvillage.com/parks/15664, Hillsdale ,12.0,,398,"310 West Saint Joe Street, Litchfield, MI, 49252",42.02898,-84.75346,42.0438579,-84.7645081
+330,446,Ramblewood Mobile Home Park,https://www.mhvillage.com/parks/15666, Hillsdale ,30.0,,399,"4091 State Road, Hillsdale, MI, 49242",41.86512,-84.60385,41.9265173,-84.5712264
+331,447,Bayside Estates,https://www.mhvillage.com/parks/561, Huron ,74.0,266.0,407,"2420 Pinetree Drive, Sebewaing, MI, 48759",43.73981,-83.39244,43.757481,-83.42886299999999
+332,448,Clarkston Riverview Mobile Court,https://www.mhvillage.com/parks/566, Huron ,36.0,250.0,408,"4599 Pigeon Road, Elkton, MI, 48731",43.83306,-83.16145,43.8185615,-83.1611361
+333,449,Huron Estates Mobile Home Village,https://www.mhvillage.com/parks/15811, Huron ,50.0,315.0,409,"163 Nelson Street, Harbor Beach, MI, 48441",43.80169,-82.73358,43.8438764,-82.6633301
+334,450,Misty Meadows,https://www.mhvillage.com/parks/559, Huron ,27.0,,410,"1723 South Vandyke, Bad Axe, MI, 48413",43.7882,-83.06817,43.7882033,-83.0681701
+335,451,Port Austin Estates,https://www.mhvillage.com/parks/15814, Huron ,36.0,,411,"M 25 & Larned Road Box 250, Port Austin, MI, 48467",44.00348,-82.96883,44.0441776,-83.0098931
+336,452,Summerwood Estates,https://www.mhvillage.com/parks/564, Huron ,80.0,,412,"162 Charlotte Street, Bad Axe, MI, 48413",43.78782,-82.99111,43.81167620000001,-83.00378769999999
+337,453,Clarkson Pines Mobile Home Village,https://www.mhvillage.com/parks/15810, Huron ,,,413,"865 South Vandyke Road, Bad Axe, MI, 48413",43.80155,-83.01907,43.7999533,-83.0202553
+338,454,Mel-O-Day Acres Mobile Home Park,https://www.mhvillage.com/parks/15807, Huron ,40.0,,414,"3193 Port Austin Road, Port Austin, MI, 48467",44.00348,-82.96883,43.9998259,-83.1190101
+339,455,Whalen's Grindstone Park,https://www.mhvillage.com/parks/16049, Huron ,34.0,,415,"3373 Pointe Aux Barques, Port Austin, MI, 48467",44.00348,-82.96883,44.0546186,-82.8946155
+340,456,Sand Point Corners,https://www.mhvillage.com/parks/15812, Huron ,,,416,"7910 Port Austin Road, Pigeon, MI, 48755",43.83991,-83.30276,43.9175104,-83.3143546
+341,457,Caseville County Park,https://www.mhvillage.com/parks/16001, Huron ,,,417,"6400 Main Street, Caseville, MI, 48725",43.94751,-83.2214,43.9471392,-83.2706803
+342,458,Caseville Resort and Marina,https://www.mhvillage.com/parks/106402, Huron ,,,418,"6450 Riverside Dr, Caseville, MI, 48725",43.9441,-83.26923,43.9441293,-83.2692109
+343,459,Charlie's Place,https://www.mhvillage.com/parks/15809, Huron ,,,419,"11860 Kilmanagh Road, Sebewaing, MI, 48759",43.73981,-83.39244,43.7542692,-83.44551560000001
+344,460,Farmers Mobile Park,https://www.mhvillage.com/parks/15808, Huron ,,,420,"6351 Main Street, Caseville, MI, 48725",43.94751,-83.2214,43.9489916,-83.26903410000001
+345,461,Oak Grove,https://www.mhvillage.com/parks/54393, Huron ,,,421,"3341 Port Austin Road, Port Austin, MI, 48467",44.00348,-82.96883,43.996311,-83.125349
+346,462,Hamlin,https://www.mhvillage.com/parks/15107, Ingham ,209.0,,423,"5325 Van Orden Road, Webberville, MI, 48892",42.63604,-84.15417,42.6365077,-84.1550659
+347,463,Mason Manor,https://www.mhvillage.com/parks/275, Ingham ,269.0,355.0,427,"2179 Hull Road, Mason, MI, 48854",42.58138,-84.46032,42.5196553,-84.44236380000001
+348,464,Oak Island Village,https://www.mhvillage.com/parks/15714, Ingham ,250.0,420.0,424,"16430  Park Lake Road, East Lansing, MI, 48823",42.76324,-84.43861,42.7786632,-84.43906980000001
+349,465,Leslie Estates,https://www.mhvillage.com/parks/15231, Ingham ,78.0,,426,"714 Mill Street, Leslie, MI, 49251",42.46997,-84.41181,42.4478056,-84.4230315
+350,466,Sycamore Village,https://www.mhvillage.com/parks/233, Ingham ,396.0,428.0,425,"900 West Columbia Road, Mason, MI, 48854",42.58138,-84.46032,42.5824152,-84.38022529999999
+351,467,Dutch Hills,https://www.mhvillage.com/parks/277, Ingham ,278.0,428.0,428,"16400 Upton Road, East Lansing, MI, 48823",42.76324,-84.43861,42.7787777,-84.4020309
+352,468,Village Square ,https://www.mhvillage.com/parks/15229, Ingham ,100.0,,429,"875 West Grand River Avenue, Williamston, MI, 48895",42.68861,-84.26846,42.6856257,-84.29505700000001
+353,469,Delhi Manor,https://www.mhvillage.com/parks/15050, Ingham ,286.0,382.0,430,"4075 East Holt Road, Holt, MI, 48842",42.64033,-84.50636,42.6384325,-84.50728219999999
+354,470,Valley Brook Mobile Home Estates,https://www.mhvillage.com/parks/15228, Ingham ,51.0,,433,"1560 North Eifert Road, Holt, MI, 48842",42.63978,-84.5433,42.5934328,-84.5427503
+355,471,Falcon Pointe,https://www.mhvillage.com/parks/32341, Ingham ,244.0,,434,"555 Quarterhorse Road, East Lansing, MI, 48823",42.76324,-84.43861,42.7799062,-84.4966541
+356,472,"Webbervilla, LLC",https://www.mhvillage.com/parks/15232, Ingham ,174.0,,436,"400 West Grand River Avenue, Webberville, MI, 48892",42.64479,-84.17841,42.6688679,-84.1812917
+357,473,Williamston Lakes,https://www.mhvillage.com/parks/15913, Ingham ,71.0,425.0,437,"2300 East Grand River, Williamston, MI, 48895",42.68861,-84.26846,42.6847708,-84.27083809999999
+358,474,Windmill Park,https://www.mhvillage.com/parks/15110, Ingham ,484.0,390.0,438,"1433 Eifert Road, Holt, MI, 48842",42.63978,-84.5433,42.624,-84.54781
+359,475,Willow Village Mobile Home Park,https://www.mhvillage.com/parks/15533, Ingham ,45.0,,439,"2445 East Grand River, Williamston, MI, 48895",42.68861,-84.26846,42.6866265,-84.2639871
+360,476,Knolls Of Hamlin,https://www.mhvillage.com/parks/37739, Ingham ,23.0,,440,"5247 Van Orden, Webberville, MI, 48892",42.64479,-84.17841,42.638044,-84.157656
+361,477,Sunset Mobile Home Park,https://www.mhvillage.com/parks/15648, Sanilac ,105.0,295.0,1071,"854 West Sanilac Road, Sandusky, MI, 48471",43.43036,-82.86887,43.4220524,-82.7964196
+362,478,Country Manor Mobile Home Park,https://www.mhvillage.com/parks/15224, Ingham ,39.0,,442,"4400 Edgar Road, Leslie, MI, 49251",42.46997,-84.41181,42.453976,-84.504204
+363,479,Winslow's Mobile Home Terrace,https://www.mhvillage.com/parks/15230, Ingham ,72.0,,443,"734 West Grand River Avenue, Okemos, MI, 48864",42.70499,-84.40207,42.7128396,-84.3759887
+364,480,Sherwood Forest Manufactured Home Community,https://www.mhvillage.com/parks/15874, Ionia ,240.0,,444,"1133 Yeomans Street, Ionia, MI, 48846",42.98037,-85.08586,42.9836282,-85.0831903
+365,481,Sunset Ridge,https://www.mhvillage.com/parks/32569, Ionia ,190.0,409.0,445,"7204 East Grand River Avenue, Portland, MI, 48875",42.85464,-84.9269,42.8697893,-84.9366388
+366,482,Canterbury Estates,https://www.mhvillage.com/parks/602, Ionia ,290.0,391.0,448,"360 East Tuttle, Ionia, MI, 48846",42.95113,-85.06619,42.9499199,-85.0682099
+367,483,Pine Haven Estates,https://www.mhvillage.com/parks/15904, Ionia ,50.0,800.0,446,"10400 Pewamo Road, Pewamo, MI, 48873",42.99322,-84.83829,43.0019505,-84.8683944
+368,484,Wellington Estates,https://www.mhvillage.com/parks/15751, Wayne ,410.0,,1177,"16031 Beech Daly Road, Taylor, MI, 48180",42.22557,-83.26855,42.1876839,-83.28675369999999
+369,485,Cedar Hill Trailer Park,https://www.mhvillage.com/parks/15691, Ionia ,13.0,250.0,449,"11211 East Nickleplate Road, Pewamo, MI, 48873",42.99322,-84.83829,43.03352599999999,-84.85172299999999
+370,486,Evergreen Mobile Home Community,https://www.mhvillage.com/parks/461, Ionia ,110.0,335.0,450,"2096 North State Road, Ionia, MI, 48846",42.98166,-85.0551,43.0167015,-85.0706579
+371,487,Parkview Estates,https://www.mhvillage.com/parks/15682, Ionia ,75.0,365.0,451,"9203 Nelson Road, Portland, MI, 48875",42.85464,-84.9269,42.8539623,-84.9348472
+372,488,Woodcreek Mobile Estates,https://www.mhvillage.com/parks/15684, Ionia ,30.0,,452,"6600 North State Road, Orleans, MI, 48865",43.07627,-85.10939,43.08467450000001,-85.0745383
+373,489,Glenview Mobile Home Park,https://www.mhvillage.com/parks/15690, Ionia ,13.0,245.0,453,"4090 Jackson Road, Saranac, MI, 48881",42.93399,-85.20615,42.9285111,-85.194074
+374,490,Grieves Trailer Park,https://www.mhvillage.com/parks/15685, Ionia ,5.0,,454,"178 Washington Street, Saranac, MI, 48881",42.93399,-85.20615,42.9259188,-85.2173596
+375,491,Long Lake Mobile Home Estates,https://www.mhvillage.com/parks/504, Ionia ,25.0,,456,"2701 West Long Lake Road, Orleans, MI, 48865",43.07627,-85.10939,43.1083699,-85.1293285
+376,492,Pine View Trailer Park,https://www.mhvillage.com/parks/15683, Ionia ,20.0,,457,"6385 Whites Bride Road, Belding, MI, 48809",43.04999,-85.22343,43.0793763,-85.2630195
+377,493,Hidden Valley Mobile Home Park,https://www.mhvillage.com/parks/15689, Ionia ,50.0,,458,"3856 South Stage Road, Ionia, MI, 48846",42.98166,-85.0551,42.9970643,-84.9953839
+378,494,West Wind Court,https://www.mhvillage.com/parks/15686, Ionia ,11.0,,459,"5448 West Grand River Ave, Portland, MI, 48875",42.85464,-84.9269,42.8715635,-84.9103193
+379,495,Carl Chase,https://www.mhvillage.com/parks/16000, Ionia ,,,460,"2020 Johnson Road, Saranac, MI, 48881",42.93399,-85.20615,42.9579607,-85.1741917
+380,496,Schmid Farm Estates,https://www.mhvillage.com/parks/87313, Ionia ,14.0,,461,"5590 N State Road, Orleans, MI, 48865",43.07627,-85.10939,43.0699182,-85.0751233
+381,497,Sunset View Mobile Home Park,https://www.mhvillage.com/parks/15692, Ionia ,35.0,,462,"926 Hill Street, Portland, MI, 48875",42.85464,-84.9269,42.8617107,-84.8978163
+382,498,Slater's Mobile Home Village,https://www.mhvillage.com/parks/530, Ionia ,,,463,"728 Jordan Lake Avenue, Lake Odessa, MI, 48849",42.80836,-85.14312,42.7783414,-85.13298089999999
+383,500,Northern Pines,https://www.mhvillage.com/parks/15995, Oscoda ,30.0,700.0,935,"6720 South Drive, Hale, MI, 48739",44.38296,-83.79446,44.3829561,-83.79454779999999
+384,501,White Pine Ridge,https://www.mhvillage.com/parks/15817, Oscoda ,,,946,"6721 South Drive, Hale, MI, 48739",44.39344,-83.81642,44.382701,-83.791736
+385,502,Lake Terrace,https://www.mhvillage.com/parks/44285, Iron ,,,478,"1360 Lake Terrace Dr, Three Lakes, WI, 54562",45.7841,-89.13693,45.7841398,-89.13693669999999
+386,503,The Crossings On Broadway,https://www.mhvillage.com/parks/16022, Isabella ,225.0,,480,"5402 East Broadway Road, Mount Pleasant, MI, 48858",43.60401,-84.74175,43.6016718,-84.7407989
+387,504,Summerhill Village,https://www.mhvillage.com/parks/15633, Isabella ,305.0,285.0,481,"5280 Mission Road, Mount Pleasant, MI, 48858",43.61887,-84.79772,43.5645399,-84.7673623
+388,505,Oakview Mobile Estates,https://www.mhvillage.com/parks/15631, Isabella ,46.0,,482,"1800 East Jordan Road, Mount Pleasant, MI, 48858",43.61887,-84.79772,43.65363120000001,-84.81397129999999
+389,506,Broadway Acres,https://www.mhvillage.com/parks/15720, Isabella ,71.0,,483,"5400 Kay Street, Mount Pleasant, MI, 48858",43.608,-84.73948,43.60800039999999,-84.7394781
+390,507,Country Place Park,https://www.mhvillage.com/parks/15634, Isabella ,66.0,,484,"4151 East Jordan Road, Mount Pleasant, MI, 48858",43.61887,-84.79772,43.6550064,-84.765911
+391,508,Isabella Village,https://www.mhvillage.com/parks/15905, Isabella ,170.0,400.0,479,"5232 East Broadway Road, Mount Pleasant, MI, 48858",43.60358,-84.74468,43.6010256,-84.74515219999999
+392,509,Maple View Estates East,https://www.mhvillage.com/parks/15635, Isabella ,136.0,200.0,485,"1955 S. Chippewa Road, Mount Pleasant, MI, 48858",43.61224,-84.62801,43.6122463,-84.62755829999999
+393,510,Mount Pleasant Mobile Home Park,https://www.mhvillage.com/parks/15588, Isabella ,120.0,,486,"505 South Bradley Rd., Mount Pleasant, MI, 48858",43.61887,-84.79772,43.599702,-84.796278
+394,511,Broomfield Valley Mobile Home Park,https://www.mhvillage.com/parks/15587, Isabella ,85.0,,487,"6553 West Remus Road, Mount Pleasant, MI, 48858",43.61887,-84.79772,43.5958945,-84.981865
+395,512,Alexander's Mobile Village,https://www.mhvillage.com/parks/33825, Isabella ,20.0,,488,"8649 South Loomis Road, Shepherd, MI, 48883",43.56428,-84.697,43.5160026,-84.6669656
+396,513,Maple View Estates West,https://www.mhvillage.com/parks/15632, Isabella ,37.0,,489,"10749 East Pickard, Mount Pleasant, MI, 48858",43.61887,-84.79772,43.6132529,-84.6314973
+397,514,Westwind Mobile Home Park,https://www.mhvillage.com/parks/15636, Isabella ,,,490,"3640 East Rosebush Road, Rosebush, MI, 48878",43.70936,-84.76817,43.6980825,-84.77569860000001
+398,515,Sherman Oaks,https://www.mhvillage.com/parks/347, Jackson ,366.0,,492,"1144 Sherman Blvd., Jackson, MI, 49201",42.33629,-84.41924,42.3362918,-84.4192362
+399,516,Windham Hills,https://www.mhvillage.com/parks/15980, Jackson ,420.0,,493,"4020 County Farm Road, Jackson, MI, 49201",42.2594,-84.37935,42.2805225,-84.47643289999999
+400,517,Hillanlake Village Mobile Home Park,https://www.mhvillage.com/parks/15377, Jackson ,151.0,,495,"3998 Sunset Drive, Brooklyn, MI, 49230",42.09382,-84.22136,42.0876353,-84.1885133
+401,519,Coachman's Cove,https://www.mhvillage.com/parks/399, Jackson ,246.0,385.0,496,"6600 Portage Lake Road, Munith, MI, 49259",42.37239,-84.24817,42.3304705,-84.22722089999999
+402,520,Cozy Manufactured Home Community,https://www.mhvillage.com/parks/397, Jackson ,206.0,,494,"1259 East Mcdevitt Road, Jackson, MI, 49203",42.19499,-84.38051,42.1949774,-84.38058099999999
+403,521,Spring Valley Estates,https://www.mhvillage.com/parks/394, Jackson ,94.0,370.0,499,"121 Split Rail Trail, Hanover, MI, 49241",42.09807,-84.54466,42.1005522,-84.5445883
+404,522,Three Oaks Estates,https://www.mhvillage.com/parks/15540, Jackson ,44.0,,500,"13380 Michigan 60, Concord, MI, 49237",42.1768,-84.64385,42.1278092,-84.919046
+405,523,Spring Harbor,https://www.mhvillage.com/parks/5736, Jackson ,81.0,,501,"271 Green St., Springport, MI, 49284",42.37553,-84.68605,42.3755092,-84.68615
+406,524,Sun Valley Estates,https://www.mhvillage.com/parks/344, Jackson ,184.0,,502,"301 Mantle Avenue, Jackson, MI, 49202",42.25854,-84.37015,42.2584471,-84.370178
+407,525,The Reserves,https://www.mhvillage.com/parks/439, Jackson ,304.0,418.0,503,"3999 Sherwood Lakes Boulevard, Jackson, MI, 49201",42.29109,-84.44512,42.2907325,-84.44490449999999
+408,526,Arbor Village,https://www.mhvillage.com/parks/15376, Jackson ,266.0,360.0,504,"7940 South Circle Drive, Parma, MI, 49269",42.29845,-84.59764,42.2271986,-84.5548263
+409,527,Indian Village,https://www.mhvillage.com/parks/15351, Jackson ,294.0,,505,"2600 East South Street, Jackson, MI, 49201",42.2594,-84.37935,42.2209435,-84.3567099
+410,528,Jackson Mobile Home Park,https://www.mhvillage.com/parks/15538, Jackson ,80.0,460.0,497,"2240 Brooklyn Road, Jackson, MI, 49203",42.21266,-84.39559,42.219892,-84.387188
+411,529,Michigan Avenue Estates,https://www.mhvillage.com/parks/15438, Jackson ,39.0,,506,"3921 West Michigan Avenue, Jackson, MI, 49202",42.27538,-84.40753,42.2541439,-84.46631800000002
+412,530,Pleasant Lake Mobile Home Court,https://www.mhvillage.com/parks/15535, Jackson ,57.0,,507,"11711 Bunkerhill Road, Pleasant Lake, MI, 49272",42.38781,-84.34844,42.3803008,-84.3239435
+413,531,Shady Park Mobile Home Court,https://www.mhvillage.com/parks/15534, Jackson ,23.0,,508,"4000 East South Street, Jackson, MI, 49201",42.2594,-84.37935,42.20282,-84.3421369
+414,532,Walnut Ridge,https://www.mhvillage.com/parks/15962, Jackson ,299.0,,509,"3001 West Parnall Road, Jackson, MI, 49201",42.2594,-84.37935,42.290945,-84.4443184
+415,533,Sherwood Forest,https://www.mhvillage.com/parks/40284, Jackson ,200.0,,510,"7945 Dunn Road, Munith, MI, 49259",42.37239,-84.24817,42.3483589,-84.2615983
+416,534,Miller Trailer Village,https://www.mhvillage.com/parks/15536, Jackson ,55.0,,511,"3500 South Dearing Road, Spring Arbor, MI, 49283",42.20021,-84.56956,42.2101772,-84.5410371
+417,535,Vinings Trailer Park,https://www.mhvillage.com/parks/32872, Jackson ,199.0,,512,"105 Portage Lake Road, Munith, MI, 49259",42.37239,-84.24817,42.339483,-84.2274857
+418,536,Andry's On The Lake,https://www.mhvillage.com/parks/16052, Jackson ,160.0,,513,"7740 Mount Hope Road, Grass Lake, MI, 49240",42.28988,-84.19142,42.34332819999999,-84.2099319
+419,546,Wyngate Farms,https://www.mhvillage.com/parks/15870, Kalamazoo ,333.0,400.0,514,"5560 Al Sabo Drive, Kalamazoo, MI, 49009",42.30008,-85.67871,42.2355202,-85.6723824
+420,547,Colonial Manor,https://www.mhvillage.com/parks/15541, Kalamazoo ,195.0,,523,"5500 West Kl Avenue, Kalamazoo, MI, 49009",42.28097,-85.65886,42.2809651,-85.6588647
+421,548,Saddlebrook Farms,https://www.mhvillage.com/parks/16006, Kalamazoo ,147.0,410.0,515,"5053 S. Fourth, Kalamazoo, MI, 49009",42.30008,-85.67871,42.2445142,-85.7254926
+422,549,Hillcrest Acres,https://www.mhvillage.com/parks/15868, Kalamazoo ,150.0,,517,"3205 Douglas Ave., Kalamazoo, MI, 49004",42.32271,-85.60429,42.322709,-85.6042927
+423,550,Weatherstone Village Community,https://www.mhvillage.com/parks/15977, Kalamazoo ,93.0,608.0,518,"5210 Marsh Arbor Trail, Kalamazoo, MI, 49004",42.35437,-85.57046,42.3341196,-85.5247838
+424,551,Colonial Acres,https://www.mhvillage.com/parks/441, Kalamazoo ,612.0,,524,"5374 E. Deadwood Drive, Portage, MI, 49002",42.24031,-85.54112,42.2403295,-85.5411639
+425,552,Royal Estates,https://www.mhvillage.com/parks/15341, Kalamazoo ,183.0,454.0,519,"8300 Ravine Road, Kalamazoo, MI, 49009",42.30008,-85.67871,42.3801156,-85.6786041
+426,553,Fountain Springs,https://www.mhvillage.com/parks/586, Kalamazoo ,327.0,460.0,520,"1410 South 9th Street, Kalamazoo, MI, 49009",42.30008,-85.67871,42.2770509,-85.6807271
+427,554,Pavilion Estates MHC,https://www.mhvillage.com/parks/15339, Kalamazoo ,531.0,369.0,521,"6830 E N Avenue, Kalamazoo, MI, 49048",42.24486,-85.49586,42.2411453,-85.49799019999999
+428,555,Huntington Run,https://www.mhvillage.com/parks/15940, Kalamazoo ,175.0,,527,"6255 Cranbrook Lane, Kalamazoo, MI, 49009",42.25554,-85.67135,42.2563918,-85.67109850000001
+429,556,Saddlebrook Village,https://www.mhvillage.com/parks/48601, Kalamazoo ,142.0,,522,"503 South Fourth, Kalamazoo, MI, 49009",42.30008,-85.67871,42.2841,-85.7247139
+430,557,Twinleaf,https://www.mhvillage.com/parks/15335, Kalamazoo ,185.0,849.0,525,"3614 Stadium Drive, Kalamazoo, MI, 49008",42.26511,-85.61897,42.2727995,-85.6346095
+431,558,Americana Estates,https://www.mhvillage.com/parks/15497, Kalamazoo ,161.0,393.0,526,"1802 Tray Lane, Kalamazoo, MI, 49006",42.3008,-85.62484,42.2745728,-85.6433651
+432,559,Sugarloaf Mobile Home Park,https://www.mhvillage.com/parks/15488, Kalamazoo ,57.0,367.0,528,"11443 Bonnie Dr, Schoolcraft, MI, 49087",42.15079,-85.62805,42.1508027,-85.6280553
+433,560,Evergreen Park,https://www.mhvillage.com/parks/419, Kalamazoo ,76.0,,529,"182 East D Avenue, Kalamazoo, MI, 49009",42.30008,-85.67871,42.37595109999999,-85.5883796
+434,561,Richland MHC,https://www.mhvillage.com/parks/417, Kalamazoo ,45.0,,530,"9604 East M-89, Richland, MI, 49083",42.37703,-85.45947,42.3752692,-85.4422015
+435,562,Climax MHP,https://www.mhvillage.com/parks/15494, Kalamazoo ,75.0,310.0,532,"14253 East On Avenue, Climax, MI, 49034",42.23909,-85.34544,42.238466,-85.3504023
+436,563,Country Acres,https://www.mhvillage.com/parks/15725, Wexford ,200.0,,1182,"300 Kristy Jo, Cadillac, MI, 49601",44.24871,-85.4407,44.2485609,-85.4399349
+437,564,Gale Valley Estates,https://www.mhvillage.com/parks/316, Kalamazoo ,226.0,,534,"353 East Michigan Avenue, Galesburg, MI, 49053",42.28488,-85.41088,42.2891773,-85.4067324
+438,565,Oak Brook Estates,https://www.mhvillage.com/parks/15902, Kalamazoo ,134.0,,535,"7200 Lovers Lane, Portage, MI, 49002",42.19698,-85.55991,42.2117624,-85.5750558
+439,566,Portage Terrace Mobile Home Park,https://www.mhvillage.com/parks/15491, Kalamazoo ,81.0,,536,"11247 Portage Road, Portage, MI, 49002",42.15373,-85.56545,42.153742,-85.565451
+440,575,Mobile Home Estates,https://www.mhvillage.com/parks/15821, Kalkaska ,50.0,,537,"2012 East Estate Road, Kalkaska, MI, 49646",44.71867,-85.09015,44.7429467,-85.1799413
+441,576,Country Meadows Village,https://www.mhvillage.com/parks/15960, Kent ,307.0,,546,"5401 76th SE, Caledonia, MI, 49316",42.78644,-85.54563,42.8317121,-85.5341852
+442,577,Leonard Gardens,https://www.mhvillage.com/parks/577, Kent ,319.0,,547,"4524 Leonard NW, Grand Rapids, MI, 49534",42.97102,-85.79108,42.985098,-85.7826822
+443,578,Pinebrook Village,https://www.mhvillage.com/parks/15260, Kent ,185.0,,549,"444 Bellewood Street SE, Grand Rapids, MI, 49548",42.86682,-85.66334,42.8599532,-85.65183619999999
+444,579,Alpine Meadows,https://www.mhvillage.com/parks/15037, Kent ,403.0,,550,"3800 Fruitridge Avenue NW, Grand Rapids, MI, 49544",43.05124,-85.73307,43.0345984,-85.76025609999999
+445,580,"Key Vista, MHC",https://www.mhvillage.com/parks/15263, Kent ,137.0,495.0,551,"1800 West Main Street, Lowell, MI, 49331",42.93103,-85.35858,42.9300363,-85.3592321
+446,581,Byron Center,https://www.mhvillage.com/parks/33822, Kent ,143.0,,552,"2680 84th Street, Byron Center, MI, 49315",42.81036,-85.72937,42.8093554,-85.73012609999999
+447,582,Camelot Manor,https://www.mhvillage.com/parks/15040, Kent ,335.0,,553,"170 Camelot Blvd, Grand Rapids, MI, 49548",42.86682,-85.66334,42.849881,-85.668588
+448,583,Cedar Springs Mobile Estates,https://www.mhvillage.com/parks/15245, Kent ,216.0,450.0,555,"400 Susan, Cedar Springs, MI, 49319",43.23061,-85.51268,43.2307095,-85.5484729
+449,584,Holiday Estates,https://www.mhvillage.com/parks/15303, Wayne ,551.0,,1166,"46000 Geddes Road Lot 416, Canton, MI, 48188",42.28145,-83.49234,42.27960400000001,-83.4924674
+450,587,Key Heights Village,https://www.mhvillage.com/parks/15253, Kent ,286.0,495.0,559,"11335 East Fulton Street, Lowell, MI, 49331",42.9646,-85.37632,42.9319061,-85.3882709
+451,588,Cutler Estates,https://www.mhvillage.com/parks/15049, Kent ,259.0,,560,"6471 South Division, Grand Rapids, MI, 49548",42.82086,-85.66357,42.86447709999999,-85.6588999
+452,589,Grand Village,https://www.mhvillage.com/parks/169, Kent ,230.0,,561,"6500 South Division Avenue, Grand Rapids, MI, 49548",42.82086,-85.66357,42.8469142,-85.6608261
+453,590,Dutton Mill Village,https://www.mhvillage.com/parks/15036, Kent ,307.0,,562,"6720 West Mill Run SE, Caledonia, MI, 49316",42.84126,-85.5783,42.8455728,-85.57793269999999
+454,591,Algoma Estates,https://www.mhvillage.com/parks/161, Montcalm ,343.0,395.0,788,"4456 13 Mile Road, Rockford, MI, 49341",43.12562,-85.49424,43.1607264,-85.5598418
+455,592,Brookside Village,https://www.mhvillage.com/parks/15877, Kent ,196.0,,565,"3130 Slater Ave SE, Kentwood, MI, 49512",42.90659,-85.55911,42.9065768,-85.5591182
+456,593,Ferrand Estates,https://www.mhvillage.com/parks/172, Kent ,420.0,459.0,566,"4528 Halifax SW, Wyoming, MI, 49519",42.88233,-85.73019,42.8823155,-85.7301976
+457,596,Brentwood Village,https://www.mhvillage.com/parks/15041, Kent ,195.0,,570,"201 60th Street SE, Kentwood, MI, 49548",42.86682,-85.66334,42.8565478,-85.6582577
+458,597,Riverview Manufactured Housing Community,https://www.mhvillage.com/parks/15096, Kent ,154.0,,571,"95 Viking Drive, Sparta, MI, 49345",43.16063,-85.69073,43.1912069,-85.6831993
+459,598,Southwood Village,https://www.mhvillage.com/parks/171, Kent ,394.0,406.0,548,"440 60th Street SE, Grand Rapids, MI, 49548",42.86682,-85.66334,42.8514881,-85.6531206
+460,600,The Oaks of Rockford,https://www.mhvillage.com/parks/104025, Montcalm ,262.0,525.0,790,"11640 Townsquare Blvd, Rockford, MI, 49341",43.12562,-85.49424,43.1767877,-85.5264605
+461,605,Creekside,https://www.mhvillage.com/parks/15099, Kent ,165.0,527.0,568,"5100 Clyde Park Avenue SW, Wyoming, MI, 49509",42.90216,-85.69671,42.87206159999999,-85.6826526
+462,613,Lakeside Village,https://www.mhvillage.com/parks/281, Montcalm ,67.0,500.0,794,"12205 Hart Street, Greenville, MI, 48838",43.13567,-85.36587,43.1244958,-85.3665826
+463,619,Spring Valley Mobile Home Park,https://www.mhvillage.com/parks/15262, Montcalm ,52.0,525.0,795,"6460 Northland Drive, Rockford, MI, 49341",43.12562,-85.49424,43.0801072,-85.56642610000002
+464,621,Whispering Pines,https://www.mhvillage.com/parks/15385, Van Buren ,104.0,,1119,"67663 County Road 388, South Haven, MI, 49090",42.41813,-86.22021,42.4028076,-86.2033221
+465,627,Lincoln Pines Resort Inc,https://www.mhvillage.com/parks/287, Montcalm ,156.0,,800,"13033 19 Mile Road, Gowen, MI, 49326",43.24926,-85.32648,43.253523,-85.348873
+466,633,Side-O-Lake Resort Park,https://www.mhvillage.com/parks/15261, Montcalm ,45.0,,805,"15301 Lakeshore Drive, Gowen, MI, 49326",43.24926,-85.32648,43.2645722,-85.3367537
+467,636,La-E-Ma Land Mobile Home Park,https://www.mhvillage.com/parks/15254, Montcalm ,29.0,,809,"7825 Cannonsburg Road, Rockford, MI, 49341",43.12562,-85.49424,43.0562895,-85.47412520000002
+468,642,Pine Lakes Mobile Home Park,https://www.mhvillage.com/parks/15993, Lapeer ,163.0,525.0,572,"110 Pine Lakes Drive, Lapeer, MI, 48446",43.0454,-83.23808,43.0442215,-83.2378906
+469,643,Ideal Villa Mobile Home Park,https://www.mhvillage.com/parks/15302, Lapeer ,168.0,,573,"3660 South Lapeer Road, Metamora, MI, 48455",42.94319,-83.30183,42.9506015,-83.3138798
+470,644,Hunters Creek,https://www.mhvillage.com/parks/15872, Lapeer ,402.0,330.0,575,"725 Demille Road, Lapeer, MI, 48446",43.05416,-83.33011,43.03889909999999,-83.313465
+471,645,River Ridge,https://www.mhvillage.com/parks/30003, Washtenaw ,288.0,420.0,1137,"289 Dundee, Saline, MI, 48176",42.14439,-83.81735,42.1564621,-83.7991778
+472,646,Crestview Manor,https://www.mhvillage.com/parks/15542, Lapeer ,200.0,375.0,577,"1485 Ridgeview Drive, Lapeer, MI, 48446",43.05416,-83.33011,43.0659687,-83.3139937
+473,647,Deerfield Pines,https://www.mhvillage.com/parks/15929, Lapeer ,122.0,350.0,578,"82 Deerfield Pines Drive, North Branch, MI, 48461",43.21108,-83.22283,43.1928692,-83.31409149999999
+474,648,Kingsbrook Estates,https://www.mhvillage.com/parks/443, Lapeer ,233.0,,579,"4600 N. Van Dyke Road, Almont, MI, 48003",42.93551,-83.04396,42.932731,-83.0553442
+475,649,Lapeer Meadows,https://www.mhvillage.com/parks/15544, Lapeer ,228.0,290.0,580,"1265 Farnsworth Road, Lapeer, MI, 48446",43.05416,-83.33011,43.067656,-83.298828
+476,650,North Branch Meadows,https://www.mhvillage.com/parks/16007, Lapeer ,127.0,,581,"6800 Lydia Boulevard, North Branch, MI, 48461",43.21108,-83.22283,43.2325498,-83.18256219999999
+477,651,Sand Hill Estates,https://www.mhvillage.com/parks/15546, Lapeer ,50.0,,582,"4063 Bowers Road, Attica, MI, 48412",43.06305,-83.16774,43.0624004,-83.1849594
+478,652,Victoria Meadows,https://www.mhvillage.com/parks/15963, Lapeer ,130.0,320.0,583,"3750 Nash Lane, Dryden, MI, 48428",42.93839,-83.15914,42.9507007,-83.12726169999999
+479,653,Garner Drive Mobile Home Park,https://www.mhvillage.com/parks/15545, Lapeer ,18.0,,584,"Garner Drive, Imlay City, MI, 48444",43.06429,-83.04903,43.0471982,-83.1164423
+480,654,Sterling Estates,https://www.mhvillage.com/parks/15148, Macomb ,760.0,629.0,670,"43475 La Grand Boulevard, Sterling Heights, MI, 48314",42.60928,-83.0516,42.612433,-83.0377214
+481,655,Maple Woods,https://www.mhvillage.com/parks/522, Lenawee ,285.0,415.0,600,"1550 West Beecher Road, Adrian, MI, 49221",41.89354,-84.06128,41.8895902,-84.0711469
+482,656,Hidden River North,https://www.mhvillage.com/parks/15930, Lenawee ,211.0,,601,"975 Beecher Road, Adrian, MI, 49221",41.89354,-84.06128,41.8871905,-84.0528058
+483,657,Round Lake Estates,https://www.mhvillage.com/parks/589, Lenawee ,109.0,360.0,602,"787 Stoneham, Manitou Beach, MI, 49253",41.9644,-84.28753,41.9642638,-84.28751539999999
+484,658,Newburg Meadows,https://www.mhvillage.com/parks/369, Lenawee ,135.0,375.0,603,"9115 North Union Street, Tecumseh, MI, 49286",42.01141,-83.91696,42.0219132,-83.9542972
+485,659,Bean Creek Resort,https://www.mhvillage.com/parks/15405, Lenawee ,72.0,,604,"9575 Devils Lake Highway, Manitou Beach, MI, 49253",41.97564,-84.27058,41.982937,-84.313845
+486,660,Hidden River South,https://www.mhvillage.com/parks/16023, Lenawee ,202.0,,605,"3251 South Adrian Highway, Adrian, MI, 49221",41.89354,-84.06128,41.8709852,-84.0380035
+487,661,Coach Light Estates,https://www.mhvillage.com/parks/309, Lenawee ,230.0,,606,"650 West Adrian Street, Blissfield, MI, 49228",41.81319,-83.86387,41.83709169999999,-83.87947969999999
+488,662,Country Villa,https://www.mhvillage.com/parks/371, Lenawee ,73.0,675.0,611,"12919 Tipton Highway, Clinton, MI, 49236",42.08586,-83.95871,42.07035,-84.065029
+489,663,Friendly Village Of Adrian,https://www.mhvillage.com/parks/15347, Lenawee ,179.0,378.0,607,"1100 South Main Street, Adrian, MI, 49221",41.89354,-84.06128,41.88225490000001,-84.0474904
+490,664,Leffingwell Estates,https://www.mhvillage.com/parks/15401, Lenawee ,70.0,,608,"595 South Meridian Road, Hudson, MI, 49247",41.85379,-84.33698,41.8417689,-84.35753679999999
+491,665,Water Wheel Community,https://www.mhvillage.com/parks/15345, Lenawee ,172.0,372.0,610,"316 West Michigan Avenue, Clinton, MI, 49236",42.08586,-83.95871,42.0793807,-83.9806255
+492,666,Raisin Valley Estates,https://www.mhvillage.com/parks/15403, Lenawee ,27.0,,612,"4897 N. Adrian Hwy, Adrian, MI, 49221",41.95703,-84.00383,41.9570358,-84.0037646
+493,667,Water's Edge,https://www.mhvillage.com/parks/110884, Lenawee ,48.0,,613,"Devils Lake Highway, Manitou Beach, MI, 49253",41.97564,-84.27058,42.0015876,-84.2956605
+494,668,Clinton Estates,https://www.mhvillage.com/parks/40692, Lenawee ,30.0,,614,"1801 West Michigan Avenue, Clinton, MI, 49236",42.08586,-83.95871,42.0711939,-83.9878943
+495,669,King Mobile Home Court,https://www.mhvillage.com/parks/15346, Lenawee ,123.0,,615,"1142 Lansing Street, Adrian, MI, 49221",41.89354,-84.06128,41.8871515,-84.0227836
+496,670,Southgate Mobile Park,https://www.mhvillage.com/parks/15400, Lenawee ,48.0,325.0,616,"2425 East Us Highway 223, Adrian, MI, 49221",41.87328,-84.0143,41.873281,-84.01429499999999
+497,671,Adrian Estates,https://www.mhvillage.com/parks/15547, Lenawee ,26.0,,617,"1003 Lansing Street, Adrian, MI, 49221",41.89354,-84.06128,41.888262,-84.023
+498,672,Lee Villa Mobile Home Park,https://www.mhvillage.com/parks/15404, Lenawee ,113.0,342.0,618,"2985 Gady Road, Adrian, MI, 49221",41.89354,-84.06128,41.9625207,-83.9679771
+499,673,Robinhood Mobile Court,https://www.mhvillage.com/parks/15402, Lenawee ,25.0,,619,"3180 North Adrian, Adrian, MI, 49221",41.89354,-84.06128,41.9290637,-84.00881009999999
+500,674,Silver Lawn Mobile Park,https://www.mhvillage.com/parks/54881, Lenawee ,,,620,"10891 Cement City Highway, Addison, MI, 49220",42.04354,-84.31813,42.0435847,-84.318197
+501,675,Sylvan Glen Estates,https://www.mhvillage.com/parks/341, Livingston ,476.0,397.0,621,"6600 Grand River, Brighton, MI, 48114",42.57775,-83.7528,42.5700578,-83.82223789999999
+502,676,Brighton Village,https://www.mhvillage.com/parks/388, Livingston ,195.0,,623,"7500 Grand River Rd., Brighton, MI, 48114",42.54329,-83.78787,42.564245,-83.80553119999999
+503,677,Hartland Meadows,https://www.mhvillage.com/parks/15965, Livingston ,617.0,525.0,624,"13634 W Highland Rd, Hartland, MI, 48353",42.6449,-83.71859,42.6347409,-83.68736009999999
+504,678,Burkhart Ridge,https://www.mhvillage.com/parks/15997, Livingston ,306.0,480.0,625,"1011 River Line Drive, Howell, MI, 48843",42.57271,-83.91015,42.6145415,-84.003374
+505,679,Howell Estates,https://www.mhvillage.com/parks/15420, Livingston ,455.0,,626,"515 Mason Road, Howell, MI, 48843",42.60019,-83.94013,42.5993278,-83.9387404
+506,680,Cedar River Estates,https://www.mhvillage.com/parks/15421, Livingston ,118.0,,627,"400 Cedar River Drive, Fowlerville, MI, 48836",42.66427,-84.0605,42.6530631,-84.0763563
+507,681,Alan's Park,https://www.mhvillage.com/parks/374, Shiawassee ,32.0,,1086,"11785 Lansing Road, Durand, MI, 48429",42.89658,-84.00732,42.9467767,-83.9339517
+508,682,Grandshire Estates,https://www.mhvillage.com/parks/15715, Livingston ,151.0,550.0,629,"851 Willow Street, Fowlerville, MI, 48836",42.66427,-84.0605,42.6506436,-84.0781804
+509,683,Lake Chemung Outdoor Resort,https://www.mhvillage.com/parks/16058, Livingston ,335.0,150.0,630,"320 South Hughes Road, Howell, MI, 48843",42.57271,-83.91015,42.5932464,-83.85325379999999
+510,685,Woodland Park & Sales,https://www.mhvillage.com/parks/15415, Livingston ,65.0,400.0,632,"8005 West Grand River Avenue, Brighton, MI, 48114",42.5435,-83.78799,42.5582278,-83.7936659
+511,686,Fairlawn Meadows,https://www.mhvillage.com/parks/384, Livingston ,48.0,,633,"1701 Fairlawn Road, Howell, MI, 48843",42.57271,-83.91015,42.6233036,-83.9148991
+512,687,Fairlane Estates Mobile Home Park,https://www.mhvillage.com/parks/15418, Livingston ,60.0,,634,"2195 East Grand River, Howell, MI, 48843",42.57271,-83.91015,42.6012683,-83.9099037
+513,688,Starlight Trailer Court,https://www.mhvillage.com/parks/15413, Livingston ,48.0,,635,"7175 Bishop Road, Brighton, MI, 48116",42.50307,-83.76896,42.4982226,-83.75388079999999
+514,689,Brighton Trailer Court,https://www.mhvillage.com/parks/15422, Livingston ,9.0,,636,"614 Flint Road, Brighton, MI, 48116",42.50307,-83.76896,42.53783139999999,-83.77717439999999
+515,690,Red Oaks Of Chemung,https://www.mhvillage.com/parks/16032, Livingston ,,,637,"102 East Grand River Avenue, Howell, MI, 48843",42.57271,-83.91015,42.6073108,-83.9292883
+516,691,Waldon Woods Family Recreation Resort,https://www.mhvillage.com/parks/16055, Livingston ,,,638,"2975 North Old Us 23, Howell, MI, 48855",42.6469,-83.75867,42.6470075,-83.7560893
+517,692,River's Edge,https://www.mhvillage.com/parks/15046, Macomb ,1000.0,,654,"38000 Le Chateau Blvd, Clinton Township, MI, 48038",42.57442,-82.96078,42.5739556,-82.9609057
+518,693,Shelby Forest,https://www.mhvillage.com/parks/256, Macomb ,664.0,447.0,656,"13955 Bronte Drive, Shelby Township, MI, 48315",42.67107,-83.00109,42.662669,-82.986443
+519,694,Shelby West,https://www.mhvillage.com/parks/15708, Macomb ,644.0,,657,"12277 Conservation Trail, Shelby Township, MI, 48315",42.67107,-83.00109,42.6591155,-83.00793709999999
+520,695,Lafayette Place,https://www.mhvillage.com/parks/15065, Macomb ,254.0,,658,"21155 Warner, Warren, MI, 48091",42.45129,-83.07388,42.4510759,-83.0768119
+521,696,East Village Estates,https://www.mhvillage.com/parks/253, Macomb ,708.0,,659,"57400 Bedford Blvd., Washington, MI, 48094",42.71725,-83.02236,42.7177036,-83.0218478
+522,697,Springbrook Estates,https://www.mhvillage.com/parks/15147, Macomb ,398.0,675.0,663,"71400 Van Dyke Road, Romeo, MI, 48065",42.81963,-83.01812,42.8199378,-83.0168812
+523,698,Rudgate Manor,https://www.mhvillage.com/parks/15089, Macomb ,931.0,400.0,664,"5150 Rudgate Boulevard, Sterling Heights, MI, 48310",42.56452,-83.06894,42.59056090000001,-83.0598251
+524,699,Carriage Way,https://www.mhvillage.com/parks/222, Saint Clair ,798.0,,1024,"29800 Guilford Circle, Chesterfield, MI, 48051",42.67515,-82.81371,42.6849374,-82.80989919999999
+525,700,Silver Springs,https://www.mhvillage.com/parks/37937, Saint Clair ,547.0,,1025,"43600 Park Drive West, Clinton Township, MI, 48036",42.59859,-82.91368,42.614453,-82.87617589999999
+526,701,Rudgate Clinton,https://www.mhvillage.com/parks/302, Macomb ,667.0,,667,"20475 Foster Drive, Clinton Township, MI, 48036",42.57842,-82.91662,42.57779559999999,-82.9138487
+527,702,Pine Crest Estates,https://www.mhvillage.com/parks/31376, Saint Clair ,214.0,440.0,1026,"30086 Pineview Circle, Chesterfield, MI, 48051",42.67515,-82.81371,42.6876874,-82.8054796
+528,703,Dequindre Estates,https://www.mhvillage.com/parks/15707, Macomb ,303.0,,669,"2017 Shirewood Dr., Shelby Township, MI, 48317",42.65294,-83.09154,42.6529356,-83.0915361
+529,704,Westbridge Manor,https://www.mhvillage.com/parks/251, Saint Clair ,1446.0,500.0,1028,"45301 Chateau Thierry Blvd., Macomb, MI, 48044",42.65061,-82.92604,42.6326105,-82.9037598
+530,705,Glennwood Village,https://www.mhvillage.com/parks/15233, Macomb ,147.0,659.0,677,"2526 Morrissey Road, Warren, MI, 48091",42.46934,-83.05494,42.4663402,-83.0770739
+531,706,Millstone Pond,https://www.mhvillage.com/parks/32594, Saint Clair ,263.0,417.0,1030,"37781 Sandstone Trail, Lenox, MI, 48048",42.74174,-82.79775,42.7250637,-82.7337618
+532,707,Fairchild Lake,https://www.mhvillage.com/parks/15138, Saint Clair ,300.0,485.0,1034,"49645 Au Lac Road, Chesterfield, MI, 48051",42.67515,-82.81371,42.6648105,-82.85419739999999
+533,708,Willow Point,https://www.mhvillage.com/parks/33956, Saint Clair ,284.0,381.0,1037,"43400 Lenfesty Drive, Harrison Township, MI, 48045",42.61222,-82.85886,42.613929,-82.8580047
+534,709,Westbrook,https://www.mhvillage.com/parks/126708, Saint Clair ,,,1038,"45013 Catalpa Blvd., Macomb, MI, 48044",42.6296,-82.90159,42.6296001,-82.90162029999999
+535,710,Leslie's Mobile Home Village,https://www.mhvillage.com/parks/15067, Macomb ,166.0,,678,"25214 Gratiot Avenue, Roseville, MI, 48066",42.50967,-82.93596,42.494843,-82.939134
+536,711,Riverbrook,https://www.mhvillage.com/parks/224, Saint Clair ,390.0,,1041,"59477 Hardy Lane, New Haven, MI, 48048",42.74174,-82.79775,42.7394595,-82.7839228
+537,712,Parkway Village LLC,https://www.mhvillage.com/parks/15090, Saint Clair ,242.0,347.0,1044,"23500 South Keystone Way, Clinton Township, MI, 48036",42.59859,-82.91368,42.612573,-82.864659
+538,716,Richmond Place,https://www.mhvillage.com/parks/15145, Saint Clair ,117.0,,1035,"36401 Division Road, Richmond, MI, 48062",42.80925,-82.75075,42.8096041,-82.7513853
+539,735,River Haven Estates,https://www.mhvillage.com/parks/15826, Mason ,65.0,,705,"24 Caberfae Highway, Manistee, MI, 49660",44.23921,-86.19861,44.26480460000001,-86.29793540000001
+540,736,East Lake Estates,https://www.mhvillage.com/parks/16019, Mason ,197.0,,706,"829 Oregon Avenue, Manistee, MI, 49660",44.23921,-86.19861,44.2365737,-86.2947363
+541,737,The Bluffs on Manistee Lake,https://www.mhvillage.com/parks/105890, Mason ,100.0,,708,"956 Tennessee Avenue, Manistee, MI, 49660",44.23582,-86.29581,44.2365547,-86.29583129999999
+542,738,Forest Pines Manistee,https://www.mhvillage.com/parks/15591, Mason ,75.0,375.0,709,"1525 West County Line Road, Manistee, MI, 49660",44.23921,-86.19861,44.1753376,-86.3197794
+543,739,Tamarac Village,https://www.mhvillage.com/parks/470, Mason ,293.0,,699,"2875 North Lakeshore Drive, Ludington, MI, 49431",43.96235,-86.39777,44.0086242,-86.45848579999999
+544,740,Ludington Mobile Home Park,https://www.mhvillage.com/parks/15589, Mason ,68.0,,700,"5040 Rasmussen Road, Ludington, MI, 49431",43.96235,-86.39777,43.9744063,-86.405829
+545,741,Hidden Forest,https://www.mhvillage.com/parks/30045, Mason ,116.0,407.0,701,"3626 West Hidden Forest Drive, Ludington, MI, 49431",43.96235,-86.39777,43.96026,-86.373122
+546,742,Holiday Village Of Scottville,https://www.mhvillage.com/parks/15590, Mason ,150.0,,702,"1701 West Us Highway 10-31, Scottville, MI, 49454",43.95513,-86.32162,43.9552949,-86.3215982
+547,743,Heritage Hills Mobile Home Estates,https://www.mhvillage.com/parks/15593, Mason ,30.0,,703,"3677 South Pere Marquette, Ludington, MI, 49431",43.96235,-86.39777,43.89050690000001,-86.40002009999999
+548,744,Laman's Landing Resort,https://www.mhvillage.com/parks/15592, Mason ,32.0,,704,"6100 North Beaune Road, Ludington, MI, 49431",43.96235,-86.39777,44.0659337,-86.40788599999999
+549,745,Lakewood Mobile Home Park,https://www.mhvillage.com/parks/15618, Oceana ,40.0,300.0,896,"408 East Sands Street, Pentwater, MI, 49449",43.79434,-86.37572,43.7871347,-86.4281677
+550,746,Big Rapids Mobile Home Court,https://www.mhvillage.com/parks/15579, Mecosta ,135.0,255.0,710,"606 Bjornson Street, Big Rapids, MI, 49307",43.7051,-85.51279,43.7083176,-85.47293719999999
+551,747,Country Manor Estates,https://www.mhvillage.com/parks/15999, Mecosta ,78.0,300.0,711,"18500 Northland Drive, Big Rapids, MI, 49307",43.7051,-85.51279,43.7336497,-85.5000178
+552,748,Holiday Terrace Mobile Home Park,https://www.mhvillage.com/parks/15594, Mecosta ,71.0,,712,"10845 Percy Lane, Mecosta, MI, 49332",43.63724,-85.24514,43.6240978,-85.3141165
+553,749,Parks Place Estates,https://www.mhvillage.com/parks/528, Mecosta ,29.0,300.0,713,"14065 30th Avenue, Remus, MI, 49340",43.6693,-85.14673,43.669155,-85.1471923
+554,750,Sunset Shores,https://www.mhvillage.com/parks/76392, Mecosta ,80.0,,714,"10406 Pierce Rd., Stanwood, MI, 49346",43.59275,-85.40347,43.577762,-85.29211099999999
+555,751,Haven View Mobile Home Court,https://www.mhvillage.com/parks/15596, Mecosta ,80.0,,715,"18505 Northland Drive, Big Rapids, MI, 49307",43.7051,-85.51279,43.7347297,-85.5042158
+556,752,College Park Mobile Village,https://www.mhvillage.com/parks/15600, Mecosta ,100.0,,716,"1111 Catherine Street, Big Rapids, MI, 49307",43.7051,-85.51279,43.7122482,-85.4802258
+557,753,Country Mobile Home Court,https://www.mhvillage.com/parks/15629, Osceola ,20.0,,927,"6420 East 13 Mile Road, Paris, MI, 49338",43.7569,-85.60857,43.739451,-85.64006499999999
+558,754,Circle Drive Mobile Home Park,https://www.mhvillage.com/parks/15597, Mecosta ,50.0,,718,"12380 185th Avenue, Big Rapids, MI, 49307",43.64786,-85.45304,43.6478782,-85.4530121
+559,755,Hunter's Creek,https://www.mhvillage.com/parks/476, Mecosta ,50.0,,719,"11334 120th Avenue, Rodney, MI, 49342",43.63143,-85.32412,43.6314596,-85.3240843
+560,756,Forest Hills Park,https://www.mhvillage.com/parks/15598, Mecosta ,,,720,"14400 Northland Drive, Big Rapids, MI, 49307",43.7051,-85.51279,43.6766719,-85.48343299999999
+561,757,Round Lake Resort Mobile Home Park,https://www.mhvillage.com/parks/15599, Mecosta ,8.0,,721,"11133 Eleven Mile Road, Mecosta, MI, 49332",43.63724,-85.24514,43.6264291,-85.3060627
+562,758,Buck's Mobile Home Park,https://www.mhvillage.com/parks/15595, Mecosta ,,,722,"21965 8 Mile Road, Stanwood, MI, 49346",43.59275,-85.40347,43.58308479999999,-85.5208667
+563,759,Lackie's Birch Haven Subdivision,https://www.mhvillage.com/parks/16042, Osceola ,,,928,"Airstrip Road, Barryton, MI, 49305",43.75187,-85.14328,43.7043868,-85.1845803
+564,760,Roger Heights Mobile Home Park,https://www.mhvillage.com/parks/52249, Mecosta ,,,724,"11299 Riverside Drive, Stanwood, MI, 49346",43.59275,-85.40347,43.636824,-85.46022719999999
+565,761,Bayside Mobile Estates,https://www.mhvillage.com/parks/15843, Menominee ,97.0,,725,"3400 - 10th Street, Menominee, MI, 49858",45.12976,-87.61257,45.1297539,-87.6124871
+566,762,Cedar Ridge Mobile Home Park,https://www.mhvillage.com/parks/15845, Menominee ,75.0,,726,"5000 13th Street, Menominee, MI, 49858",45.14611,-87.61748,45.146109,-87.617485
+567,763,Forest Glen,https://www.mhvillage.com/parks/29603, Menominee ,16.0,,727,"450 Myrtle Street, Marinette, WI, 54143",45.09182,-87.6466,45.0918178,-87.646599
+568,764,Foxx Glen,https://www.mhvillage.com/parks/28731, Menominee ,76.0,,728,"3920 Hall Ave, Marinette, WI, 54143",45.09188,-87.67188,45.1007324,-87.65853369999999
+569,765,Golden Sands Mobile Home Court,https://www.mhvillage.com/parks/27024, Menominee ,,,729,"3400 Pierce Ave, Marinette, WI, 54143",45.09188,-87.67188,45.0723052,-87.6261639
+570,766,Country Meadows Mobile Home Park,https://www.mhvillage.com/parks/26981, Menominee ,220.0,,730,"3415 Pierce Ave, Marinette, WI, 54143",45.09188,-87.67188,45.07145999999999,-87.630755
+571,767,Cramer Estates,https://www.mhvillage.com/parks/31291, Menominee ,,,731,"Merchant, Marinette, WI, 54143",45.09188,-87.67188,45.0918178,-87.646599
+572,768,Marinette Mobile Home Court,https://www.mhvillage.com/parks/36172, Menominee ,,,732,"1596 Marinette Ave, Marinette, WI, 54143",45.09188,-87.67188,45.0899086,-87.6490961
+573,769,Science City,https://www.mhvillage.com/parks/337, Midland ,171.0,,733,"3823 Bay City Road, Midland, MI, 48642",43.60536,-84.18068,43.606519,-84.18109749999999
+574,770,Alpine Village,https://www.mhvillage.com/parks/15379, Midland ,283.0,,735,"3601 Alpine Drive, Midland, MI, 48642",43.70512,-84.23785,43.66359500000001,-84.2693597
+575,771,Old Oak Trails Estates,https://www.mhvillage.com/parks/15955, Midland ,203.0,357.0,736,"1661 North Old Oak Trail, Sanford, MI, 48657",43.71958,-84.40022,43.6603706,-84.3238725
+576,772,Arlington Manor,https://www.mhvillage.com/parks/15378, Midland ,100.0,285.0,737,"222 Rockwell Dr, Midland, MI, 48642",43.70512,-84.23785,43.6005737,-84.1668507
+577,773,Coleman Mobile Home Park,https://www.mhvillage.com/parks/15381, Midland ,58.0,250.0,738,"330 South 3rd Street, Coleman, MI, 48618",43.75117,-84.58959,43.75111,-84.58881269999999
+578,774,Oakside Mobile Home Park,https://www.mhvillage.com/parks/409, Midland ,142.0,285.0,739,"2752 West North Union Road, Midland, MI, 48642",43.70512,-84.23785,43.61217329999999,-84.15853899999999
+579,775,Stolkholm Forest Village,https://www.mhvillage.com/parks/15380, Midland ,121.0,285.0,740,"800 West Mier Road, Sanford, MI, 48657",43.71958,-84.40022,43.7156793,-84.3992189
+580,776,Victoria Woods,https://www.mhvillage.com/parks/15450, Midland ,52.0,270.0,741,"2574 West Midland Road, Midland, MI, 48642",43.70512,-84.23785,43.6050039,-84.1527157
+581,777,Maple Grove Village,https://www.mhvillage.com/parks/15340, Midland ,140.0,,742,"400 Kuipers Drive, Midland, MI, 48642",43.70512,-84.23785,43.6009637,-84.1781106
+582,778,Countryside Manor,https://www.mhvillage.com/parks/361, Midland ,63.0,,743,"47 North Meridian Road, Midland, MI, 48640",43.58296,-84.35133,43.6139199,-84.3696276
+583,779,Rumbaugh Estates,https://www.mhvillage.com/parks/362, Midland ,59.0,,744,"1404 Rumbaugh, Midland, MI, 48642",43.70512,-84.23785,43.6511606,-84.17341139999999
+584,780,Lakeview Trailer Park,https://www.mhvillage.com/parks/15382, Midland ,18.0,,745,"320 Cedar Street, Sanford, MI, 48657",43.71958,-84.40022,43.6756719,-84.3805247
+585,781,"Evergreen Whispering Pines MHP, LLC",https://www.mhvillage.com/parks/42428, Midland ,105.0,550.0,746,"227 W. Olson Road, Midland, MI, 48640",43.58296,-84.35133,43.621705,-84.377883
+586,782,Woodview Mobile Home Park,https://www.mhvillage.com/parks/338, Midland ,,,748,"257 West Olson Road, Midland, MI, 48640",43.58296,-84.35133,43.624419,-84.381554
+587,783,Pine Court,https://www.mhvillage.com/parks/29402, Osceola ,15.0,,925,"5340 West Stoney Corners Road, Mc Bain, MI, 49657",44.22911,-85.17152,44.1938748,-85.1971343
+588,784,Sandy Oaks Resort,https://www.mhvillage.com/parks/105535, Roscommon ,227.0,,988,"2757 Owens Dr, Houghton Lake, MI, 48629",44.29882,-84.73407,44.2936179,-84.6938948
+589,785,Cadillac Leisure Mobile Home Park,https://www.mhvillage.com/parks/15722, Wexford ,98.0,,1184,"1101-1151 6th Stt, Cadillac, MI, 49601",44.25966,-85.42514,44.25965739999999,-85.4251367
+590,786,Whispering Oaks Mobile Home Park,https://www.mhvillage.com/parks/15862, Roscommon ,26.0,,991,"3517 West Houghton Lake Drive, Houghton Lake, MI, 48629",44.29882,-84.73407,44.2973716,-84.7097818
+591,787,Mounds Mobile Home Park,https://www.mhvillage.com/parks/54551, Roscommon ,,,994,"130 Mounds Trail, Houghton Lake, MI, 48629",44.29882,-84.73407,44.3597682,-84.684799
+592,788,North Shore Trailer Park,https://www.mhvillage.com/parks/15865, Roscommon ,,,995,"8687 East Houghton Lake Road, Houghton Lake, MI, 48629",44.29882,-84.73407,44.375733,-84.732097
+593,789,Poplar's Resort,https://www.mhvillage.com/parks/15669, Roscommon ,,,997,"10360 West Shore Dr, Houghton Lake, MI, 48629",44.29882,-84.73407,44.3555988,-84.7944047
+594,790,Frenchtown Villa / Elizabeth Woods,https://www.mhvillage.com/parks/15319, Monroe ,1149.0,,764,"1250 Paree, Newport, MI, 48166",41.97734,-83.29112,42.0032719,-83.3539974
+595,791,Meadowbrook Estates,https://www.mhvillage.com/parks/331, Monroe ,453.0,,765,"1250 Strandwyck, Monroe, MI, 48161",41.91011,-83.42683,41.91023029999999,-83.4272427
+596,792,Kimberly Estates,https://www.mhvillage.com/parks/329, Monroe ,387.0,,766,"7769 Kimberly Dr, Newport, MI, 48166",41.99027,-83.36667,41.9912824,-83.3689217
+597,793,Newport Farms,https://www.mhvillage.com/parks/30588, Monroe ,513.0,492.0,768,"9059 W. Timberview Dr., Newport, MI, 48166",42.00771,-83.33446,42.0122769,-83.33752439999999
+598,794,Raisin Ridge,https://www.mhvillage.com/parks/15994, Monroe ,404.0,,772,"801 Franklin Blvd, Monroe, MI, 48161",41.93203,-83.46824,41.9319864,-83.4683159
+599,795,Inverness Mobile Home Community,https://www.mhvillage.com/parks/415, Monroe ,518.0,,769,"6230 Lewis Avenue, Temperance, MI, 48182",41.79069,-83.58813,41.7306847,-83.5646392
+600,796,Oakridge Estates,https://www.mhvillage.com/parks/15737, Monroe ,621.0,,770,"75 Briarwood Trail, Monroe, MI, 48161",41.89171,-83.40729,41.89285539999999,-83.4069787
+601,797,Pleasantville MHC,https://www.mhvillage.com/parks/15337, Monroe ,152.0,,773,"1045 Nadeau Road, Monroe, MI, 48162",41.94976,-83.44536,41.9660853,-83.35456099999999
+602,798,Country Heritage,https://www.mhvillage.com/parks/15969, Monroe ,213.0,,774,"771 Mary Jean Court, Dundee, MI, 48131",41.94859,-83.65202,41.9484194,-83.6516418
+603,799,The Orchards,https://www.mhvillage.com/parks/33834, Monroe ,630.0,483.0,771,"3600 Townsquare Boulevard, Carleton, MI, 48117",42.03778,-83.42102,42.0749498,-83.313465
+604,800,Carleton Mobile Home Park,https://www.mhvillage.com/parks/15338, Monroe ,228.0,385.0,775,"12500 Jones Rd., Carleton, MI, 48117",42.05671,-83.38965,42.0550345,-83.387427
+605,801,Dundee Meadows,https://www.mhvillage.com/parks/15951, Monroe ,80.0,450.0,776,"202 Emerald Circle, Dundee, MI, 48131",41.96234,-83.66653,41.9623504,-83.66652169999999
+606,802,Elizabeth Woods,https://www.mhvillage.com/parks/105129, Monroe ,620.0,553.0,777,"1250 Paree, Newport, MI, 48166",42.00351,-83.35345,42.0032719,-83.3539974
+607,803,Flat Rock Village,https://www.mhvillage.com/parks/15485, Monroe ,332.0,,778,"11150 Telegraph Road, Carleton, MI, 48117",42.03778,-83.42102,42.0381952,-83.3275007
+608,804,Hidden Creek,https://www.mhvillage.com/parks/15937, Monroe ,351.0,379.0,779,"6400 South Dixie Highway, Erie, MI, 48133",41.78609,-83.48738,41.73633710000001,-83.52838109999999
+609,805,Mill Race Shores Manufactured Housing Community,https://www.mhvillage.com/parks/15941, Monroe ,97.0,,780,"563 Allen Road, Milan, MI, 48160",42.08375,-83.67022,42.075937,-83.6833386
+610,806,Northtowne Meadows,https://www.mhvillage.com/parks/15734, Monroe ,386.0,450.0,781,"6255 Telegraph Road, Erie, MI, 48133",41.78609,-83.48738,41.7322302,-83.5496136
+611,807,Willow Green,https://www.mhvillage.com/parks/15336, Monroe ,429.0,385.0,782,"2033 North Outer Drive, Monroe, MI, 48161",41.91264,-83.47301,41.9141824,-83.4320035
+612,808,Yorkshire Manor,https://www.mhvillage.com/parks/15309, Monroe ,280.0,356.0,783,"1205 York Blvd., Carleton, MI, 48117",42.03778,-83.42102,42.05146209999999,-83.3923126
+613,809,Shamrock Mobile Home Park,https://www.mhvillage.com/parks/15480, Monroe ,54.0,,784,"1811 North Telegraph Road, Monroe, MI, 48162",41.94976,-83.44536,41.9472607,-83.40263999999999
+614,810,Sunny South Villa,https://www.mhvillage.com/parks/15479, Monroe ,68.0,,785,"15377 South Telegraph, Monroe, MI, 48161",41.91264,-83.47301,41.8987984,-83.43250429999999
+615,811,Huron River Mobile Home Park,https://www.mhvillage.com/parks/15750, Monroe ,89.0,,786,"8025 South Huron River Road, South Rockwood, MI, 48179",42.05419,-83.26085,42.047007,-83.22382100000002
+616,817,Village Trails,https://www.mhvillage.com/parks/15979, Montcalm ,100.0,,789,"518 Hickory Ln., Howard City, MI, 49329",43.3823,-85.47568,43.3823726,-85.47566429999999
+617,818,Brookside Mobile Home Sites,https://www.mhvillage.com/parks/15657, Montcalm ,14.0,,791,"7875 Garlock Road, Carson City, MI, 48811",43.18769,-84.85692,43.1789604,-84.8599583
+618,819,Creekview Mobile Home Park,https://www.mhvillage.com/parks/15654, Montcalm ,84.0,375.0,792,"400 North Walnut, Greenville, MI, 48838",43.20853,-85.27232,43.1839649,-85.2409443
+619,820,Edmore Estates,https://www.mhvillage.com/parks/492, Montcalm ,18.0,,793,"525 West Gilson Street, Edmore, MI, 48829",43.41448,-85.01942,43.4068711,-85.0507593
+620,821,Stanton Mobile Home Community,https://www.mhvillage.com/parks/15656, Montcalm ,50.0,,796,"101 Rachael, Stanton, MI, 48888",43.31444,-85.10173,43.2959139,-85.0874542
+621,822,Stoney Lake Mobile Home Park,https://www.mhvillage.com/parks/15652, Montcalm ,14.0,325.0,797,"2650 Stoney Lake Blvd., Stanton, MI, 48888",43.25525,-85.07728,43.2552491,-85.07728499999999
+622,823,Tamarack Pines Estates,https://www.mhvillage.com/parks/15920, Montcalm ,80.0,,798,"9555 Maple Hill Road, Howard City, MI, 49329",43.40285,-85.50268,43.4327513,-85.48267369999999
+623,824,Thunderhawk Resort,https://www.mhvillage.com/parks/83549, Montcalm ,50.0,330.0,799,"4261 N Bass Lake Rd, Pierson, MI, 49339",43.3378,-85.47797,43.3811072,-85.5224749
+624,825,Pond View Estates,https://www.mhvillage.com/parks/472, Montcalm ,90.0,,801,"613 North Edgeview Street, Greenville, MI, 48838",43.20853,-85.27232,43.1775314,-85.2527987
+625,826,Sheridan Mobile Home Park,https://www.mhvillage.com/parks/15653, Montcalm ,26.0,,802,"453 East Condensery Road, Sheridan, MI, 48884",43.21177,-85.05864,43.2063757,-85.0619097
+626,827,Greenbrier Estates,https://www.mhvillage.com/parks/15655, Montcalm ,57.0,,803,"11345 South Greenville Road, Greenville, MI, 48838",43.20853,-85.27232,43.2063824,-85.2515306
+627,828,Pondview Manufactured Home Community,https://www.mhvillage.com/parks/104897, Montcalm ,93.0,,804,"621 North Walnut Street, Greenville, MI, 48838",43.18644,-85.24159,43.1860855,-85.24197430000001
+628,829,Sandy Creek,https://www.mhvillage.com/parks/15938, Montcalm ,,,806,"Tbd, Crystal, MI, 48818",43.26309,-84.91473,43.263088,-84.9147337
+629,830,White Oak Acres,https://www.mhvillage.com/parks/16017, Montcalm ,34.0,,807,"Wood Road, Sheridan, MI, 48884",43.21177,-85.05864,43.2002138,-85.009746
+630,831,Tamarack Meadows,https://www.mhvillage.com/parks/32162, Montcalm ,135.0,495.0,808,"1601 Hiddenview Dr, Lakeview, MI, 48850",43.44553,-85.27591,43.4336887,-85.2628016
+631,835,Hunt Creek Mobile Home Court,https://www.mhvillage.com/parks/15899, Presque Isle ,,,985,"600 North Elizabeth, Hillman, MI, 49746",45.04133,-83.94273,45.0687729,-83.9057189
+632,836,City Of Rose City Trailer Park,https://www.mhvillage.com/parks/15847, Oscoda ,,,939,"310 North Williams Street, Rose City, MI, 48654",44.47283,-84.12718,44.4237276,-84.11577419999999
+633,837,Presque Isle Estates,https://www.mhvillage.com/parks/575, Presque Isle ,,,978,"1605 Morley Drive, Rogers City, MI, 49779",45.40277,-83.77896,45.4208231,-83.8382074
+634,838,Whispering Pines Trailer Park,https://www.mhvillage.com/parks/15850, Oscoda ,,,930,"236 South Mount Tom Road, Mio, MI, 48647",44.68578,-84.06082,44.6744569,-84.1307597
+635,839,Apple Carr Village,https://www.mhvillage.com/parks/305, Muskegon ,529.0,,832,"516 South Courtland Lane, Muskegon, MI, 49442",43.24349,-86.12583,43.2436911,-86.12545349999999
+636,840,Clover Estates Mobile Home Community,https://www.mhvillage.com/parks/407, Muskegon ,223.0,,833,"3239 Clover Parkway, Muskegon, MI, 49444",43.16883,-86.19416,43.1923831,-86.1495229
+637,841,Egelcraft,https://www.mhvillage.com/parks/15871, Muskegon ,458.0,,834,"2129 Arrowhead Drive, Muskegon, MI, 49442",43.2142,-86.14254,43.21754019999999,-86.143377
+638,842,Park Meadows,https://www.mhvillage.com/parks/15739, Muskegon ,300.0,427.0,835,"210 East Giles, North Muskegon, MI, 49445",43.29868,-86.27285,43.2561251,-86.26756000000002
+639,843,"Pine Island Recreation Park, Inc.",https://www.mhvillage.com/parks/15440, Muskegon ,30.0,,836,"3768 Pine Island Drive, Lot 9, Holton, MI, 49425",43.41283,-86.14919,43.4128378,-86.1491788
+640,844,Derby Brothers Company,https://www.mhvillage.com/parks/70655, Muskegon ,30.0,325.0,837,"3774 Pine Island Drive, Holton, MI, 49425",43.41298,-86.14933,43.41298510000001,-86.149329
+641,845,Bel Air Estates,https://www.mhvillage.com/parks/15315, Muskegon ,116.0,395.0,838,"2481 West Sherman Boulevard, Muskegon, MI, 49441",43.1869,-86.27287,43.2048954,-86.3046088
+642,846,Norton Shores,https://www.mhvillage.com/parks/405, Muskegon ,656.0,,839,"3223 Bailey Street, Muskegon, MI, 49444",43.19381,-86.21534,43.19425469999999,-86.2157577
+643,847,Arlington Woods,https://www.mhvillage.com/parks/307, Muskegon ,659.0,335.0,840,"3785 Evanston Avenue, Muskegon, MI, 49442",43.2459,-86.14177,43.2105477,-86.1510105
+644,848,Cricklewood Court,https://www.mhvillage.com/parks/15293, Muskegon ,62.0,695.0,849,"23604 36th Avenue, Ravenna, MI, 49451",43.19947,-85.87744,43.199545,-85.87739979999999
+645,849,Crystal Downs MHC,https://www.mhvillage.com/parks/15312, Muskegon ,104.0,525.0,841,"2701 Crystal Lake Road, Whitehall, MI, 49461",43.38689,-86.3276,43.398655,-86.3090678
+646,850,Nomad MHC,https://www.mhvillage.com/parks/15441, Muskegon ,111.0,,842,"2701 Huizenga Street, Muskegon, MI, 49444",43.16883,-86.19416,43.2037741,-86.22181499999999
+647,851,Oaks Mobile Home Park,https://www.mhvillage.com/parks/335, Muskegon ,172.0,,843,"3240 Getty Street, Muskegon, MI, 49444",43.19449,-86.22454,43.192987,-86.222348
+648,852,Emerald Estates,https://www.mhvillage.com/parks/15622, Newaygo ,30.0,345.0,861,"238 Jones Street, Grant, MI, 49327",43.33695,-85.84536,43.3325336,-85.81181389999999
+649,853,Hidden Oaks MHC,https://www.mhvillage.com/parks/194, Muskegon ,104.0,,845,"14787 Apple Drive, Fruitport, MI, 49415",43.15305,-86.12557,43.1149515,-86.15253109999999
+650,854,Timberline Estates Mobile Home Park,https://www.mhvillage.com/parks/15548, Muskegon ,302.0,,846,"2315 Oak Street, Twin Lake, MI, 49457",43.36803,-86.14947,43.2965593,-86.1535294
+651,855,Edgewood Mobile Park,https://www.mhvillage.com/parks/15445, Muskegon ,65.0,,847,"7433 Whitehall Road, Whitehall, MI, 49461",43.38689,-86.3276,43.3923721,-86.2999725
+652,856,West Pine Island Manufactured Home Community,https://www.mhvillage.com/parks/3977, Muskegon ,30.0,,848,"3534 Pinewood Trail, Holton, MI, 49425",43.44293,-86.11695,43.4120787,-86.1561693
+653,857,Maple Island Estates,https://www.mhvillage.com/parks/15443, Muskegon ,129.0,,850,"7311 White Road, Muskegon, MI, 49442",43.2459,-86.14177,43.2636674,-86.0643805
+654,858,Mona Lake Mobile Home Park,https://www.mhvillage.com/parks/15442, Muskegon ,67.0,,851,"3527 Hoyt Street, Muskegon, MI, 49444",43.16883,-86.19416,43.1880588,-86.24224110000002
+655,859,West Pine Island,https://www.mhvillage.com/parks/46519, Muskegon ,30.0,,852,"1091 East Laketon, Muskegon, MI, 49442",43.2459,-86.14177,43.218882,-86.217321
+656,860,Crestview Estates MHC,https://www.mhvillage.com/parks/15444, Muskegon ,,,853,"3290 Getty Street, Muskegon, MI, 49444",43.16883,-86.19416,43.19178,-86.2245271
+657,863,Brookhaven Estates,https://www.mhvillage.com/parks/15972, Newaygo ,178.0,318.0,854,"622 South Division Street, Newaygo, MI, 49337",43.43292,-85.69911,43.4112377,-85.78647079999999
+658,864,Brooks Lake Mobile Home Park,https://www.mhvillage.com/parks/16002, Newaygo ,15.0,,855,"2263 Spruell, Newaygo, MI, 49337",43.43292,-85.69911,43.4016446,-85.745013
+659,865,Country View Estates,https://www.mhvillage.com/parks/15961, Newaygo ,134.0,,856,"401 Market Street, Fremont, MI, 49412",43.47283,-85.96834,43.4725589,-85.96901199999999
+660,866,Fremont Hills Mobile Home Park,https://www.mhvillage.com/parks/15625, Newaygo ,58.0,295.0,857,"927 Lake Drive, Fremont, MI, 49412",43.46012,-85.91641,43.4599707,-85.9588433
+661,868,Meadowview Village,https://www.mhvillage.com/parks/15624, Newaygo ,86.0,280.0,858,"1307 Locust Street, Fremont, MI, 49412",43.46012,-85.91641,43.4642422,-85.9688558
+662,869,Rob-Ann Mobile Home Court,https://www.mhvillage.com/parks/15623, Newaygo ,84.0,260.0,859,"1215 Locust Street, Fremont, MI, 49412",43.46012,-85.91641,43.4649149,-85.9657964
+663,870,Lake Forest Park,https://www.mhvillage.com/parks/15627, Newaygo ,70.0,,862,"9502 South 2nd Street, Grant, MI, 49327",43.38183,-85.77775,43.381821,-85.777732
+664,871,Leisure Time,https://www.mhvillage.com/parks/51641, Newaygo ,94.0,,863,"4799 South Spruce Avenue, White Cloud, MI, 49349",43.59664,-85.76073,43.4686878,-85.7459245
+665,872,Four Seasons Trailer Park,https://www.mhvillage.com/parks/15626, Newaygo ,56.0,,864,"3531 Antor, Newaygo, MI, 49337",43.43292,-85.69911,43.4905984,-85.61075009999999
+666,873,Maple Lane Mobile Home Park,https://www.mhvillage.com/parks/485, Newaygo ,30.0,,865,"65 South North Street, White Cloud, MI, 49349",43.59664,-85.76073,43.5524011,-85.77795259999999
+667,874,Sportsman Park,https://www.mhvillage.com/parks/30405, Newaygo ,75.0,,866,"2500 Sportsman Drive, White Cloud, MI, 49349",43.59664,-85.76073,43.5106678,-85.633912
+668,875,Zmrzlik Mobile Home Park,https://www.mhvillage.com/parks/52252, Newaygo ,,,867,"277 Echo Drive, White Cloud, MI, 49349",43.59664,-85.76073,43.5392435,-85.8091154
+669,876,The Woodlands,https://www.mhvillage.com/parks/15072, Oakland ,375.0,,869,"1441 W. Romeo Rd., Oakland Township, MI, 48363",42.79891,-83.16643,42.7951351,-83.16624
+670,877,Sashabaw Meadows,https://www.mhvillage.com/parks/200, Oakland ,511.0,,871,"4359 Dogwood Boulevard, Clarkston, MI, 48348",42.75994,-83.41043,42.7997871,-83.3645387
+671,878,Orion Lakes,https://www.mhvillage.com/parks/15176, Oakland ,423.0,,873,"47 Bluebird Hill, Orion, MI, 48359",42.72557,-83.27255,42.710208,-83.24982709999999
+672,879,Ridgewood,https://www.mhvillage.com/parks/15073, Oakland ,500.0,390.0,874,"3331 Stoneybrook Drive, Milford, MI, 48380",42.60998,-83.66783,42.609661,-83.6654286
+673,880,White Lake,https://www.mhvillage.com/parks/15178, Oakland ,315.0,511.0,875,"1415 Fisk Road, White Lake, MI, 48386",42.65948,-83.47848,42.660199,-83.47160099999999
+674,881,Highland Greens Estates,https://www.mhvillage.com/parks/15083, Oakland ,907.0,,876,"2377 North Milford Road, Highland, MI, 48357",42.65963,-83.61861,42.6617139,-83.6189729
+675,882,Childs Lake Estates,https://www.mhvillage.com/parks/176, Oakland ,619.0,612.0,877,"4377 Old Plank Road, Milford, MI, 48381",42.55917,-83.60581,42.5324398,-83.57375979999999
+676,883,Kensington Place,https://www.mhvillage.com/parks/15063, Oakland ,488.0,614.0,878,"60501 Grand River, New Hudson, MI, 48165",42.49632,-83.62307,42.5135233,-83.6500215
+677,884,Commerce Meadows,https://www.mhvillage.com/parks/15710, Oakland ,602.0,719.0,879,"2400 Meadows Circle Drive, Wixom, MI, 48393",42.51883,-83.54914,42.5588407,-83.5470931
+678,885,Stratford Villa,https://www.mhvillage.com/parks/15172, Oakland ,409.0,679.0,880,"3333 Stratford Villa Way, Wixom, MI, 48393",42.51883,-83.54914,42.556419,-83.540677
+679,886,Meadow Lake,https://www.mhvillage.com/parks/15878, Oakland ,425.0,540.0,881,"3951 Bentwood Circle West, White Lake, MI, 48383",42.69415,-83.56175,42.6942591,-83.5610736
+680,887,Clarkston Lakes,https://www.mhvillage.com/parks/15152, Oakland ,498.0,669.0,882,"4260 Dogwood Blvd., Clarkston, MI, 48348",42.75994,-83.41043,42.79829609999999,-83.3676277
+681,888,Sheffield Estates,https://www.mhvillage.com/parks/15550, Oakland ,228.0,479.0,883,"165 South Opdyke Road, Auburn Hills, MI, 48326",42.66474,-83.27461,42.6318667,-83.24908520000001
+682,889,Rochester Estates,https://www.mhvillage.com/parks/15077, Oakland ,775.0,689.0,884,"600 Le Grand Boulevard West, Rochester, MI, 48307",42.65989,-83.12274,42.6687695,-83.1091422
+683,890,South Lyon Woods,https://www.mhvillage.com/parks/15171, Oakland ,211.0,,886,"530 Lanier St., South Lyon, MI, 48178",42.45572,-83.64766,42.4557088,-83.6477294
+684,891,Troy Villa,https://www.mhvillage.com/parks/15175, Oakland ,282.0,358.0,887,"2100 Stephenson Highway, Troy, MI, 48083",42.55458,-83.12253,42.55447849999999,-83.121337
+685,892,College Heights,https://www.mhvillage.com/parks/15235, Oakland ,161.0,,889,"3501 Auburn Road, Auburn Hills, MI, 48326",42.66474,-83.27461,42.6369608,-83.2164679
+686,893,Cedarbrook Estates,https://www.mhvillage.com/parks/257, Oakland ,691.0,589.0,890,"323 Le Grande Boulevard, White Lake, MI, 48383",42.6556,-83.52972,42.6445975,-83.5364712
+687,894,Novi Meadows,https://www.mhvillage.com/parks/15080, Oakland ,401.0,659.0,891,"26250 Virginia Avenue, Novi, MI, 48374",42.46948,-83.52443,42.4830485,-83.5525703
+688,895,Fawn Lake Estates,https://www.mhvillage.com/parks/15071, Oakland ,135.0,,894,"831 North Pontiac Trail, Walled Lake, MI, 48390",42.55292,-83.48216,42.5390488,-83.48681619999999
+689,896,Lake Villa,https://www.mhvillage.com/parks/187, Oakland ,850.0,478.0,892,"182 Parker Lake Drive, Oxford, MI, 48371",42.82544,-83.23046,42.82530329999999,-83.2305181
+690,938,Hesperia MHP,https://www.mhvillage.com/parks/106678, Oceana ,99.0,,903,"946 North Smith St Hesperia Mi 49421, Hesperia, MI, 49421",43.57217,-86.02691,43.5720711,-86.0268445
+691,939,Holiday Shores,https://www.mhvillage.com/parks/105361, Oceana ,54.0,,897,"7980 Village Rd, Mears, MI, 49436",43.69036,-86.47706,43.6912001,-86.47828059999999
+692,940,Hylander Valley,https://www.mhvillage.com/parks/15619, Oceana ,71.0,220.0,898,"231 North Eastwood Road, Hart, MI, 49420",43.73003,-86.28381,43.764097,-86.3562974
+693,941,Sun Retreats Silver Lake,https://www.mhvillage.com/parks/111228, Oceana ,,,899,"1441 N. 34th Street, Mears, MI, 49436",43.67202,-86.47347,43.6719934,-86.47346499999999
+694,942,Evergreen Village Mobile Home Park,https://www.mhvillage.com/parks/15630, Oceana ,99.0,,900,"946 N. Smith St., Hesperia, MI, 49421",43.57217,-86.02691,43.5720711,-86.0268445
+695,943,Pines Mobile Home Park,https://www.mhvillage.com/parks/15621, Oceana ,48.0,,901,"3241 72nd Street, Hart, MI, 49420",43.70482,-86.37955,43.704859,-86.3795951
+696,944,Green Lawn Mobile Home Court,https://www.mhvillage.com/parks/15620, Oceana ,40.0,,902,"2725 Forest Street, Rothbury, MI, 49452",43.51292,-86.277,43.5054547,-86.3459512
+697,945,Evart Mobile Court,https://www.mhvillage.com/parks/15602, Osceola ,21.0,,921,"201 Fair Street, Evart, MI, 49631",43.90763,-85.23521,43.8992999,-85.27332439999999
+698,946,Young's Trailer Park,https://www.mhvillage.com/parks/479, Osceola ,17.0,,922,"521 East Church Avenue, Reed City, MI, 49677",43.88709,-85.50842,43.8687488,-85.5016661
+699,947,Pheasant Ridge Estates,https://www.mhvillage.com/parks/15879, Wexford ,196.0,400.0,1183,"399 Thistlewood Drive, Cadillac, MI, 49601",44.25705,-85.54792,44.236628,-85.403915
+700,948,Shady Lane Trailer Court,https://www.mhvillage.com/parks/15861, Roscommon ,,,998,"9671 Airport Road, Saint Helen, MI, 48656",44.3737,-84.45642,44.3640102,-84.4171229
+701,950,Knollwood,https://www.mhvillage.com/parks/298, Ottawa ,161.0,,958,"4595 Knollwood Drive, Allendale, MI, 49401",42.9792,-85.93827,42.9746686,-85.896587
+702,951,Allendale Meadows,https://www.mhvillage.com/parks/195, Ottawa ,352.0,,959,"11400 Boyne Boulevard, Allendale, MI, 49401",42.97615,-85.91025,42.97558470000001,-85.9103714
+703,952,Presidential Estates,https://www.mhvillage.com/parks/15035, Ottawa ,364.0,469.0,960,"5075 Presidential Lane, Hudsonville, MI, 49426",42.86056,-85.84727,42.8598773,-85.8467041
+704,953,Country Hills Village,https://www.mhvillage.com/parks/15971, Ottawa ,236.0,,961,"2200 Riley Street, Hudsonville, MI, 49426",42.82574,-85.83773,42.8211072,-85.8345459
+705,954,Leisure Estates,https://www.mhvillage.com/parks/15070, Ottawa ,438.0,599.0,967,"523 Butternut Drive, Holland, MI, 49424",42.84691,-86.12535,42.8145622,-86.1217521
+706,955,Windmill Estates,https://www.mhvillage.com/parks/190, Ottawa ,400.0,625.0,965,"333 East Lakewood Boulevard, Holland, MI, 49424",42.84691,-86.12535,42.8088042,-86.09549
+707,956,Timberline Estates,https://www.mhvillage.com/parks/211, Ottawa ,296.0,444.0,957,"260 Pin Oak Drive, Coopersville, MI, 49404",43.0722,-85.95367,43.0550527,-85.9281343
+708,957,West Olive Estates,https://www.mhvillage.com/parks/15907, Ottawa ,741.0,366.0,966,"8930 146th Avenue, West Olive, MI, 49460",42.93087,-86.14741,42.9309794,-86.14684249999999
+709,958,Lincoln Estates,https://www.mhvillage.com/parks/231, Ottawa ,191.0,452.0,962,"1139 Lincoln Avenue, Holland, MI, 49423",42.76859,-86.09715,42.7573008,-86.0954904
+710,959,Logan Estates,https://www.mhvillage.com/parks/601, Ottawa ,378.0,360.0,968,"8697 Riley Street, Zeeland, MI, 49464",42.8298,-85.99427,42.8292751,-85.9955719
+711,960,Brookshire Meadows West,https://www.mhvillage.com/parks/15921, Ottawa ,98.0,,969,"1501 Port Sheldon Road, Jenison, MI, 49428",42.91956,-85.84175,42.8880725,-85.8200044
+712,961,Country Estates,https://www.mhvillage.com/parks/296, Ottawa ,255.0,,970,"14700 State Road, Spring Lake, MI, 49456",43.08642,-86.15331,43.0863348,-86.1528697
+713,962,North Shore Manufactured Home Community and RV,https://www.mhvillage.com/parks/15299, Ottawa ,123.0,,971,"17990 North Shore Road, Spring Lake, MI, 49456",43.08278,-86.23485,43.08443680000001,-86.2343389
+714,963,Village Green Mobile Home Park,https://www.mhvillage.com/parks/230, Ottawa ,392.0,520.0,972,"1700 Robbins Road, Grand Haven, MI, 49417",43.01959,-86.1235,43.0447705,-86.2001969
+715,964,Boulder Ridge,https://www.mhvillage.com/parks/30512, Ottawa ,96.0,350.0,973,"4370 Pingree, Allendale, MI, 49401",42.9792,-85.93827,42.9821047,-85.89243189999999
+716,965,Crockery Mobile Home Park,https://www.mhvillage.com/parks/27720, Ottawa ,168.0,442.0,975,"13251 State Road, Nunica, MI, 49448",43.08912,-86.11726,43.0922695,-86.11806279999999
+717,966,Forest Lake Estates,https://www.mhvillage.com/parks/580, Ottawa ,221.0,442.0,976,"17147 148th Avenue, Spring Lake, MI, 49456",43.08046,-86.16039,43.0803008,-86.15657619999999
+718,967,Grand Country Mobile Village,https://www.mhvillage.com/parks/15295, Ottawa ,52.0,325.0,977,"13401 84th Street, Coopersville, MI, 49404",43.01102,-85.99683,43.0109961,-85.9967581
+719,968,Holiday West Village,https://www.mhvillage.com/parks/15728, Ottawa ,341.0,,964,"3611 Butternut Drive, Holland, MI, 49424",42.83347,-86.14889,42.8328858,-86.14939810000001
+720,972,Waverly Shores Village,https://www.mhvillage.com/parks/15926, Ottawa ,326.0,,963,"11777 Riley Street, Holland, MI, 49424",42.84691,-86.12535,42.8288983,-86.07271279999999
+721,976,Denton Township Trailer Park,https://www.mhvillage.com/parks/15864, Roscommon ,59.0,,989,"808 Lake Street, Prudenville, MI, 48651",44.25112,-84.61186,44.3093829,-84.6382539
+722,977,Lakeview Mobile Home Park,https://www.mhvillage.com/parks/15858, Roscommon ,49.0,,990,"454 East Houghton Lake Drive, Prudenville, MI, 48651",44.25112,-84.61186,44.3115966,-84.63458720000001
+723,978,Windmill Estates (Saginaw),https://www.mhvillage.com/parks/15556, Saginaw ,59.0,225.0,1014,"5655 Dixie Highway, Saginaw, MI, 48601",43.41401,-83.92621,43.3752236,-83.892834
+724,979,Freeland Mobile Home Park,https://www.mhvillage.com/parks/593, Saginaw ,122.0,270.0,1008,"10340 Midland Road, Freeland, MI, 48623",43.50701,-84.16247,43.5586689,-84.167453
+725,980,Falconview Estates,https://www.mhvillage.com/parks/15952, Saginaw ,179.0,415.0,1000,"9645 Meadowlark, Freeland, MI, 48623",43.50701,-84.16247,43.5255914,-84.1031557
+726,981,Lawndale Estates,https://www.mhvillage.com/parks/15331, Saginaw ,667.0,367.0,1001,"4509 Longmeadow Blvd W, Saginaw, MI, 48603",43.47308,-84.04161,43.473002,-84.04137469999999
+727,982,Birch Forest Manufactured Housing Community,https://www.mhvillage.com/parks/15326, Saginaw ,103.0,,1002,"1 Big Bear, Birch Run, MI, 48415",43.27871,-83.80726,43.2793596,-83.82985769999999
+728,983,Saginaw Valley Mobile Home Park,https://www.mhvillage.com/parks/15553, Saginaw ,179.0,,1003,"6160 Davis Road, Saginaw, MI, 48604",43.49612,-83.95579,43.49683539999999,-83.95570699999999
+729,984,Robin Glen,https://www.mhvillage.com/parks/15551, Saginaw ,505.0,350.0,1004,"5720 East Washington Road, Saginaw, MI, 48601",43.41401,-83.92621,43.4465558,-83.83802159999999
+730,985,Lakeview Estates on Lawndale,https://www.mhvillage.com/parks/43135, Saginaw ,122.0,340.0,1005,"4231 Lawndale Road, Saginaw, MI, 48603",43.46935,-84.03448,43.4692302,-84.0340717
+731,986,Birchwood Farms,https://www.mhvillage.com/parks/15932, Saginaw ,143.0,,1006,"8057 Birchwood Drive, Birch Run, MI, 48415",43.27871,-83.80726,43.24132549999999,-83.79320849999999
+732,987,Edgewood Village Mobile Home Community,https://www.mhvillage.com/parks/15892, Saginaw ,198.0,385.0,1007,"1490 South Graham Road, Saginaw, MI, 48609",43.403,-84.07321,43.40303429999999,-84.1327804
+733,988,Peachtree Manor,https://www.mhvillage.com/parks/15458, Saginaw ,86.0,325.0,1010,"7575 Dixie Highway, Bridgeport, MI, 48722",43.3432,-83.84325,43.3184295,-83.8203592
+734,989,Stoddard Mobile Court,https://www.mhvillage.com/parks/15327, Saginaw ,125.0,,1012,"16940 South Oakley Road, Chesaning, MI, 48616",43.19782,-84.13047,43.1747181,-84.1702925
+735,990,Thomas Crossings,https://www.mhvillage.com/parks/103519, Saginaw ,43.0,350.0,1013,"1723 Cranberry Lake Cir, Saginaw, MI, 48609",43.403,-84.07321,43.3981766,-84.07000169999999
+736,991,Burt Estates,https://www.mhvillage.com/parks/15330, Saginaw ,112.0,,1015,"11324 East Road, Burt, MI, 48417",43.26405,-83.94485,43.2590151,-83.9532364
+737,992,Kris Kay Mobile Home Park,https://www.mhvillage.com/parks/15332, Saginaw ,302.0,,1016,"1800 Graham Road, Saginaw, MI, 48609",43.403,-84.07321,43.4004916,-84.13127589999999
+738,993,Birch Run Mobile Home Park,https://www.mhvillage.com/parks/15559, Saginaw ,50.0,,1017,"10670 Dixie Highway, Birch Run, MI, 48415",43.27871,-83.80726,43.268227,-83.78645999999999
+739,994,Saginaw Villas,https://www.mhvillage.com/parks/15328, Saginaw ,469.0,,1018,"4141 Dixie Highway, Saginaw, MI, 48601",43.41401,-83.92621,43.3946377,-83.9077533
+740,995,Pleasant Valley Estates,https://www.mhvillage.com/parks/15329, Saginaw ,220.0,300.0,1019,"16105 Doyle Road, Hemlock, MI, 48626",43.40693,-84.2362,43.40631519999999,-84.2347949
+741,996,Bridgeport Mobile Home Park,https://www.mhvillage.com/parks/15557, Saginaw ,,,1020,"5948 Dixie Highway, Saginaw, MI, 48601",43.41401,-83.92621,43.3658946,-83.8867448
+742,997,Evergreen Trailer Park,https://www.mhvillage.com/parks/15552, Saginaw ,,,1021,"614 Owosso Street, Chesaning, MI, 48616",43.19782,-84.13047,43.1910694,-84.1215806
+743,998,St. Clair Place,https://www.mhvillage.com/parks/15504, Saint Clair ,100.0,625.0,1027,"2700 Cox Road, Saint Clair, MI, 48079",42.85563,-82.5461,42.827406,-82.513021
+744,999,The Lakes Estates,https://www.mhvillage.com/parks/15987, Saint Clair ,254.0,,1029,"5901 Lapeer Road, Kimball, MI, 48074",42.94735,-82.57144,42.9895916,-82.564105
+745,1000,The Shores of Anchor Bay,https://www.mhvillage.com/parks/15512, Saint Clair ,659.0,369.0,1031,"7061 Bethuy Road, Fair Haven, MI, 48023",42.72154,-82.71075,42.6960779,-82.7036876
+746,1001,Pinewood on the Lake,https://www.mhvillage.com/parks/421, Saint Clair ,380.0,,1032,"2109 Redwood Avenue, Columbus, MI, 48063",42.83795,-82.6648,42.8390253,-82.6604966
+747,1002,Admirals Cove Senior Living,https://www.mhvillage.com/parks/106208, Saint Clair ,500.0,,1033,"10470 Dixie Hwy, Fair Haven, MI, 48023",42.69016,-82.70127,42.6889441,-82.7075627
+748,1003,Shangri La Mobile Home Community,https://www.mhvillage.com/parks/15324, Saint Clair ,270.0,360.0,1036,"6900 South River Road, Marine City, MI, 48039",42.69406,-82.54969,42.7061726,-82.5000633
+749,1004,Channel View,https://www.mhvillage.com/parks/15713, Saint Clair ,303.0,470.0,1023,"5150 Taft Road, Clay Township, MI, 48001",42.63062,-82.57803,42.6305782,-82.5780576
+750,1005,Indian Trail North,https://www.mhvillage.com/parks/319, Saint Clair ,496.0,390.0,1039,"3650 Metcalf Road, Burtchville, MI, 48059",43.08691,-82.50022,43.0862094,-82.48707929999999
+751,1006,Hunters Crossing,https://www.mhvillage.com/parks/30614, Saint Clair ,114.0,324.0,1040,"150 Hunters Crossing Boulevard, Capac, MI, 48014",43.0258,-82.93776,43.00638319999999,-82.923936
+752,1007,Algonac Mobile Home Park,https://www.mhvillage.com/parks/15513, Saint Clair ,30.0,332.0,1042,"3812 Pointe Tremble Road, Algonac, MI, 48001",42.63516,-82.58246,42.6206128,-82.560479
+753,1008,Marysville Senior Living,https://www.mhvillage.com/parks/321, Saint Clair ,230.0,,1043,"3333 Ravenswood Road, Marysville, MI, 48040",42.93655,-82.46486,42.9330637,-82.4647054
+754,1029,Colonial Estates Mobile Home Park,https://www.mhvillage.com/parks/15696, Saint Joseph ,112.0,486.0,1045,"501 Us Highway 131 North, White Pigeon, MI, 49099",41.80159,-85.6618,41.7992851,-85.6599063
+755,1030,Klines Resort,https://www.mhvillage.com/parks/468, Saint Joseph ,244.0,432.0,1046,"22260 Klines Resort Road, Three Rivers, MI, 49093",42.04843,-85.52378,42.0482198,-85.52396689999999
+756,1031,Meadow Lane Village,https://www.mhvillage.com/parks/507, Saint Joseph ,127.0,390.0,1047,"614 13th Street, Three Rivers, MI, 49093",41.93812,-85.61865,41.9381233,-85.6186481
+757,1032,Memory Lane Mobile Home Park,https://www.mhvillage.com/parks/510, Saint Joseph ,227.0,380.0,1048,"25039 West Us 12, Sturgis, MI, 49091",41.79494,-85.46631,41.7949394,-85.4663097
+758,1033,River Run Estates,https://www.mhvillage.com/parks/15944, Saint Joseph ,60.0,325.0,1049,"800 East Hoffman Street, Three Rivers, MI, 49093",41.97611,-85.63896,41.9551606,-85.61885199999999
+759,1034,Sturgis Commons,https://www.mhvillage.com/parks/111198, Saint Joseph ,21.0,250.0,1050,"960 W Chicago St, Sturgis, MI, 49091",41.7974,-85.43202,41.7969758,-85.43175520000001
+760,1035,Sweet Lake Mobile Home Park,https://www.mhvillage.com/parks/15700, Saint Joseph ,48.0,410.0,1051,"31004 East Chicago Road, Sturgis, MI, 49091",41.8426,-85.43596,41.8010777,-85.3499035
+761,1036,Washburn Lake Village MHC,https://www.mhvillage.com/parks/15693, Saint Joseph ,42.0,245.0,1052,"59502 Long Lake Road, Colon, MI, 49040",41.98217,-85.34158,41.9346101,-85.33297619999999
+762,1037,Village Mobile Home Court,https://www.mhvillage.com/parks/15702, Saint Joseph ,82.0,325.0,1054,"121 South Erie Street, Three Rivers, MI, 49093",41.97611,-85.63896,41.9415097,-85.6445938
+763,1038,Michiana Mobile Home Park,https://www.mhvillage.com/parks/15699, Saint Joseph ,38.0,,1055,"231 1st St, Sturgis, MI, 49091",41.80088,-85.42926,41.8009019,-85.4292955
+764,1039,River Forest Mobile Home Park,https://www.mhvillage.com/parks/15694, Saint Joseph ,56.0,,1056,"19013 Fawn River Road, White Pigeon, MI, 49099",41.79712,-85.67925,41.779901,-85.583761
+765,1040,Golden Pond Mobile Home Park,https://www.mhvillage.com/parks/506, Saint Joseph ,39.0,,1057,"61600 Youngman Road, Three Rivers, MI, 49093",41.97611,-85.63896,41.9015989,-85.7078281
+766,1041,Hickory Lane Mobile Home Park,https://www.mhvillage.com/parks/15695, Saint Joseph ,32.0,,1058,"14809 West M-60, Three Rivers, MI, 49093",41.97611,-85.63896,41.9222475,-85.66663470000002
+767,1042,River's Edge Mobile Home Community,https://www.mhvillage.com/parks/15697, Saint Joseph ,76.0,220.0,1059,"135 North Jane Street, Centreville, MI, 49032",41.92322,-85.52973,41.9243456,-85.5297504
+768,1043,Camp Withers Mobile Home Park,https://www.mhvillage.com/parks/15698, Saint Joseph ,,,1060,"15717 Withers Road, Constantine, MI, 49042",41.85222,-85.66766,41.8888623,-85.64930749999999
+769,1044,Midway Mobile Home Park,https://www.mhvillage.com/parks/15701, Saint Joseph ,,,1061,"920 West Chicago, Sturgis, MI, 49091",41.8426,-85.43596,41.79752329999999,-85.43169010000001
+770,1045,Rocky's Hide Away,https://www.mhvillage.com/parks/66109, Saint Joseph ,,,1062,"Born Street, Three Rivers, MI, 49093",41.97611,-85.63896,41.9256012,-85.7696045
+771,1046,Huron Shores Estates,https://www.mhvillage.com/parks/15584, Sanilac ,189.0,,1063,"144 Shoreline East, Port Sanilac, MI, 48469",43.45362,-82.55642,43.4593758,-82.54985719999999
+772,1047,Eagles Landing Estates,https://www.mhvillage.com/parks/15896, Sanilac ,350.0,348.0,1064,"2335 Peck Road, Croswell, MI, 48422",43.25701,-82.64868,43.2612171,-82.7144598
+773,1048,Lakeview Manufactured Home Community,https://www.mhvillage.com/parks/15646, Sanilac ,45.0,,1065,"5767 Main Street, Lexington, MI, 48450",43.2624,-82.53023,43.2625325,-82.5300839
+774,1049,Country Hill Pines,https://www.mhvillage.com/parks/15650, Sanilac ,97.0,400.0,1066,"3997 Peck Road, Croswell, MI, 48422",43.25701,-82.64868,43.2633457,-82.648957
+775,1050,Croswell Estates Mobile Home Park,https://www.mhvillage.com/parks/15645, Sanilac ,46.0,,1067,"20 Black River Road, Croswell, MI, 48422",43.27129,-82.63007,43.2712588,-82.6302688
+776,1051,Lexington North Shore Mobile Home Community,https://www.mhvillage.com/parks/15647, Sanilac ,228.0,489.0,1068,"5203 Main Street, Lexington, MI, 48450",43.25623,-82.53776,43.2755972,-82.5310207
+777,1052,Deckerville Estates,https://www.mhvillage.com/parks/15644, Sanilac ,43.0,,1069,"2451 Black River Street, Deckerville, MI, 48427",43.52664,-82.73705,43.5268269,-82.7368364
+778,1053,Huron Bay Resort,https://www.mhvillage.com/parks/15950, Sanilac ,60.0,,1070,"2545 South Lakeshore Drive, Applegate, MI, 48401",43.34503,-82.66988,43.3774121,-82.53598819999999
+779,1054,Mapleview Estates,https://www.mhvillage.com/parks/15901, Sanilac ,124.0,,1072,"7120 Maple View Circle, Brown City, MI, 48416",43.2269,-82.98934,43.20939389999999,-82.9827081
+780,1055,Sandpiper Estates Co-op,https://www.mhvillage.com/parks/15649, Sanilac ,90.0,,1073,"6103 Lakeshore Road, Lexington, MI, 48450",43.25623,-82.53776,43.24781400000001,-82.538423
+781,1056,Pine Terrace Estates,https://www.mhvillage.com/parks/15651, Sanilac ,56.0,,1074,"2236 Van Dyke Road, Marlette, MI, 48453",43.35645,-83.00265,43.349104,-83.08756609999999
+782,1057,Marlette Subdivision,https://www.mhvillage.com/parks/16045, Sanilac ,,,1075,"Lilac Dr, Marlette, MI, 48453",43.35645,-83.00265,43.3252014,-83.086128
+783,1058,Countryside Village,https://www.mhvillage.com/parks/381, Shiawassee ,359.0,445.0,1078,"4600 West Britton Road, Perry, MI, 48872",42.79956,-84.20716,42.83444679999999,-84.2506183
+784,1059,Candlewick Court,https://www.mhvillage.com/parks/383, Shiawassee ,211.0,,1077,"1800 Candlewick Drive, Owosso, MI, 48867",42.98324,-84.18965,42.9802527,-84.189666
+785,1060,Holiday Shores RV Resort,https://www.mhvillage.com/parks/64592, Shiawassee ,615.0,205.0,1079,"10915 East Goodall Road, Durand, MI, 48429",42.89658,-84.00732,42.9514919,-83.9521638
+786,1061,Lakeview Estates,https://www.mhvillage.com/parks/327, Shiawassee ,239.0,385.0,1080,"8499 East M-71, Durand, MI, 48429",42.89658,-84.00732,42.932379,-84.00045159999999
+787,1062,Leisure Lake,https://www.mhvillage.com/parks/15990, Shiawassee ,425.0,,1081,"10001 East Goodall Road, Durand, MI, 48429",42.89658,-84.00732,42.9516977,-83.9706643
+788,1063,Morrice Meadows,https://www.mhvillage.com/parks/15983, Shiawassee ,102.0,497.0,1083,"335 E. Third St, Morrice, MI, 48857",42.83946,-84.1719,42.83942039999999,-84.1718583
+789,1064,Woods & Fields Communities - West,https://www.mhvillage.com/parks/39603, Shiawassee ,72.0,300.0,1084,"2627 West M 21, Owosso, MI, 48867",42.9963,-84.17578,42.997403,-84.220737
+790,1065,Country Manor,https://www.mhvillage.com/parks/377, Shiawassee ,44.0,,1085,"5649 Vernon Road, Durand, MI, 48429",42.89658,-84.00732,42.9158058,-84.02716430000001
+791,1066,Northwoods Community,https://www.mhvillage.com/parks/15409, Shiawassee ,97.0,,1087,"2100 North Hintz Road, Owosso, MI, 48867",42.9963,-84.17578,43.0286621,-84.1476783
+792,1067,Woods and Fields Communities - East,https://www.mhvillage.com/parks/379, Shiawassee ,323.0,310.0,1088,"2450 Krouse Road, Owosso, MI, 48867",42.9963,-84.17578,42.9839013,-84.21675119999999
+793,1068,Pleasant Valley Trailer Court,https://www.mhvillage.com/parks/15867, Shiawassee ,,,1091,"1704 South M-52, Owosso, MI, 48867",42.9963,-84.17578,42.9729209,-84.1877306
+794,1069,Van's Mobile Home Park,https://www.mhvillage.com/parks/15407, Shiawassee ,,,1092,"9720 East Lansing Road, Durand, MI, 48429",42.89658,-84.00732,42.924475,-83.9736511
+795,1070,Creekside Manor,https://www.mhvillage.com/parks/467, Tuscola ,140.0,350.0,1093,"1655 South Reese Road, Reese, MI, 48757",43.48647,-83.6802,43.4611143,-83.69799239999999
+796,1071,Huntsville Mobile Home Park,https://www.mhvillage.com/parks/15637, Tuscola ,60.0,255.0,1095,"6451 Main Street, Cass City, MI, 48726",43.6078,-83.21029,43.590941,-83.17841
+797,1072,Pebble Creek,https://www.mhvillage.com/parks/15643, Tuscola ,128.0,,1096,"1145 Bradford, Reese, MI, 48757",43.48647,-83.6802,43.4770712,-83.6410799
+798,1073,Pine Crest Mobile Home Estates,https://www.mhvillage.com/parks/15641, Tuscola ,89.0,300.0,1097,"1771 Sunset Dr., Caro, MI, 48723",43.51691,-83.35852,43.5169165,-83.35852489999999
+799,1074,Riverview Park,https://www.mhvillage.com/parks/15640, Tuscola ,99.0,,1098,"985 Norma Drive, Caro, MI, 48723",43.49228,-83.38507,43.4707485,-83.4055812
+800,1075,Sugar Tree Estates,https://www.mhvillage.com/parks/31096, Tuscola ,207.0,,1099,"1347 Cambridge Lane, Caro, MI, 48723",43.50556,-83.38237,43.5055598,-83.3823682
+801,1076,Villageside Mobile Home Park,https://www.mhvillage.com/parks/15945, Tuscola ,16.0,,1100,"2378 North Thomas Road, Fairgrove, MI, 48733",43.53879,-83.57378,43.5337282,-83.54282169999999
+802,1077,Wood Valley Mobile Home Park,https://www.mhvillage.com/parks/15890, Tuscola ,141.0,270.0,1101,"5651 Hasco Road, Millington, MI, 48746",43.27934,-83.55401,43.3293897,-83.56393849999999
+803,1078,Vassar Estates,https://www.mhvillage.com/parks/488, Tuscola ,10.0,,1102,"5656 Freewald, Millington, MI, 48746",43.27934,-83.55401,43.3340509,-83.5670423
+804,1079,Depot Mobile Home Park,https://www.mhvillage.com/parks/16060, Van Buren ,100.0,280.0,1110,"Dunkley Avenue, South Haven, MI, 49090",42.41813,-86.22021,42.4082727,-86.2701739
+805,1080,Caro Mobile Estates,https://www.mhvillage.com/parks/15638, Tuscola ,,,1104,"165 - 3rd Street, Caro, MI, 48723",43.48033,-83.40468,43.4804649,-83.4047156
+806,1081,Ber-Wa-Ga-Na Campground,https://www.mhvillage.com/parks/73127, Tuscola ,,,1105,"2601 W Sanilac, Vassar, MI, 48768",43.36773,-83.56067,43.4080513,-83.4446579
+807,1082,Leo's Cabins Trailer Park,https://www.mhvillage.com/parks/490, Tuscola ,,,1106,"533 Goodrich Street, Vassar, MI, 48768",43.36773,-83.56067,43.3627762,-83.5792749
+808,1083,Walnut Trailer Park,https://www.mhvillage.com/parks/15642, Tuscola ,,,1107,"4118 South Seeger Street, Cass City, MI, 48726",43.6078,-83.21029,43.59229149999999,-83.1734731
+809,1084,Prospect Manor MHC,https://www.mhvillage.com/parks/15394, Van Buren ,52.0,365.0,1125,"1012 S.  Lagrave Street, Paw Paw, MI, 49079",42.20427,-85.87731,42.20427979999999,-85.8773587
+810,1085,Applewood Mobile Home Park,https://www.mhvillage.com/parks/31541, Van Buren ,30.0,330.0,1109,"53425 County Road 687, Hartford, MI, 49057",42.17197,-86.15671,42.2238279,-86.1637902
+811,1086,Lawrence Mobile Home Park,https://www.mhvillage.com/parks/15393, Van Buren ,60.0,,1111,"175 Corwin Road, Lawrence, MI, 49064",42.21484,-86.06538,42.2111662,-86.0535379
+812,1087,Meadowbrook Village,https://www.mhvillage.com/parks/15886, Van Buren ,50.0,,1112,"07120 - 68th Street, South Haven, MI, 49090",42.39284,-86.20709,42.394657,-86.2075048
+813,1088,Mitchell Brothers Mobile Home Park East,https://www.mhvillage.com/parks/15392, Van Buren ,49.0,,1113,"75641 16th Ave, South Haven, MI, 49090",42.41813,-86.22021,42.35951250000001,-86.28251879999999
+814,1089,Phelps Mobile Home Park,https://www.mhvillage.com/parks/15390, Van Buren ,35.0,,1114,"56630 - 89th Avenue, Decatur, MI, 49045",42.09674,-86.09552,42.0967224,-86.0954757
+815,1090,The Ravines,https://www.mhvillage.com/parks/15743, Van Buren ,106.0,375.0,1115,"73100 County Road 388, South Haven, MI, 49090",42.41813,-86.22021,42.4077047,-86.25419950000001
+816,1091,The Village View,https://www.mhvillage.com/parks/59383, Van Buren ,71.0,300.0,1116,"Becky Blvd, Paw Paw, MI, 49079",42.22974,-85.90916,42.2015188,-85.8847541
+817,1092,Three Mile Lake Trailer Park,https://www.mhvillage.com/parks/15383, Van Buren ,48.0,450.0,1117,"63381 - 41st Street, Paw Paw, MI, 49079",42.18771,-85.95,42.187697,-85.949963
+818,1093,West Point Hills,https://www.mhvillage.com/parks/15322, Van Buren ,377.0,385.0,1118,"53914 25th Street, Mattawan, MI, 49071",42.24458,-85.77246,42.2237208,-85.7938917
+819,1094,Singing Sands RV Park,https://www.mhvillage.com/parks/104917, Van Buren ,150.0,,1120,"262 74th St, South Haven, MI, 49090",42.43859,-86.26099,42.4384652,-86.26293749999999
+820,1095,Baseline Mobile Home Park,https://www.mhvillage.com/parks/15113, Van Buren ,75.0,,1121,"M-40 North, Gobles, MI, 49055",42.36507,-85.85603,42.3610474,-85.8789437
+821,1096,Viking River Mobile Home Park,https://www.mhvillage.com/parks/15386, Van Buren ,25.0,,1122,"63580 54th Avenue, Hartford, MI, 49057",42.22237,-86.16232,42.2224067,-86.1622314
+822,1097,Shady Brook Mobile Home Park,https://www.mhvillage.com/parks/15388, Van Buren ,20.0,,1123,"43910 30th St, Paw Paw, MI, 49079",42.26014,-85.84485,42.260143,-85.844854
+823,1098,Deal Mobile Home Village,https://www.mhvillage.com/parks/15395, Van Buren ,58.0,,1124,"24575 Pleasant Drive, Mattawan, MI, 49071",42.24458,-85.77246,42.2288189,-85.8020868
+824,1099,South Haven Manufactured Housing Community,https://www.mhvillage.com/parks/15387, Van Buren ,47.0,,1126,"73561 Chambers Street, South Haven, MI, 49090",42.41813,-86.22021,42.39889530000001,-86.2601408
+825,1100,Frosty Acres,https://www.mhvillage.com/parks/15880, Van Buren ,75.0,,1127,"Frosty Road, Lawton, MI, 49065",42.135,-85.84237,42.1441084,-85.7771131
+826,1101,East Point Hills,https://www.mhvillage.com/parks/16029, Van Buren ,,,1128,"28910 25th Street, Mattawan, MI, 49071",42.23536,-85.79491,42.2353588,-85.7949142
+827,1102,Wolf Lake Mobile Home Park,https://www.mhvillage.com/parks/15384, Van Buren ,41.0,,1129,"24054 M-43 Route #1, Mattawan, MI, 49071",42.24458,-85.77246,42.2960947,-85.78661579999999
+828,1110,Augusta Woods,https://www.mhvillage.com/parks/29550, Washtenaw ,398.0,563.0,1130,"8330 N. Brookston Drive, Willis, MI, 48191",42.1696,-83.54464,42.1712766,-83.54499469999999
+829,1111,Orchard Grove,https://www.mhvillage.com/parks/391, Washtenaw ,290.0,,1132,"2835 South Wagner Rd., Ann Arbor, MI, 48103",42.24536,-83.79625,42.24659020000001,-83.79633489999999
+830,1112,Royal Holiday,https://www.mhvillage.com/parks/15206, Wayne ,436.0,,1180,"39500 West Warren Road, Lot 110, Canton, MI, 48187",42.33048,-83.74797,42.3350626,-83.43168709999999
+831,1113,Arbor Woods,https://www.mhvillage.com/parks/15943, Washtenaw ,458.0,,1133,"1993 Arbor Woods Boulevard, Ypsilanti, MI, 48198",42.27038,-83.59978,42.27587740000001,-83.573878
+832,1114,Scio Farms,https://www.mhvillage.com/parks/15562, Washtenaw ,913.0,,1134,"6655 Jackson Road, Ann Arbor, MI, 48103",42.29152,-83.85969,42.2909626,-83.86287039999999
+833,1115,Lakeview ,https://www.mhvillage.com/parks/15304, Washtenaw ,392.0,410.0,1135,"9910 Geraldine Street, Ypsilanti, MI, 48197",42.19994,-83.56478,42.1995182,-83.56630369999999
+834,1116,Sylvan Crossing,https://www.mhvillage.com/parks/37563, Washtenaw ,138.0,485.0,1142,"23351 Redwood Drive, Chelsea, MI, 48118",42.29652,-84.04003,42.297844,-84.04132899999999
+835,1117,Northfield Estates,https://www.mhvillage.com/parks/15705, Washtenaw ,648.0,495.0,1138,"158 Emerald Circle, Whitmore Lake, MI, 48189",42.42484,-83.77513,42.425436,-83.775915
+836,1118,Arbor Meadows,https://www.mhvillage.com/parks/15711, Washtenaw ,409.0,759.0,1143,"5229 West Michigan Avenue, Ypsilanti, MI, 48197",42.20175,-83.62191,42.2060786,-83.6765162
+837,1119,Saline Meadows,https://www.mhvillage.com/parks/15426, Washtenaw ,148.0,450.0,1139,"6564 East Michigan Avenue Lot 39, Saline, MI, 48176",42.19529,-83.72082,42.19414219999999,-83.7210341
+838,1120,Coachville MHC,https://www.mhvillage.com/parks/312, Washtenaw ,121.0,,1148,"3423 Carpenter Road, Ypsilanti, MI, 48197",42.20175,-83.62191,42.2389797,-83.6793866
+839,1121,Hamburg Hills,https://www.mhvillage.com/parks/15417, Washtenaw ,152.0,420.0,1141,"7243 Sheldon Road, Whitmore Lake, MI, 48189",42.40808,-83.7945,42.4331423,-83.80405960000002
+840,1122,Coventry Woods,https://www.mhvillage.com/parks/15935, Washtenaw ,195.0,420.0,1144,"7243 Sheldon Road, Whitmore Lake, MI, 48189",42.40808,-83.7945,42.4331423,-83.80405960000002
+841,1123,Sunnyside Park,https://www.mhvillage.com/parks/15427, Washtenaw ,53.0,410.0,1145,"2740 Packard, Ann Arbor, MI, 48108",42.22341,-83.72918,42.2434851,-83.71299139999999
+842,1124,Swan Creek,https://www.mhvillage.com/parks/15931, Wayne ,304.0,,1173,"23379 Island Drive, New Boston, MI, 48164",42.13347,-83.39271,42.1330965,-83.4190076
+843,1125,Timberlands,https://www.mhvillage.com/parks/30335, Washtenaw ,184.0,950.0,1147,"3375 East Michigan Avenue, Ypsilanti, MI, 48198",42.27038,-83.59978,42.2570184,-83.54530319999999
+844,1126,Manchester Manor,https://www.mhvillage.com/parks/15918, Washtenaw ,116.0,325.0,1149,"101 Hibbard Street, Manchester, MI, 48158",42.16163,-84.02147,42.1560289,-84.0251632
+845,1127,Saline Mobile Home Park,https://www.mhvillage.com/parks/15428, Washtenaw ,81.0,,1150,"475 North Maple Road, Saline, MI, 48176",42.14439,-83.81735,42.1741775,-83.7757817
+846,1128,Village Estates,https://www.mhvillage.com/parks/15425, Washtenaw ,71.0,,1151,"2580 Holmes Road, Ypsilanti, MI, 48198",42.27038,-83.59978,42.2535167,-83.5599783
+847,1129,Westridge Mobile Home Park,https://www.mhvillage.com/parks/15320, Washtenaw ,373.0,470.0,1152,"1515 Ridge Road, Ypsilanti, MI, 48198",42.27038,-83.59978,42.2625624,-83.5548905
+848,1130,Whittaker Oaks,https://www.mhvillage.com/parks/31950, Washtenaw ,228.0,425.0,1153,"11333 Whittaker Road, Whittaker, MI, 48190",42.13194,-83.59457,42.1235657,-83.5987735
+849,1137,College Park Estates,https://www.mhvillage.com/parks/15047, Wayne ,230.0,,1155,"51074 Mott Road #243, Canton, MI, 48188",42.26249,-83.54209,42.2656393,-83.54311109999999
+850,1138,Sherwood Village,https://www.mhvillage.com/parks/274, Wayne ,385.0,,1157,"41275 Old Michigan, Canton, MI, 48188",42.27872,-83.44458,42.2759198,-83.4450717
+851,1139,Deerfield Estates,https://www.mhvillage.com/parks/15712, Wayne ,822.0,425.0,1158,"26211 Telegraph Road, Flat Rock, MI, 48134",42.10896,-83.29846,42.1142984,-83.2706704
+852,1140,Metro Commons,https://www.mhvillage.com/parks/15194, Wayne ,227.0,439.0,1160,"28745 Van Born Rd., Romulus, MI, 48174",42.26574,-83.3214,42.2652972,-83.3208174
+853,1141,Northville Crossing,https://www.mhvillage.com/parks/15975, Wayne ,756.0,600.0,1161,"9800 Bloomsbury Circle, Northville, MI, 48167",42.43107,-83.60844,42.4294964,-83.610896
+854,1142,West Village Estates,https://www.mhvillage.com/parks/15923, Wayne ,629.0,,1163,"7040 Shawnee, Romulus, MI, 48174",42.20291,-83.34416,42.2530136,-83.4210287
+855,1143,Academy / West Point,https://www.mhvillage.com/parks/15209, Wayne ,441.0,,1164,"41021 Old Michigan Ave, Canton, MI, 48188",42.27312,-83.44285,42.2760048,-83.44349129999999
+856,1144,Tela Valley Manufactured Home Community,https://www.mhvillage.com/parks/182, Wayne ,488.0,390.0,1179,"17707 Telegraph Road, Brownstown Township, MI, 48174",42.17717,-83.26191,42.17718989999999,-83.26191759999999
+857,1145,Holiday West,https://www.mhvillage.com/parks/15189, Wayne ,844.0,,1165,"50333 Willis Road, Belleville, MI, 48111",42.17526,-83.47532,42.1555057,-83.5280298
+858,1147,Plymouth Hills,https://www.mhvillage.com/parks/214, Wayne ,632.0,450.0,1167,"14150 D Drive, Plymouth, MI, 48170",42.36352,-83.53664,42.3823693,-83.53218129999999
+859,1148,Crestwood Estates,https://www.mhvillage.com/parks/15181, Wayne ,196.0,350.0,1169,"26235 West Warren Avenue, Dearborn Heights, MI, 48127",42.33439,-83.27389,42.3405678,-83.2977593
+860,1150,Woodhaven Place,https://www.mhvillage.com/parks/15211, Wayne ,220.0,487.0,1171,"23501 Van Horn Road, Woodhaven, MI, 48183",42.12796,-83.21699,42.1217064,-83.2606364
+861,1151,American Presidential Estates,https://www.mhvillage.com/parks/515, Wayne ,503.0,,1175,"6300 West Adams, Belleville, MI, 48111",42.17526,-83.47532,42.1997891,-83.5404429
+862,1152,Rawsonville Woods,https://www.mhvillage.com/parks/15057, Wayne ,536.0,488.0,1176,"10825 Rawsonville Road, Belleville, MI, 48111",42.13237,-83.54066,42.13131509999999,-83.53433749999999
+863,1155,North Huron Manufactured Housing Community,https://www.mhvillage.com/parks/15974, Wayne ,96.0,440.0,1178,"33151 Fort Road Site #6, Rockwood, MI, 48173",42.06536,-83.2496,42.0649458,-83.2485816
+864,1159,Capitol Hills,https://www.mhvillage.com/parks/514, Wayne ,503.0,460.0,1181,"6300 West Adams, Belleville, MI, 48111",42.17526,-83.47532,42.1997891,-83.5404429
