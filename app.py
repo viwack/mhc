@@ -10,12 +10,17 @@ import pathlib
 from pathlib import Path
 import matplotlib.pyplot as plt
 import seaborn as sns
+from matplotlib.ticker import FuncFormatter
+import matplotlib.colors as mcolors
 import json
 import pandas as pd
 import geopandas as gpd
 #from geopy.geocoders import Nominatim
 import numpy as np
 import io
+from datetime import date
+import plotly.express as px
+
 here = pathlib.Path(__file__)
 
 # Step 1: Geocoding the address using OpenStreetMap's Nominatim
@@ -102,7 +107,7 @@ def build_district_layers(upper=0):
                 'fillOpacity': 0.3
             },
             hover_style={
-                'color': 'orange', 
+                'color': 'orange',
                 'weight': 3
             }
         )
@@ -202,18 +207,24 @@ def build_marker_layer(LARA_C):
 
 
 def build_infographics1():
-    #def modify(string):
-    #    return string[0] + string[1:].lower()
-    # Calculating the total number of sites for each unique name
-    total_sites_by_name = lara_df[['County',"Total_#_Sites"]].dropna().groupby('County').sum()
-    total_sites_by_name = total_sites_by_name.sort_values(by="Total_#_Sites",ascending=False)
+    total_sites_by_name = lara_df[['County', "Total_#_Sites"]].dropna().groupby('County').sum()
+    total_sites_by_name = total_sites_by_name.sort_values(by="Total_#_Sites", ascending=False)
     totnum = 20
-    total_sites_by_name = total_sites_by_name.iloc[:totnum,:]
+    total_sites_by_name = total_sites_by_name.iloc[:totnum, :]
     sns.set_color_codes("pastel")
+
+    cmap = plt.get_cmap('viridis')
+    norm = mcolors.Normalize(vmin=total_sites_by_name["Total_#_Sites"].min(),
+                             vmax=total_sites_by_name["Total_#_Sites"].max())
+    colors = [cmap(norm(value)) for value in total_sites_by_name["Total_#_Sites"]]
+
     ax = sns.barplot(x="Total_#_Sites", y="County", data=total_sites_by_name,
-                color="b")
-    ax.set(xlabel="Total Number of Sites", title = 'Top 20 Michigan Counties by number of manufactured home sites (LARA)')
-    return
+                     palette=colors, edgecolor='w')
+    ax.set(xlabel="Total Number of Sites", title='Top 20 Michigan Counties by number of manufactured home sites (LARA)')
+
+    ax.xaxis.set_major_formatter(FuncFormatter(lambda x, _: f'{x:,.0f}'))
+
+    return ax
 
 def build_infographics2():
     total_sites_by_name = mhvillage_df[['County',"Average_rent"]].dropna().groupby('County').mean()
@@ -230,14 +241,25 @@ def build_infographics2():
     count0 = total_sites_by_name_count_20['count'][:totnum]
     y_pos = range(len(total_sites_by_name_count_20[:totnum]))
 
-    ax = sns.barplot(x="Average_rent", y="County", data=total_sites_by_name_count_20,
-                label="Average rent", color="b")
-    ax.set(xlabel='Average rent', title = "Average rent by county (MHVillage)")
-    count0 = total_sites_by_name_count_20['count']
+    totnum = -1
+    total_sites_by_name_count_20 = total_sites_by_name_count_20.iloc[:totnum, :].reset_index()
 
-    ax.bar_label(ax.containers[0], labels=[f'{c:.0f}' for c in count0],
-              label_type = 'center', color='w', fontsize=10)
-    return
+    # Create a color gradient based on the average rent
+    cmap = plt.get_cmap('viridis')  # Choose the colormap
+    norm = mcolors.Normalize(vmin=total_sites_by_name_count_20["Average_rent"].min(),
+                             vmax=total_sites_by_name_count_20["Average_rent"].max())
+    colors = [cmap(norm(value)) for value in total_sites_by_name_count_20["Average_rent"]]
+
+    ax = sns.barplot(x="Average_rent", y="County", data=total_sites_by_name_count_20,
+                     label="Average rent", palette=colors, edgecolor='w')
+    ax.set(xlabel='Average rent', title="Average rent by county (MHVillage)")
+
+    for i, bar in enumerate(ax.patches):
+        ax.text(bar.get_width(), bar.get_y() + bar.get_height() / 2,
+                f'{total_sites_by_name_count_20["count"][i]:.0f}',
+                ha='left', va='center', fontsize=10, color='black')
+
+    return ax
 
 
 basemaps = {
@@ -263,80 +285,107 @@ layernames = ["Marker MHVillage (name, address, # sites, source)",
 app_ui = ui.page_fluid(
     ui.HTML("""
         <hr>
-        <h1 style="text-align: center; margin-bottom: 10px;">Manufactured Housing Communities in Michigan</h1>
+        <h1 style="text-align: center; margin-bottom: 10px;"><b>Manufactured Housing Communities in Michigan</b></h1>
         <h2 style="text-align: center; margin-bottom: 40px;
         font-size: 18px; ">Project by <a href="https://www.mhaction.org"
-        target="_blank">MH Action</a> and
-        <a href="https://informs.engin.umich.edu/" target="_blank">INFORMS at the University of Michigan</a>
+        target="_blank"><i>MH Action</i></a> and
+        <a href="https://informs.engin.umich.edu/" target="_blank"><i>INFORMS at the University of Michigan</i></a>
         </h2>
     """),
     ui.row(
-        ui.column(7, output_widget("map", width="auto", height="600px")),
         ui.column(5,
                   ui.HTML("""
-                    <h2 style="text-align: left; font-size: 20px;">About</h2>
+                    <h2 style="text-align: left; font-size: 20px;"><b>About</b></h2>
                     <h3 style="font-size: 16px;">
-                    <ul>LARA data was obtained in January 2024 via an FOIA request.</ul>
-                    <ul>MHVillage data was scraped in December 2023.</ul>
-                    <h2 style="text-align: left; font-size: 20px;">Definitions</h2>
+                    This app is a visualization tool designed to highlight the distribution of manufactured housing communities across Michigan. LARA data was obtained in January 2024 from the Michigan <a href="https://www.michigan.gov/lara" target="_blank">Department of Licensing and Regulatory Affairs</a> via a Freedom of Information Act (<a href="https://michiganlara.govqa.us/WEBAPP/_rs/(S(yu3ftx4zmh34spiozdwicnsn))/supporthome.aspx" target="_blank">FOIA</a>) Request. <a href="https://www.mhvillage.com/Communities/CommunityReport.php" target="_blank">MHVillage</a> data was scraped in December 2023. For more information, visit <a href="https://www.mhaction.org" target="_blank">MHAction.org</a>.
+
+                    <br><br>
+                    <h2 style="text-align: left; font-size: 18px;">Definitions</h2>
                     <h3 style="font-size: 16px;">
                     <ul>
-                    <li>MHC: Manufactured Housing Community</li>
-                    <li>LARA: Michigan Department of Licensing and Regulatory Affairs. Michigan MHC's are required to register with LARA.</li>
-                    <li>MHVillage: Online marketplace for buying and selling manufactured homes.</li>
+                    <li><b>MHC:</b> Manufactured Housing Community</li>
+                    <li><b>LARA:</b> Michigan Department of Licensing and Regulatory Affairs. Michigan MHC's are required to register with LARA.</li>
+                    <li><b>MHVillage:</b> Online marketplace for buying and selling manufactured homes.</li>
                     </ul>
-
-                    </h3>
-                    <p style="font-size: 16px;">
-                    NOTE: Blue circles are MHC's reported by LARA, orange circles are reported by MHVillage.
-                    </p>
+                    <h2 style="font-size: 18px;"><br>Add Map Layers</h2>
                 """),
                   ui.input_select("basemap", "Choose a basemap:", choices=list(basemaps.keys())),
                   ui.input_selectize("layers", "Layers to visualize:", layernames, multiple=True, selected=None)
                   ),
-
+        ui.column(7, output_widget("map", width="auto", height="600px",),
+            ui.HTML("</h3> <p style='text-align: center; font-size: 16px;'><i> NOTE: Blue circles are MHC's reported by LARA, orange circles are reported by MHVillage.</i></p>"),),
+    ),
+    ui.HTML("<hr> <h1><b>Infographics</b></h1>"),
+    ui.row(
+        ui.column(10, ui.output_plot("infographics1")),
+        ui.column(2, ui.HTML("<br><br>Need other county data? Download the full table "), ui.download_link("download_info1", "here."))
     ),
 
-    ui.HTML("<hr> <h1>Infographics</h1>"),
-    ui.output_plot("infographics1"),
-    ui.output_plot("infographics2"),
+    ui.row(
+        ui.column(10, ui.output_plot("infographics2")),
+        ui.column(2, ui.HTML("<br><br>More rent values "), ui.download_link("download_info2", "here."))
+    ),
+
     ui.HTML("""
         <h2 style="text-align: left; margin-bottom: 10px;
-        font-size: 16px; ">Note: White numbers inside the bars signify number
-        of MHC's included in the average, based on availability of data on MHVillage. For example, the average rent across 14 MHC's located in Oakland County is approx. $575. </h2>
+        font-size: 16px; "><i>NOTE: Black numbers next to the bars represent the number of MHC's included in the calculated average, based on availability of data on MHVillage. For example, the average rent across the 14 reported MHC's in Oakland County is approximately $575.</i></h2>
     """),
 
-    ui.HTML("<hr> <h1>Tables</h1>"),
+    ui.HTML("<hr> <h1><b>Tables</b></h1>"),
     ui.row(
         ui.column(3,
             ui.input_selectize("main_category", "Select a geographic boundary:", choices=geographic_regions),
             ui.output_ui("sub_category_ui"),
             ui.input_selectize("datasource", "Select a source:", choices=[ 'LARA', 'MHVillage'], ),
         ),
-        ui.column(3,
-            ui.HTML("<br><br><br><br><br><br><br><br><br><br>"),
-            ui.HTML("""
-                <h1 style="text-align: center; margin-bottom: 2px;
-                font-size: 17px; ">Table Summary</h2>
-            """),
-            ui.output_table("site_list_summary")
-        )
+
     ),
     ui.row(
-        ui.column(7,ui.output_table("site_list")),
-        ui.column(5, ui.download_button("download_data", "Download table"))
+        ui.column(6,ui.output_table("site_list")),
+        ui.column(3, ui.HTML("""
+                <h1 style="text-align: left; margin-bottom: 1px;
+                font-size: 18px; "<br><br><b>Summary of Location Totals</b></h2>
+            """),
+            ui.output_table("site_list_summary"),
+            ui.download_button("download_data", "Download Table")
+        )
     ),
     #ui.tags.div(ui.output_html("district_map"))
+
     ui.HTML("""
         <hr>
-        <h1 style="text-align: left; margin-bottom: 10px;">Credits:</h1>
+        <h1 style="text-align: left; margin-bottom: 10px;"><b>Credits</b></h1>
         <h2 style="text-align: left; margin-bottom: 10px;
-        font-size: 18px; ">Project lead: Hessa Al-Thani, <br>
-        MH Action contact: Paul Terranova with support from Deb Campbell, <br>
-        Website development: Naichen Shi, <br>
-        Data scraping and collection: Bingqing Xiang,<br>
-        With Support from <a href="https://ginsberg.umich.edu/ctac"
-        target="_blank">CTAC</a> at University of Michigan.</h2>
+        font-size: 18px; ">Project lead: <a href="mailto:hessakh@umich.edu" target="_blank">Hessa Al-Thani</a><br>
+        MHAction contact: <a href="mailto:pterranova@mhaction.org" target="_blank">Paul Terranova</a> with support from <a href="mailto:dcampbell@ionia-mi.net" target="_blank">Deb Campbell</a> <br>
+        Website development: Naichen Shi <br>
+        Web design: Vicky Wang <br>
+        Data scraping and collection: Bingqing Xiang<br>
+        In partnership with the <a href="https://ginsberg.umich.edu/ctac"
+        target="_blank">Community Technical Assistance Collaborative</a> at the University of Michigan.</h2>
+    """),
+
+    ui.HTML("""
+        <hr>
+        <h1 style="text-align: left; margin-bottom: 10px;"><b>Reference Files</b></h1>
+    """),
+    ui.download_link("download_mhvillage", "Raw data: MHVillage with coordinates and legislative district .csv"),
+    ui.HTML("""
+        <br>
+    """),
+    ui.download_link("download_lara", "Raw data: LARA with coordinates and legislative distric .csv"),
+    ui.HTML("""
+        <br>
+    """),
+    ui.download_link("download_house_districts", "Michigan State House Districts 2021 .GeoJSON"),
+    ui.HTML("""
+        <br>
+    """),
+    ui.download_link("download_senate_districts", "Michigan State Senate Districts 2021 .GeoJSON"),
+
+    ui.HTML("""
+        <hr>
+        <h2 style="text-align: left; margin-bottom: 10px; font-size: 16px;">This is an updated version from June 2024. The original app can be found <a href="https://hessakh.shinyapps.io/michigan_housing1/" target="_blank">here.</a> Updated source code can be found on <a href="https://github.com/viwaumich/mhc" target="_blank">Git.</a> Please reach out to Vicky Wang (<a href="mailto:viwa@umich.edu" target="_blank">viwa@umich.edu</a>) with questions.</h2>
     """),
      #       <h2 style="text-align: left; margin-bottom: 10px;font-size: 18px;
       #  Source code can be found on
@@ -437,9 +486,42 @@ def server(input, output, session):
         build_infographics1()
 
     @output
+    @render.download(filename=lambda: f"all-mhc-counts.csv")
+    def download_info1():
+        df = lara_df[['County', 'Total_#_Sites']].dropna()
+        county_sites_df = df.groupby('County')['Total_#_Sites'].sum().reset_index()
+
+        county_sites_df = county_sites_df.rename(columns={'Total_#_Sites': 'Number of Sites'})
+
+        county_sites_df = county_sites_df.sort_values('Number of Sites', ascending=False)
+
+        output = io.StringIO()
+        county_sites_df.to_csv(output, index=False)
+        output.seek(0)
+
+        return output.getvalue(), ""
+
+    @output
     @render.plot
     def infographics2():
         build_infographics2()
+
+    @output
+    @render.download(filename=lambda: f"all-mhc-rents.csv")
+    def download_info2():
+        df = mhvillage_df[['County', 'Average_rent']].dropna()
+        county_sites_df = df.groupby('County')['Average_rent'].mean().reset_index()
+
+        county_sites_df = county_sites_df.rename(columns={'Average_rent': 'Average Rent'})
+
+        county_sites_df = county_sites_df.sort_values('Average Rent', ascending=False)
+        county_sites_df['Average Rent'] = county_sites_df['Average Rent'].round(2)
+
+        output = io.StringIO()
+        county_sites_df.to_csv(output, index=False)
+        output.seek(0)
+
+        return output.getvalue(), ""
 
     @reactive.Calc
     def reactive_site_list():
@@ -493,7 +575,8 @@ def server(input, output, session):
         return summary_df
 
     @output
-    @render.download
+    @render.download(filename=lambda: f"data-{date.today().isoformat()}-mhc.csv"
+    )
     def download_data():
         if input.datasource() == 'MHVillage':
             if input.main_category() == 'County':
@@ -532,14 +615,55 @@ def server(input, output, session):
             '# of Sites': [num_sites]
         })
 
-        # Convert DataFrame to CSV and return it
         output = io.StringIO()
         df.to_csv(output, index=False)
         summary_df.to_csv(output, index=False)
         output.seek(0)
-        return output.getvalue(), "text.csv"
 
+        return output.getvalue(), ""
 
+    @output
+    @render.download(filename=lambda: f"lara_with_coord_and_legislativedistrict.csv")
+    def download_mhvillage():
+        output = io.StringIO()
+        mhvillage_df.to_csv(output, index=False)
+        output.seek(0)
+        return output.getvalue(), ""
+
+    @output
+    @render.download(filename=lambda: f"MHVillageDec7_Legislative1.csv")
+    def download_mhvillage():
+        output = io.StringIO()
+        mhvillage_df.to_csv(output, index=False)
+        output.seek(0)
+        return output.getvalue(), ""
+
+    @output
+    @render.download(filename=lambda: f"LARA_with_coord_and_legislativedistrict1.csv")
+    def download_lara():
+        output = io.StringIO()
+        lara_df.to_csv(output, index=False)
+        output.seek(0)
+        return output.getvalue(), ""
+
+    @output
+    @render.download(filename=lambda: f"Michigan_State_House_Districts_2021.json")
+    def download_house_districts():
+        output = io.StringIO()
+        with open(here.parent / house_districts_geojson_path, 'r') as f:
+            output.write(f.read())
+        output.seek(0)
+        return output.getvalue(), ""
+
+    @output
+    @render.download(filename=lambda:
+    f"Michigan_State_Senate_Districts_2021.json")
+    def download_senate_districts():
+        output = io.StringIO()
+        with open(here.parent / senate_districts_geojson_path, 'r') as f:
+            output.write(f.read())
+        output.seek(0)
+        return output.getvalue(), ""
 
     @render.code
     def info():

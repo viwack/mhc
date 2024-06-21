@@ -1,0 +1,53 @@
+Scratch Paper
+
+
+
+def build_infographics1():
+    total_sites_by_name = lara_df[['County', "Total_#_Sites"]].dropna().groupby('County').sum()
+    total_sites_by_name = total_sites_by_name.sort_values(by="Total_#_Sites", ascending=False)
+    totnum = 20
+    total_sites_by_name = total_sites_by_name.iloc[:totnum, :]
+    sns.set_color_codes("pastel")
+
+    cmap = plt.get_cmap('plasma')
+    norm = mcolors.Normalize(vmin=total_sites_by_name["Total_#_Sites"].min(),
+                             vmax=total_sites_by_name["Total_#_Sites"].max())
+    colors = [cmap(norm(value)) for value in total_sites_by_name["Total_#_Sites"]]
+
+    ax = sns.barplot(x="Total_#_Sites", y="County", data=total_sites_by_name,
+                     palette=colors, edgecolor='w')
+    ax.set(xlabel="Total Number of Sites", title='Top 20 Michigan Counties by number of manufactured home sites (LARA)')
+
+    ax.xaxis.set_major_formatter(FuncFormatter(lambda x, _: f'{x:,.0f}'))
+
+    return ax
+
+
+
+def build_infographics1(lara_df):
+    total_sites_by_name = lara_df[['County', "Total_#_Sites"]].dropna().groupby('County').sum()
+    total_sites_by_name = total_sites_by_name.sort_values(by="Total_#_Sites", ascending=False).head(20)
+    
+    # Plotting with Plotly Express
+    fig = px.bar(total_sites_by_name, 
+                 x=total_sites_by_name["Total_#_Sites"], 
+                 y=total_sites_by_name.index, 
+                 orientation='h', # Horizontal bar chart
+                 title='Top 20 Michigan Counties by number of manufactured home sites (LARA)')
+    
+    # Update layout for a cleaner look
+    fig.update_layout(
+        xaxis_title="Total Number of Sites",
+        yaxis_title="County",
+        yaxis={'categoryorder':'total ascending'}, # Sorting yaxis in ascending order for better interpretation
+        xaxis=dict(tickformat=',') # Adding commas for x-axis tick labels
+    )
+    
+    # Adding color gradient by using the 'Total_#_Sites' for color intensity
+    fig.update_traces(marker_color=total_sites_by_name["Total_#_Sites"], marker_line_color='rgb(8,48,107)',
+                      marker_line_width=1.5, opacity=0.6)
+    
+    # Inverse the y-axis to have the highest value on top
+    fig.update_yaxes(autorange="reversed")
+
+    return fig
