@@ -1,2 +1,1 @@
 app.json filter=lfs diff=lfs merge=lfs -text
-*.json filter=lfs diff=lfs merge=lfs -text
