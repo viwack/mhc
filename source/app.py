@@ -12,6 +12,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.ticker import FuncFormatter
 import matplotlib.colors as mcolors
+from matplotlib.cm import viridis
+from matplotlib.colors import Normalize
 import json
 import pandas as pd
 import geopandas as gpd
@@ -227,40 +229,41 @@ def build_infographics1():
     return ax
 
 def build_infographics2():
-    total_sites_by_name = mhvillage_df[['County',"Average_rent"]].dropna().groupby('County').mean()
-    total_sites_by_name = total_sites_by_name.sort_values(by="Average_rent",ascending=True)
-    # Drop rows where 'second_column' is empty
-    df_clean = mhvillage_df[['County',"Average_rent"]].dropna()
-    county_counts = df_clean['County'].value_counts()
-    total_sites_by_name_count = pd.concat([total_sites_by_name,county_counts], axis=1)
-    total_sites_by_name_count_20 = total_sites_by_name_count.sort_values(by="count",ascending=False)
-    total_sites_by_name_count_20 = total_sites_by_name_count_20[:20].sort_values(by="Average_rent",ascending=False)
-    totnum = -1
+    valid_rent_df = mhvillage_df[mhvillage_df["Average_rent"].notna()]
 
-    county = total_sites_by_name_count_20[:totnum].index
-    count0 = total_sites_by_name_count_20['count'][:totnum]
-    y_pos = range(len(total_sites_by_name_count_20[:totnum]))
+    total_sites_by_name = valid_rent_df.groupby('County')['Average_rent'].mean()
 
-    totnum = -1
-    total_sites_by_name_count_20 = total_sites_by_name_count_20.iloc[:totnum, :].reset_index()
+    county_rent_counts = valid_rent_df['County'].value_counts()
 
-    # Create a color gradient based on the average rent
-    cmap = plt.get_cmap('viridis')  # Choose the colormap
-    norm = mcolors.Normalize(vmin=total_sites_by_name_count_20["Average_rent"].min(),
-                             vmax=total_sites_by_name_count_20["Average_rent"].max())
-    colors = [cmap(norm(value)) for value in total_sites_by_name_count_20["Average_rent"]]
+    total_sites_by_name_count = pd.concat([total_sites_by_name.rename('Average_rent'), county_rent_counts.rename('count')], axis=1).dropna()
 
-    ax = sns.barplot(x="Average_rent", y="County", data=total_sites_by_name_count_20,
-                     label="Average rent", palette=colors, edgecolor='w')
+    total_sites_by_name_count_20 = total_sites_by_name_count.sort_values(by="count", ascending=False).head(20)
+
+    total_sites_by_name_count_20 = total_sites_by_name_count_20.sort_values(by="Average_rent", ascending=False)
+
+    norm = Normalize(vmin=total_sites_by_name_count_20['Average_rent'].min(), vmax=total_sites_by_name_count_20['Average_rent'].max())
+
+    colors = viridis(norm(total_sites_by_name_count_20['Average_rent']))
+
+    fig, ax = plt.subplots()
+    sns.barplot(
+        x="Average_rent",
+        y="County",
+        data=total_sites_by_name_count_20,
+        label="Average rent",
+        palette=colors,  # Use the calculated colors
+        dodge=False
+    )
+
     ax.set(xlabel='Average rent', title="Average rent by county (MHVillage)")
 
-    for i, bar in enumerate(ax.patches):
-        ax.text(bar.get_width(), bar.get_y() + bar.get_height() / 2,
-                f'{total_sites_by_name_count_20["count"][i]:.0f}',
-                ha='left', va='center', fontsize=10, color='black')
+    for p, label in zip(ax.patches, total_sites_by_name_count_20['count']):
+        ax.text(p.get_width(),  # Set the horizontal position to be at the end of the bar
+                p.get_y() + p.get_height() / 2,  # Set the vertical position to be at the center of the bar
+                f'{label:.0f}',  # The label text
+                va='center')  # Vertical alignment is center
 
     return ax
-
 
 basemaps = {
   "OpenStreetMap": L.basemaps.OpenStreetMap.Mapnik,
