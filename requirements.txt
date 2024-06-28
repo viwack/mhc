@@ -1,9 +1,0 @@
-shiny
-shinywidgets
-pandas
-geopandas
-numpy
-ipyleaflet
-ipywidgets
-seaborn
-matplotlib

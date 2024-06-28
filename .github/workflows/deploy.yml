@@ -1,0 +1,53 @@
+name: Deploy Shinylive application
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install shinylive
+        run: pip install shinylive
+        # Note that you can also specify a version of shinylive, as in:
+        #   pip install shinylive==0.0.8
+
+      - name: Make shinylive deployment in docs/
+        run: shinylive export source docs
+
+      - name: Upload website artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: "docs/"
+
+
+  # After build job is finished, deploy the website to GitHub Pages
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

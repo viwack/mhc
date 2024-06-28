@@ -1,0 +1,15 @@
+shiny
+shinywidgets
+pandas
+geopandas
+numpy
+ipyleaflet
+ipywidgets
+seaborn
+matplotlib
+pathlib
+json
+numpy
+io
+datetime
+plotly
