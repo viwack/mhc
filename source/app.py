@@ -229,41 +229,31 @@ def build_infographics1():
     return ax
 
 def build_infographics2():
-    valid_rent_df = mhvillage_df[mhvillage_df["Average_rent"].notna()]
+    # Calculate average rent by county and sort
+    average_rent_by_county = mhvillage_df[['County', "Average_rent"]].dropna().groupby('County').mean()
+    average_rent_by_county = average_rent_by_county.sort_values(by="Average_rent", ascending=False)
 
-    total_sites_by_name = valid_rent_df.groupby('County')['Average_rent'].mean()
+    # Get counts of entries per county and rename the column for clarity
+    county_counts = mhvillage_df['County'].value_counts().rename('count')
 
-    county_rent_counts = valid_rent_df['County'].value_counts()
+    # Combine average rent and counts into one DataFrame
+    combined_df = pd.concat([average_rent_by_county, county_counts], axis=1).sort_values(by="count", ascending=False)
 
-    total_sites_by_name_count = pd.concat([total_sites_by_name.rename('Average_rent'), county_rent_counts.rename('count')], axis=1).dropna()
+    # Select the top 20 counties based on number of entries
+    combined_df_top20 = combined_df.head(20).sort_values(by="Average_rent", ascending=False)
 
-    total_sites_by_name_count_20 = total_sites_by_name_count.sort_values(by="count", ascending=False).head(20)
+    # Create the bar plot
+    ax = sns.barplot(x="Average_rent", y=combined_df_top20.index, data=combined_df_top20,
+                     color="orange", orient='h')
 
-    total_sites_by_name_count_20 = total_sites_by_name_count_20.sort_values(by="Average_rent", ascending=False)
+    # Add labels to each bar with the count of sites
+    ax.bar_label(ax.containers[0], labels=[f'{c:.0f}' for c in combined_df_top20['count']],
+                 label_type='center', color='black', fontsize=10)
 
-    norm = Normalize(vmin=total_sites_by_name_count_20['Average_rent'].min(), vmax=total_sites_by_name_count_20['Average_rent'].max())
+    # Set the labels and title of the plot
+    ax.set(xlabel='Average Rent', ylabel='County', title="Average Rent by County (MHVillage)")
 
-    colors = viridis(norm(total_sites_by_name_count_20['Average_rent']))
-
-    fig, ax = plt.subplots()
-    sns.barplot(
-        x="Average_rent",
-        y="County",
-        data=total_sites_by_name_count_20,
-        label="Average rent",
-        palette=colors,  # Use the calculated colors
-        dodge=False
-    )
-
-    ax.set(xlabel='Average rent', title="Average rent by county (MHVillage)")
-
-    for p, label in zip(ax.patches, total_sites_by_name_count_20['count']):
-        ax.text(p.get_width(),  # Set the horizontal position to be at the end of the bar
-                p.get_y() + p.get_height() / 2,  # Set the vertical position to be at the center of the bar
-                f'{label:.0f}',  # The label text
-                va='center')  # Vertical alignment is center
-
-    return ax
+    return ax.figure
 
 basemaps = {
   "OpenStreetMap": L.basemaps.OpenStreetMap.Mapnik,
