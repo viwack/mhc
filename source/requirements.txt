@@ -8,7 +8,6 @@ ipywidgets
 seaborn
 matplotlib
 pathlib
-json
 numpy
 io
 datetime
