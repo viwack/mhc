@@ -3,12 +3,4 @@ shinywidgets
 pandas
 geopandas
 numpy
-ipyleaflet
-ipywidgets
-seaborn
-matplotlib
-pathlib
-numpy
-io
-datetime
 plotly
