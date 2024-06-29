@@ -17,7 +17,6 @@ from matplotlib.colors import Normalize
 import json
 import pandas as pd
 import geopandas as gpd
-#from geopy.geocoders import Nominatim
 import numpy as np
 import io
 from datetime import date
@@ -222,8 +221,7 @@ def build_infographics1():
 
     ax.xaxis.set_major_formatter(FuncFormatter(lambda x, _: f'{x:,.0f}'))
 
-    ax.set_xticklabels(ax.get_xticklabels(), rotation=20)
-
+    plt.tight_layout()  # Adjust layout to make sure everything fits without overlapping
     return ax
 
 def build_infographics2():
