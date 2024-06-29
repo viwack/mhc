@@ -215,44 +215,38 @@ def build_infographics1():
     total_sites_by_name = total_sites_by_name.iloc[:totnum, :]
     sns.set_color_codes("pastel")
 
-    cmap = plt.get_cmap('viridis')
-    norm = mcolors.Normalize(vmin=total_sites_by_name["Total_#_Sites"].min(),
-                             vmax=total_sites_by_name["Total_#_Sites"].max())
-    colors = [cmap(norm(value)) for value in total_sites_by_name["Total_#_Sites"]]
+    ax = sns.barplot(x="Total_#_Sites", y=total_sites_by_name.index, data=total_sites_by_name,
+                     color='b', edgecolor='w')
 
-    ax = sns.barplot(x="Total_#_Sites", y="County", data=total_sites_by_name,
-                     palette=colors, edgecolor='w')
     ax.set(xlabel="Total Number of Sites", title='Top 20 Michigan Counties by number of manufactured home sites (LARA)')
 
     ax.xaxis.set_major_formatter(FuncFormatter(lambda x, _: f'{x:,.0f}'))
 
+    ax.set_xticklabels(ax.get_xticklabels(), rotation=20)
+
     return ax
 
 def build_infographics2():
-    # Calculate average rent by county and sort
     average_rent_by_county = mhvillage_df[['County', "Average_rent"]].dropna().groupby('County').mean()
     average_rent_by_county = average_rent_by_county.sort_values(by="Average_rent", ascending=False)
 
-    # Get counts of entries per county and rename the column for clarity
     county_counts = mhvillage_df['County'].value_counts().rename('count')
 
-    # Combine average rent and counts into one DataFrame
     combined_df = pd.concat([average_rent_by_county, county_counts], axis=1).sort_values(by="count", ascending=False)
 
-    # Select the top 20 counties based on number of entries
     combined_df_top20 = combined_df.head(20).sort_values(by="Average_rent", ascending=False)
 
-    # Create the bar plot
     ax = sns.barplot(x="Average_rent", y=combined_df_top20.index, data=combined_df_top20,
-                     color="orange", orient='h')
+                     color="b", orient='h')
 
-    # Add labels to each bar with the count of sites
+    # Move the labels to the end of the bars and add padding to push them outside the bars
     ax.bar_label(ax.containers[0], labels=[f'{c:.0f}' for c in combined_df_top20['count']],
-                 label_type='center', color='black', fontsize=10)
+                 label_type='edge', color='black', fontsize=10, padding=3)
 
-    # Set the labels and title of the plot
     ax.set(xlabel='Average Rent', ylabel='County', title="Average Rent by County (MHVillage)")
+    ax.set_xlim(0, 650)
 
+    plt.tight_layout()  # Adjust layout to make sure everything fits without overlapping
     return ax.figure
 
 basemaps = {
