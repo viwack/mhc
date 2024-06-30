@@ -19,6 +19,7 @@ import pandas as pd
 import geopandas as gpd
 import numpy as np
 import io
+import os
 from datetime import date
 import plotly.express as px
 
@@ -80,7 +81,6 @@ upper_layers = []
 lower_layers = []
 
 labels_df =  pd.DataFrame(range(1, 51), columns=['Numbers'])
-
 
 
 def build_district_layers(upper=0):
@@ -206,7 +206,6 @@ def build_marker_layer(LARA_C):
             mklist_lara.append(markeri)
     return
 
-
 def build_infographics1():
     total_sites_by_name = lara_df[['County', "Total_#_Sites"]].dropna().groupby('County').sum()
     total_sites_by_name = total_sites_by_name.sort_values(by="Total_#_Sites", ascending=False)
@@ -274,8 +273,7 @@ app_ui = ui.page_fluid(
         <h2 style="text-align: center; margin-bottom: 40px;
         font-size: 18px; ">Project by <a href="https://www.mhaction.org"
         target="_blank"><i>MH Action</i></a> and
-        <a href="https://informs.engin.umich.edu/" target="_blank"><i>INFORMS at the University of Michigan</i></a>
-        </h2>
+        the <a href="https://ginsberg.umich.edu/ctac" target="_blank"><i>Community Technical Assistance Collaborative</i></a> at the University of Michigan</h2>
     """),
     ui.row(
         ui.column(5,
@@ -313,7 +311,7 @@ app_ui = ui.page_fluid(
 
     ui.HTML("""
         <h2 style="text-align: left; margin-bottom: 10px;
-        font-size: 16px; "><i>NOTE: Black numbers next to the bars represent the number of MHC's included in the calculated average, based on availability of data on MHVillage. For example, the average rent across the 14 reported MHC's in Oakland County is approximately $575.</i></h2>
+        font-size: 16px; "><i>NOTE: Black numbers next to the bars represent the number of MHC's included in the calculated average, based on availability of data on MHVillage. For example, the average rent across the 22 reported MHC's in Oakland County is approximately $575.</i></h2>
     """),
 
     ui.HTML("<hr> <h1><b>Tables</b></h1>"),
@@ -346,8 +344,8 @@ app_ui = ui.page_fluid(
         Website development: Naichen Shi <br>
         Web design: Vicky Wang <br>
         Data scraping and collection: Bingqing Xiang<br>
-        In partnership with the <a href="https://ginsberg.umich.edu/ctac"
-        target="_blank">Community Technical Assistance Collaborative</a> at the University of Michigan.</h2>
+        In partnership with <a href="https://informs.engin.umich.edu/"
+        target="_blank">INFORMS</a> at the University of Michigan.</h2>
     """),
 
     ui.HTML("""
@@ -370,8 +368,14 @@ app_ui = ui.page_fluid(
 
     ui.HTML("""
         <hr>
-        <h2 style="text-align: left; margin-bottom: 10px; font-size: 16px;">This is an updated version from June 2024. The original app can be found <a href="https://hessakh.shinyapps.io/michigan_housing1/" target="_blank">here.</a> Updated source code can be found on <a href="https://github.com/viwaumich/mhc" target="_blank">Git.</a> Please reach out to Vicky Wang (<a href="mailto:viwa@umich.edu" target="_blank">viwa@umich.edu</a>) with questions.</h2>
     """),
+    #ui.row(
+    #    ui.column(4, ui.output_image("mhaction_logo"), align="center"), 
+    #    ui.column(4, ui.output_image("ctac_logo"), align="center"),
+    #),
+    ui.HTML("""
+        <h2 style="text-align: left; margin-bottom: 10px; font-size: 16px;">This is an updated version from June 2024. The original app can be found <a href="https://hessakh.shinyapps.io/michigan_housing1/" target="_blank">here.</a> Updated source code can be found on <a href="https://github.com/viwaumich/mhc" target="_blank">Git.</a> Please reach out to Vicky Wang (<a href="mailto:viwa@umich.edu" target="_blank">viwa@umich.edu</a>) with questions.</h2>
+        """),
      #       <h2 style="text-align: left; margin-bottom: 10px;font-size: 18px;
       #  Source code can be found on
        # <a href="https://github.com/soundsinteresting/Michigan_housing/" target="_blank">Git</a> </h2>
@@ -650,11 +654,21 @@ def server(input, output, session):
         output.seek(0)
         return output.getvalue(), ""
 
+    #@output
+    #@render.image
+    #def mhaction_logo():
+    #    filepath = "source/mhaction_logo.png"
+    #    return {"src": filepath, "width": "200px"}
+
+    #@output
+    #@render.image
+    #def ctac_logo():
+    #    filepath = "source/ctac_logo.png"
+    #    return {"src": filepath, "width": "200px"}
+
     @render.code
     def info():
         return str([type(hist.widget), type(hist.value)])
-
-
 
 #removed to run on shiny.io
 app = App(app_ui, server, debug = True)
