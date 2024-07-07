@@ -3,9 +3,10 @@ from shiny import reactive
 from shinywidgets import output_widget, render_widget
 #from shiny.express import render
 #from ipywidgets import Label
+from ipywidgets import HTML
 import ipyleaflet as L
 from ipywidgets import Layout
-from ipyleaflet import GeoJSON, LayersControl, WidgetControl, CircleMarker, LayerGroup
+from ipyleaflet import GeoJSON, LayersControl, WidgetControl, CircleMarker, LayerGroup, Marker, Popup, Circle
 import pathlib
 from pathlib import Path
 import matplotlib.pyplot as plt
@@ -224,27 +225,28 @@ def build_infographics1():
     return ax
 
 def build_infographics2():
-    average_rent_by_county = mhvillage_df[['County', "Average_rent"]].dropna().groupby('County').mean()
-    average_rent_by_county = average_rent_by_county.sort_values(by="Average_rent", ascending=False)
+    total_sites_by_name = mhvillage_df[['County',"Average_rent"]].dropna().groupby('County').mean()
+    total_sites_by_name = total_sites_by_name.sort_values(by="Average_rent",ascending=True)
+    # Drop rows where 'second_column' is empty
+    df_clean = mhvillage_df[['County',"Average_rent"]].dropna()
+    county_counts = df_clean['County'].value_counts()
+    total_sites_by_name_count = pd.concat([total_sites_by_name,county_counts], axis=1)
+    total_sites_by_name_count_20 = total_sites_by_name_count.sort_values(by="count",ascending=False)
+    total_sites_by_name_count_20 = total_sites_by_name_count_20[:20].sort_values(by="Average_rent",ascending=False)
+    totnum = -1
 
-    county_counts = mhvillage_df['County'].value_counts().rename('count')
+    county = total_sites_by_name_count_20[:totnum].index
+    count0 = total_sites_by_name_count_20['count'][:totnum]
+    y_pos = range(len(total_sites_by_name_count_20[:totnum]))
 
-    combined_df = pd.concat([average_rent_by_county, county_counts], axis=1).sort_values(by="count", ascending=False)
+    ax = sns.barplot(x="Average_rent", y="County", data=total_sites_by_name_count_20,
+                color="b")
+    ax.set(xlabel='Average rent', title = "Average rent by county (MHVillage)")
+    count0 = total_sites_by_name_count_20['count']
 
-    combined_df_top20 = combined_df.head(20).sort_values(by="Average_rent", ascending=False)
-
-    ax = sns.barplot(x="Average_rent", y=combined_df_top20.index, data=combined_df_top20,
-                     color="b", orient='h')
-
-    # Move the labels to the end of the bars and add padding to push them outside the bars
-    ax.bar_label(ax.containers[0], labels=[f'{c:.0f}' for c in combined_df_top20['count']],
-                 label_type='edge', color='black', fontsize=10, padding=3)
-
-    ax.set(xlabel='Average Rent', ylabel='County', title="Average Rent by County (MHVillage)")
-    ax.set_xlim(0, 650)
-
-    plt.tight_layout()  # Adjust layout to make sure everything fits without overlapping
-    return ax.figure
+    ax.bar_label(ax.containers[0], labels=[f'{c:.0f}' for c in count0],
+              label_type = 'center', color='w', fontsize=10)
+    return
 
 basemaps = {
   "OpenStreetMap": L.basemaps.OpenStreetMap.Mapnik,
@@ -339,7 +341,7 @@ app_ui = ui.page_fluid(
         <hr>
         <h1 style="text-align: left; margin-bottom: 10px;"><b>Credits</b></h1>
         <h2 style="text-align: left; margin-bottom: 10px;
-        font-size: 18px; ">Project lead: <a href="mailto:hessakh@umich.edu" target="_blank">Hessa Al-Thani</a><br>
+        font-size: 16px; ">Project lead: <a href="mailto:hessakh@umich.edu" target="_blank">Hessa Al-Thani</a><br>
         MHAction contact: <a href="mailto:pterranova@mhaction.org" target="_blank">Paul Terranova</a> with support from <a href="mailto:dcampbell@ionia-mi.net" target="_blank">Deb Campbell</a> <br>
         Website development: Naichen Shi <br>
         Web design: Vicky Wang <br>
@@ -374,7 +376,7 @@ app_ui = ui.page_fluid(
     #    ui.column(4, ui.output_image("ctac_logo"), align="center"),
     #),
     ui.HTML("""
-        <h2 style="text-align: left; margin-bottom: 10px; font-size: 16px;">This is an updated version from June 2024. The original app can be found <a href="https://hessakh.shinyapps.io/michigan_housing1/" target="_blank">here.</a> Updated source code can be found on <a href="https://github.com/viwaumich/mhc" target="_blank">Git.</a> Please reach out to Vicky Wang (<a href="mailto:viwa@umich.edu" target="_blank">viwa@umich.edu</a>) with questions.</h2>
+        <h2 style="text-align: left; margin-bottom: 10px; font-size: 14px;">This is an updated version from June 2024. The original app can be found <a href="https://hessakh.shinyapps.io/michigan_housing1/" target="_blank">here.</a> Updated source code can be found on <a href="https://github.com/viwaumich/mhc" target="_blank">Git.</a> Please reach out to Vicky Wang (<a href="mailto:viwa@umich.edu" target="_blank">viwa@umich.edu</a>) with questions.</h2>
         """),
      #       <h2 style="text-align: left; margin-bottom: 10px;font-size: 18px;
       #  Source code can be found on
@@ -498,16 +500,21 @@ def server(input, output, session):
     @output
     @render.download(filename=lambda: f"all-mhc-rents.csv")
     def download_info2():
-        df = mhvillage_df[['County', 'Average_rent']].dropna()
-        county_sites_df = df.groupby('County')['Average_rent'].mean().reset_index()
+        total_sites_by_name = mhvillage_df[['County',"Average_rent"]].dropna().groupby('County').mean()
+        total_sites_by_name = total_sites_by_name.sort_values(by="Average_rent",ascending=True)
+        df_clean = mhvillage_df[['County',"Average_rent"]].dropna()
+        county_counts = df_clean['County'].value_counts()
+        total_sites_by_name_count = pd.concat([total_sites_by_name,county_counts], axis=1)
+        total_sites_by_name_count_20 = total_sites_by_name_count.sort_values(by="count",ascending=False)
+        total_sites_by_name_count_20 = total_sites_by_name_count_20[:20].sort_values(by="Average_rent",ascending=False)
+        totnum = -1
 
-        county_sites_df = county_sites_df.rename(columns={'Average_rent': 'Average Rent'})
-
-        county_sites_df = county_sites_df.sort_values('Average Rent', ascending=False)
-        county_sites_df['Average Rent'] = county_sites_df['Average Rent'].round(2)
+        county = total_sites_by_name_count_20[:totnum].index
+        count0 = total_sites_by_name_count_20['count'][:totnum]
+        y_pos = range(len(total_sites_by_name_count_20[:totnum]))
 
         output = io.StringIO()
-        county_sites_df.to_csv(output, index=False)
+        total_sites_by_name_count.to_csv(output, index=False)
         output.seek(0)
 
         return output.getvalue(), ""
@@ -517,29 +524,33 @@ def server(input, output, session):
         if input.datasource() == 'MHVillage':
             if input.main_category() == 'County':
                 df = (mhvillage_df[mhvillage_df['County'] == input.sub_category()]
-                      [['Name','Sites','FullstreetAddress']])
+                  [['Name', 'Sites', 'FullstreetAddress']])
             else:
                 df = (mhvillage_df[mhvillage_df[input.main_category()] == int(float(input.sub_category()))]
-                      [['Name','Sites','FullstreetAddress']])
+                  [['Name', 'Sites', 'FullstreetAddress']])
         else:
             if input.main_category() == 'County':
                 df = (lara_df[lara_df[input.main_category()] == input.sub_category()]
-                      [['Owner / Community_Name','Total_#_Sites','Location_Address']])
+                  [['DBA', 'Owner / Community_Name', 'Total_#_Sites', 'Location_Address']])
             else:
                 house_district = int(float(input.sub_category()))
                 df = (lara_df[lara_df[input.main_category()] == house_district]
-                      [['Owner / Community_Name','Total_#_Sites','Location_Address']])
+                  [['DBA', 'Owner / Community_Name', 'Total_#_Sites', 'Location_Address']])
 
-        # Clean up column names by removing underscores
-        df = df.rename(columns=lambda x: x.replace('_', ' '))
-        df = df.rename(columns=lambda x: x.replace('Owner / Community Name', 'Owner/Community Name'))
-        df = df.rename(columns=lambda x: x.replace('Total_#_Sites', 'Number of Sites'))
-        df = df.rename(columns=lambda x: x.replace('FullstreetAddress', 'Address'))
+        # Use 'DBA' if it exists, otherwise, fall back to 'Owner / Community_Name'
+            df['Name'] = df.apply(lambda x: x['DBA'] if pd.notnull(x['DBA']) and x['DBA'].strip() != '' else x['Owner / Community_Name'], axis=1)
 
-        # Further processing if necessary
-        df = df.dropna().astype({'Sites': int} if 'Sites' in df.columns else {})
-        df = df.sort_values('Sites' if 'Sites' in df.columns else 'Total # Sites', ascending=False)
+        # Drop the now redundant 'DBA' and 'Owner / Community_Name' columns
+            df = df.drop(columns=['DBA', 'Owner / Community_Name'])
 
+    # Clean up column names by removing underscores and renaming
+        df.columns = df.columns.str.replace('_', ' ')
+        df = df.rename(columns={'Total # Sites': 'Number of Sites', 'Location Address': 'Address'})
+        df = df[['Name', 'Address', 'Number of Sites']]
+
+    # Further processing if necessary
+        df = df.dropna(subset=['Number of Sites']).astype({'Number of Sites': int})
+        df = df.sort_values('Number of Sites', ascending=False)
 
         return df
 
@@ -552,7 +563,7 @@ def server(input, output, session):
     @render.table
     def site_list_summary():
         df = reactive_site_list()  # Access the reactive value which is always up to date
-        site_count_column = 'Sites' if 'Sites' in df.columns else 'Total # Sites'
+        site_count_column = 'Sites' if 'Sites' in df.columns else 'Number of Sites'
 
         num_mhcs = len(df)
         num_sites = pd.to_numeric(df[site_count_column], errors='coerce').sum()
