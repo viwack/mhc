@@ -5,7 +5,7 @@ from shinywidgets import output_widget, render_widget
 #from ipywidgets import Label
 from ipywidgets import HTML
 import ipyleaflet as L
-from ipywidgets import Layout
+from ipywidgets import Layout, Label
 from ipyleaflet import GeoJSON, LayersControl, WidgetControl, CircleMarker, LayerGroup, Marker, Popup, Circle
 import pathlib
 from pathlib import Path
@@ -23,6 +23,9 @@ import io
 import os
 from datetime import date
 import plotly.express as px
+from branca.colormap import linear
+from shapely.geometry import shape
+
 
 here = pathlib.Path(__file__)
 
@@ -83,41 +86,57 @@ lower_layers = []
 
 labels_df =  pd.DataFrame(range(1, 51), columns=['Numbers'])
 
+def find_geojson_centroid(geojson_feature):
+    geom = shape(geojson_feature['geometry'])
+    return geom.centroid.coords[0]  # Return as tuple (lon, lat)
+
 
 def build_district_layers(upper=0):
+    layer_group = LayerGroup()
+    label = Label(layout=Layout(width="100%"))
+
     if upper == 1:
-        if len(upper_layers) > 0:
-            return
-        #tracts_shapefile = gpd.read_file(path2folder+"/cb_2022_26_sldu_500k.shp")
         color = 'green'
         geojson_path = senate_districts_geojson_path
-        with open(here.parent / geojson_path, 'r') as f:
-            michigan_districts_data = json.load(f)
     else:
-        if len(lower_layers) > 0:
-            return
         color = 'purple'
         geojson_path = house_districts_geojson_path
-        with open(here.parent / geojson_path, 'r') as f:
-            michigan_districts_data = json.load(f)
-    layerk =  L.GeoJSON(
-            data=michigan_districts_data,
-            name='Michigan House Legislative Districts',
-            style={
-                'color': color,
-                'weight': 1,
-                'fillOpacity': 0.3
-            },
-            hover_style={
-                'color': 'orange',
-                'weight': 3
-            }
-        )
+
+    with open(here.parent / geojson_path, 'r') as f:
+        michigan_districts_data = json.load(f)
+
+    def hover_handler(event=None, feature=None, id=None, properties=None):
+        if "NAME" in properties:
+            label.value = properties["NAME"]
+        else:
+            label.value = ''
+
+
+    layerk = GeoJSON(
+        data=michigan_districts_data,
+        name=f'Michigan {"Senate" if upper == 1 else "House"} Legislative Districts',
+        style={
+            'color': color,
+            'weight': 1,
+            'fillOpacity': 0.3
+        },
+        hover_style={
+            'color': 'orange',
+            'weight': 3
+        }
+    )
+    layerk.on_hover(hover_handler)
+
+    layer_group.add_layer(layerk)  # Add the GeoJSON to the layer group
+
+    # Add the entire group of layers to the upper or lower layers list
     if upper == 1:
-        upper_layers.append(layerk)
+        upper_layers.append(layer_group)
     else:
-        lower_layers.append(layerk)
-    return
+        lower_layers.append(layer_group)
+
+    return layer_group
+
 
 
 def build_marker_layer(LARA_C):
@@ -282,7 +301,7 @@ app_ui = ui.page_fluid(
                   ui.HTML("""
                     <h2 style="text-align: left; font-size: 20px;"><b>About</b></h2>
                     <h3 style="font-size: 16px;">
-                    This app is a visualization tool designed to highlight the distribution of manufactured housing communities across Michigan. LARA data was obtained in January 2024 from the Michigan <a href="https://www.michigan.gov/lara" target="_blank">Department of Licensing and Regulatory Affairs</a> via a Freedom of Information Act (<a href="https://michiganlara.govqa.us/WEBAPP/_rs/(S(yu3ftx4zmh34spiozdwicnsn))/supporthome.aspx" target="_blank">FOIA</a>) Request. <a href="https://www.mhvillage.com/Communities/CommunityReport.php" target="_blank">MHVillage</a> data was scraped in December 2023. For more information, visit <a href="https://www.mhaction.org" target="_blank">MHAction.org</a>.
+                    This app is a visualization tool designed to highlight the distribution of manufactured housing communities across Michigan. LARA data was obtained in January 2023 from the Michigan <a href="https://www.michigan.gov/lara" target="_blank">Department of Licensing and Regulatory Affairs</a> via a Freedom of Information Act (<a href="https://michiganlara.govqa.us/WEBAPP/_rs/(S(yu3ftx4zmh34spiozdwicnsn))/supporthome.aspx" target="_blank">FOIA</a>) Request. <a href="https://www.mhvillage.com/Communities/CommunityReport.php" target="_blank">MHVillage</a> data was scraped in December 2023. For more information, visit <a href="https://www.mhaction.org" target="_blank">MHAction.org</a>.
 
                     <br><br>
                     <h2 style="text-align: left; font-size: 18px;">Definitions</h2>
@@ -500,18 +519,18 @@ def server(input, output, session):
     @output
     @render.download(filename=lambda: f"all-mhc-rents.csv")
     def download_info2():
-        total_sites_by_name = mhvillage_df[['County',"Average_rent"]].dropna().groupby('County').mean()
-        total_sites_by_name = total_sites_by_name.sort_values(by="Average_rent",ascending=True)
-        df_clean = mhvillage_df[['County',"Average_rent"]].dropna()
-        county_counts = df_clean['County'].value_counts()
-        total_sites_by_name_count = pd.concat([total_sites_by_name,county_counts], axis=1)
-        total_sites_by_name_count_20 = total_sites_by_name_count.sort_values(by="count",ascending=False)
-        total_sites_by_name_count_20 = total_sites_by_name_count_20[:20].sort_values(by="Average_rent",ascending=False)
-        totnum = -1
+        total_sites_by_name = mhvillage_df.groupby('County')['Average_rent'].mean().dropna()
 
-        county = total_sites_by_name_count_20[:totnum].index
-        count0 = total_sites_by_name_count_20['count'][:totnum]
-        y_pos = range(len(total_sites_by_name_count_20[:totnum]))
+        total_sites_by_name = total_sites_by_name.sort_values(ascending=True)
+
+        total_sites_by_name = total_sites_by_name.to_frame().reset_index()
+        df_clean = mhvillage_df[['County', "Average_rent"]].dropna()
+        county_counts = df_clean['County'].value_counts()
+        county_counts = county_counts.to_frame().reset_index()
+
+        total_sites_by_name_count = pd.merge(total_sites_by_name, county_counts, on='County')
+
+        total_sites_by_name_count = total_sites_by_name_count.sort_values(by="count", ascending=False)
 
         output = io.StringIO()
         total_sites_by_name_count.to_csv(output, index=False)
