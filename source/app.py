@@ -244,19 +244,12 @@ def build_infographics1():
     return ax
 
 def build_infographics2():
-    total_sites_by_name = mhvillage_df.groupby('County')['Average_rent'].mean().dropna()
-
-    total_sites_by_name = total_sites_by_name.sort_values(ascending=True)
-
-    total_sites_by_name = total_sites_by_name.to_frame().reset_index()
-    df_clean = mhvillage_df[['County', "Average_rent"]].dropna()
+    total_sites_by_name = mhvillage_df[['County',"Average_rent"]].dropna().groupby('County').mean()
+    total_sites_by_name = total_sites_by_name.sort_values(by="Average_rent",ascending=True)
+    # Drop rows where 'second_column' is empty
+    df_clean = mhvillage_df[['County',"Average_rent"]].dropna()
     county_counts = df_clean['County'].value_counts()
-    county_counts = county_counts.to_frame().reset_index()
-
-    total_sites_by_name_count = pd.merge(total_sites_by_name, county_counts, on='County')
-
-    total_sites_by_name_count = total_sites_by_name_count.sort_values(by="count", ascending=False)
-
+    total_sites_by_name_count = pd.concat([total_sites_by_name,county_counts], axis=1)
     total_sites_by_name_count_20 = total_sites_by_name_count.sort_values(by="count",ascending=False)
     total_sites_by_name_count_20 = total_sites_by_name_count_20[:20].sort_values(by="Average_rent",ascending=False)
     totnum = -1
@@ -266,7 +259,7 @@ def build_infographics2():
     y_pos = range(len(total_sites_by_name_count_20[:totnum]))
 
     ax = sns.barplot(x="Average_rent", y="County", data=total_sites_by_name_count_20,
-                color="b")
+                label="Average rent", color="b")
     ax.set(xlabel='Average rent', title = "Average rent by county (MHVillage)")
     count0 = total_sites_by_name_count_20['count']
 
@@ -334,8 +327,8 @@ app_ui = ui.page_fluid(
 
     ui.row(
         ui.column(10, ui.output_plot("infographics2")),
-        ui.column(2, ui.HTML("<br><br>More rent values "), ui.download_link("download_info2", "here."))
-    ),
+        ui.column(2, ui.HTML("<br><br>More rent values "), ui.HTML("""<a href="/all-mhc-rents.csv" download>here.</a>""")
+        )),
 
     ui.HTML("""
         <h2 style="text-align: left; margin-bottom: 10px;
@@ -523,27 +516,7 @@ def server(input, output, session):
     def infographics2():
         build_infographics2()
 
-    @output
-    @render.download(filename=lambda: f"all-mhc-rents.csv")
-    def download_info2():
-        total_sites_by_name = mhvillage_df.groupby('County')['Average_rent'].mean().dropna()
 
-        total_sites_by_name = total_sites_by_name.sort_values(ascending=True)
-
-        total_sites_by_name = total_sites_by_name.to_frame().reset_index()
-        df_clean = mhvillage_df[['County', "Average_rent"]].dropna()
-        county_counts = df_clean['County'].value_counts()
-        county_counts = county_counts.to_frame().reset_index()
-
-        total_sites_by_name_count = pd.merge(total_sites_by_name, county_counts, on='County')
-
-        total_sites_by_name_count = total_sites_by_name_count.sort_values(by="count", ascending=False)
-
-        output = io.StringIO()
-        total_sites_by_name_count.to_csv(output, index=False)
-        output.seek(0)
-
-        return output.getvalue(), ""
 
     @reactive.Calc
     def reactive_site_list():
