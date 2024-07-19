@@ -6,7 +6,7 @@ from shinywidgets import output_widget, render_widget
 from ipywidgets import HTML
 import ipyleaflet as L
 from ipywidgets import Layout, Label
-from ipyleaflet import GeoJSON, LayersControl, WidgetControl, CircleMarker, LayerGroup, Marker, Popup, Circle
+from ipyleaflet import GeoJSON, LayersControl, WidgetControl, CircleMarker, LayerGroup, Marker, Popup, Circle, AwesomeIcon
 import pathlib
 from pathlib import Path
 import matplotlib.pyplot as plt
@@ -90,7 +90,6 @@ def find_geojson_centroid(geojson_feature):
     geom = shape(geojson_feature['geometry'])
     return geom.centroid.coords[0]  # Return as tuple (lon, lat)
 
-
 def build_district_layers(upper=0):
     layer_group = LayerGroup()
     label = Label(layout=Layout(width="100%"))
@@ -138,15 +137,14 @@ def build_district_layers(upper=0):
     return layer_group
 
 
-
 def build_marker_layer(LARA_C):
     #if len(circlelist) >0  and len(mklist)>0:
     #    return
     leng = 0
-    if not LARA_C:
-        if len(circlelist_mh) >0  and len(mklist_mh)>0:
+    if not LARA_C: #if LARA_C is 0, then we are working with MHVillage data
+        if len(circlelist_mh) >0  and len(mklist_mh)>0: #if the circlelist and mklist are not empty, then we have already built the markers
             return
-        for ind in range(len(mhvillage_df)):
+        for ind in range(len(mhvillage_df)): #iterate through the rows of the dataframe
             lon = float(mhvillage_df['longitude'].iloc[ind])
             lat = float(mhvillage_df['latitude'].iloc[ind])
 
@@ -154,34 +152,56 @@ def build_marker_layer(LARA_C):
             if pd.isna(lara_df['House district'].iloc[ind]) or pd.isna(lara_df['Senate district'].iloc[ind]):
                 house_lara = "missing"
                 senate_lara = "missing"
-            else:
+            else: #if the house or senate district is not missing, then round the value
                 house_lara = round(lara_df['House district'].iloc[ind])
                 senate_lara = round(lara_df['Senate district'].iloc[ind])
             if pd.isna(mhvillage_df['House district'].iloc[ind]) or pd.isna(mhvillage_df['Senate district'].iloc[ind]):
                 house_mh = "missing"
                 senate_mh = "missing"
-            else:
+            else: #if the house or senate district is not missing, then round the value
                 house_mh = round(mhvillage_df['House district'].iloc[ind])
                 senate_mh = round(mhvillage_df['Senate district'].iloc[ind])
 
             if pd.isna(mhvillage_df['Sites'].iloc[ind]):
                 mhsites = "missing"
             else:
-                mhsites = round(mhvillage_df['Sites'].iloc[ind])
+                mhsites = round(mhvillage_df['Sites'].iloc[ind]) #round the number of sites
     ########Make markers
-            markeri = L.Marker(
+            icon1 = AwesomeIcon(
+                name='home',
+                marker_color='green',
+                icon_color='black',
+                spin=False
+            )
+
+            popup_content = HTML()
+            popup_content.value = (
+                f"Name: {mhvillage_df['Name'].iloc[ind]}<br>"
+                f"Sites: {mhsites}<br>"
+                f"House district: {house_mh}<br>"
+                f"Senate district: {senate_mh}<br>"
+                f"Source: MHVillage"
+            )
+
+            markeri = L.Marker( #create a marker for each location of MHVillage data
+                icon=icon1,
                 location=(lat,lon),
                 draggable=False,
-                title=str(mhvillage_df['Name'].iloc[ind])+
-                ' , number of sites: '+str(mhsites)+
-                ' , average rent: '+str(mhvillage_df['Average_rent'].iloc[ind])+
-                ' , House district: '+str(house_mh)+
-                ' , Senate district: '+str(senate_mh)+
-                ' , url: %s'%str(mhvillage_df['Url'].iloc[ind]) +
-                ' , MHVillage')
-            circleMHi = L.Circle(location=(lat,lon), radius=1, color="orange", fill_color= "orange")
+                )
+            circleMHi = L.Circle(location=(lat,lon),
+                                 radius=1,
+                                 color="orange",
+                                 fill_color= "orange")
+            popup = L.Popup(location=(lat,lon),
+                            child=popup_content,
+                            auto_close=False,
+                            close_button=False,
+                            close_on_escape_key=False,
+                            close_on_click=False)
             circlelist_mh.append(circleMHi)
-            mklist_mh.append(markeri) 
+            mklist_mh.append(popup)
+            mklist_mh.append(markeri)
+            markeri.popup = popup_content
 
     else:
         if len(circlelist_lara) >0  and len(mklist_lara)>0:
@@ -207,7 +227,14 @@ def build_marker_layer(LARA_C):
             if lon == 0 and lat == 0:
                 continue
             try:
+                icon2 = AwesomeIcon(
+                name='home',
+                marker_color='blue',
+                icon_color='black',
+                spin=False
+            )
                 markeri = L.Marker(
+                    icon=icon2,
                     location=(lat,lon),
                     draggable=False,
                     title=str(lara_df['Owner / Community_Name'].iloc[ind])+
@@ -549,9 +576,18 @@ def server(input, output, session):
             if input.main_category() == 'County':
                 df = (mhvillage_df[mhvillage_df['County'] == input.sub_category()]
                   [['Name', 'Sites', 'FullstreetAddress']])
+                df = df.rename(columns={'Sites': 'Number of Sites', 'FullstreetAddress': 'Address'})
+                df = df[['Name', 'Address', 'Number of Sites']]
+                df = df.dropna(subset=['Number of Sites']).astype({'Number of Sites': int})
+                df = df.sort_values('Number of Sites', ascending=False)
             else:
                 df = (mhvillage_df[mhvillage_df[input.main_category()] == int(float(input.sub_category()))]
                   [['Name', 'Sites', 'FullstreetAddress']])
+                df = df.rename(columns={'Sites': 'Number of Sites', 'FullstreetAddress': 'Address'})
+                df = df[['Name', 'Address', 'Number of Sites']]
+                df = df.dropna(subset=['Number of Sites']).astype({'Number of Sites': int})
+                df = df.sort_values('Number of Sites', ascending=False)
+
         else:
             if input.main_category() == 'County':
                 df = (lara_df[lara_df[input.main_category()] == input.sub_category()]
@@ -567,14 +603,12 @@ def server(input, output, session):
         # Drop the now redundant 'DBA' and 'Owner / Community_Name' columns
             df = df.drop(columns=['DBA', 'Owner / Community_Name'])
 
-    # Clean up column names by removing underscores and renaming
-        df.columns = df.columns.str.replace('_', ' ')
-        df = df.rename(columns={'Total # Sites': 'Number of Sites', 'Location Address': 'Address'})
-        df = df[['Name', 'Address', 'Number of Sites']]
+            df.columns = df.columns.str.replace('_', ' ')
+            df = df.rename(columns={'Total # Sites': 'Number of Sites', 'Location Address': 'Address'})
+            df = df[['Name', 'Address', 'Number of Sites']]
 
-    # Further processing if necessary
-        df = df.dropna(subset=['Number of Sites']).astype({'Number of Sites': int})
-        df = df.sort_values('Number of Sites', ascending=False)
+            df = df.dropna(subset=['Number of Sites']).astype({'Number of Sites': int})
+            df = df.sort_values('Number of Sites', ascending=False)
 
         return df
 
@@ -605,31 +639,41 @@ def server(input, output, session):
         if input.datasource() == 'MHVillage':
             if input.main_category() == 'County':
                 df = (mhvillage_df[mhvillage_df['County'] == input.sub_category()]
-                      [['Name', 'Sites', 'FullstreetAddress']])
+                  [['Name', 'Sites', 'FullstreetAddress']])
+                df = df.rename(columns={'Sites': 'Number of Sites', 'FullstreetAddress': 'Address'})
+                df = df[['Name', 'Address', 'Number of Sites']]
+                df = df.dropna(subset=['Number of Sites']).astype({'Number of Sites': int})
+                df = df.sort_values('Number of Sites', ascending=False)
             else:
                 df = (mhvillage_df[mhvillage_df[input.main_category()] == int(float(input.sub_category()))]
-                      [['Name', 'Sites', 'FullstreetAddress']])
+                  [['Name', 'Sites', 'FullstreetAddress']])
+                df = df.rename(columns={'Sites': 'Number of Sites', 'FullstreetAddress': 'Address'})
+                df = df[['Name', 'Address', 'Number of Sites']]
+                df = df.dropna(subset=['Number of Sites']).astype({'Number of Sites': int})
+                df = df.sort_values('Number of Sites', ascending=False)
+
         else:
             if input.main_category() == 'County':
                 df = (lara_df[lara_df[input.main_category()] == input.sub_category()]
-                      [['Owner / Community_Name', 'Total_#_Sites', 'Location_Address']])
+                  [['DBA', 'Owner / Community_Name', 'Total_#_Sites', 'Location_Address']])
             else:
                 house_district = int(float(input.sub_category()))
                 df = (lara_df[lara_df[input.main_category()] == house_district]
-                      [['Owner / Community_Name', 'Total_#_Sites', 'Location_Address']])
+                  [['DBA', 'Owner / Community_Name', 'Total_#_Sites', 'Location_Address']])
 
-        # Clean up column names by removing underscores
-        df = df.rename(columns=lambda x: x.replace('_', ' '))
-        df = df.rename(columns=lambda x: x.replace('Owner / Community Name', 'Owner/Community Name'))
-        df = df.rename(columns=lambda x: x.replace('Total_#_Sites', 'Number of Sites'))
-        df = df.rename(columns=lambda x: x.replace('FullstreetAddress', 'Address'))
+            df['Name'] = df.apply(lambda x: x['DBA'] if pd.notnull(x['DBA']) and x['DBA'].strip() != '' else x['Owner / Community_Name'], axis=1)
 
-        # Further processing if necessary
-        df = df.dropna().astype({'Sites': int} if 'Sites' in df.columns else {})
-        df = df.sort_values('Sites' if 'Sites' in df.columns else 'Total # Sites', ascending=False)
+            df = df.drop(columns=['DBA', 'Owner / Community_Name'])
+
+            df.columns = df.columns.str.replace('_', ' ')
+            df = df.rename(columns={'Total # Sites': 'Number of Sites', 'Location Address': 'Address'})
+            df = df[['Name', 'Address', 'Number of Sites']]
+
+            df = df.dropna(subset=['Number of Sites']).astype({'Number of Sites': int})
+            df = df.sort_values('Number of Sites', ascending=False)
 
         df2 = reactive_site_list()
-        site_count_column = 'Sites' if 'Sites' in df2.columns else 'Total # Sites'
+        site_count_column = 'Number of Sites'
 
         num_mhcs = len(df2)
         num_sites = pd.to_numeric(df2[site_count_column], errors='coerce').sum()

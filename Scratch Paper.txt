@@ -96,3 +96,13 @@ def build_infographics2():
                 ha='left', va='center', fontsize=10, color='black')
 
     return ax
+
+
+
+    popup_content = HTML()
+    popup_content.value = (
+        f"Name: {mhvillage_df['Name'].iloc[ind]}<br>"
+        f"Sites: {mhvillage_df['Sites'].iloc[ind]}<br>"
+        f"House district: {mhvillage_df['House district'].iloc[ind]}<br>"
+        f"Senate district: {mhvillage_df['Senate district'].iloc[ind]}<br>"
+    )
