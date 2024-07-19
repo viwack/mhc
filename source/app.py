@@ -231,40 +231,59 @@ def build_infographics1():
     total_sites_by_name = total_sites_by_name.sort_values(by="Total_#_Sites", ascending=False)
     totnum = 20
     total_sites_by_name = total_sites_by_name.iloc[:totnum, :]
-    sns.set_color_codes("pastel")
 
-    ax = sns.barplot(x="Total_#_Sites", y=total_sites_by_name.index, data=total_sites_by_name,
-                     color='b', edgecolor='w')
+    # Start plotting using matplotlib
+    fig, ax = plt.subplots(figsize=(10, 8))
 
-    ax.set(xlabel="Total Number of Sites", title='Top 20 Michigan Counties by number of manufactured home sites (LARA)')
+    # Create the bar plot
+    ax.barh(total_sites_by_name.index, total_sites_by_name["Total_#_Sites"], color='skyblue', edgecolor='w')
 
+    # Set the x-axis formatter to include commas in numbers for thousands
     ax.xaxis.set_major_formatter(FuncFormatter(lambda x, _: f'{x:,.0f}'))
 
-    plt.tight_layout()  # Adjust layout to make sure everything fits without overlapping
+    # Set labels and title
+    ax.set_xlabel("Total Number of Sites")
+    ax.set_title('Top 20 Michigan Counties by number of manufactured home sites (LARA)')
+
+    # Invert y-axis so that the county with the highest number of sites is at the top
+    ax.invert_yaxis()
+
+    # Show the plot
+    plt.tight_layout()
     return ax
 
 def build_infographics2():
-    total_sites_by_name = mhvillage_df[['County',"Average_rent"]].dropna().groupby('County').mean()
-    total_sites_by_name = total_sites_by_name.sort_values(by="Average_rent",ascending=True)
-    # Drop rows where 'second_column' is empty
-    df_clean = mhvillage_df[['County',"Average_rent"]].dropna()
+    total_sites_by_name = mhvillage_df.groupby('County')['Average_rent'].mean().dropna()
+
+    total_sites_by_name = total_sites_by_name.sort_values(ascending=True)
+
+    total_sites_by_name = total_sites_by_name.to_frame().reset_index()
+    df_clean = mhvillage_df[['County', "Average_rent"]].dropna()
     county_counts = df_clean['County'].value_counts()
-    total_sites_by_name_count = pd.concat([total_sites_by_name,county_counts], axis=1)
-    total_sites_by_name_count_20 = total_sites_by_name_count.sort_values(by="count",ascending=False)
-    total_sites_by_name_count_20 = total_sites_by_name_count_20[:20].sort_values(by="Average_rent",ascending=False)
-    totnum = -1
+    county_counts = county_counts.to_frame().reset_index()
 
-    county = total_sites_by_name_count_20[:totnum].index
-    count0 = total_sites_by_name_count_20['count'][:totnum]
-    y_pos = range(len(total_sites_by_name_count_20[:totnum]))
+    total_sites_by_name_count = pd.merge(total_sites_by_name, county_counts, on='County')
 
-    ax = sns.barplot(x="Average_rent", y="County", data=total_sites_by_name_count_20,
-                label="Average rent", color="b")
-    ax.set(xlabel='Average rent', title = "Average rent by county (MHVillage)")
-    count0 = total_sites_by_name_count_20['count']
+    total_sites_by_name_count = total_sites_by_name_count.sort_values(by="count", ascending=False)
+    total_sites_by_name_20 = total_sites_by_name_count[:20]
+    total_sites_by_name_20.sort_values('Average_rent', ascending=True, inplace=True)
 
-    ax.bar_label(ax.containers[0], labels=[f'{c:.0f}' for c in count0],
-              label_type = 'center', color='w', fontsize=10)
+    plt.figure(figsize=(10, 8))
+
+# Create a bar chart - horizontal bars might fit better if there are many counties
+    plt.barh(total_sites_by_name_20['County'], total_sites_by_name_20['Average_rent'], color='skyblue')
+
+# Add titles and labels
+    plt.title('Average Rent by County (MHVillage) - Top 20 Counties', fontsize=12)
+    plt.xlabel('Average Rent ($)')
+    plt.ylabel('County')
+
+# Optionally, add the count as text inside the bars
+    for index, value in enumerate(total_sites_by_name_20['Average_rent']):
+        plt.text(value, index, str(total_sites_by_name_20['count'].iloc[index]))
+
+# Show the plot
+    plt.tight_layout()
     return
 
 basemaps = {
@@ -301,7 +320,7 @@ app_ui = ui.page_fluid(
                   ui.HTML("""
                     <h2 style="text-align: left; font-size: 20px;"><b>About</b></h2>
                     <h3 style="font-size: 16px;">
-                    This app is a visualization tool designed to highlight the distribution of manufactured housing communities across Michigan. LARA data was obtained in January 2023 from the Michigan <a href="https://www.michigan.gov/lara" target="_blank">Department of Licensing and Regulatory Affairs</a> via a Freedom of Information Act (<a href="https://michiganlara.govqa.us/WEBAPP/_rs/(S(yu3ftx4zmh34spiozdwicnsn))/supporthome.aspx" target="_blank">FOIA</a>) Request. <a href="https://www.mhvillage.com/Communities/CommunityReport.php" target="_blank">MHVillage</a> data was scraped in December 2023. For more information, visit <a href="https://www.mhaction.org" target="_blank">MHAction.org</a>.
+                    This app is a visualization tool designed to highlight the distribution of manufactured housing communities across Michigan. LARA data was obtained in January 2024 from the Michigan <a href="https://www.michigan.gov/lara" target="_blank">Department of Licensing and Regulatory Affairs</a> via a Freedom of Information Act (<a href="https://michiganlara.govqa.us/WEBAPP/_rs/(S(yu3ftx4zmh34spiozdwicnsn))/supporthome.aspx" target="_blank">FOIA</a>) Request. <a href="https://www.mhvillage.com/Communities/CommunityReport.php" target="_blank">MHVillage</a> data was scraped in December 2023. For more information, visit <a href="https://www.mhaction.org" target="_blank">MHAction.org</a>.
 
                     <br><br>
                     <h2 style="text-align: left; font-size: 18px;">Definitions</h2>
@@ -321,18 +340,20 @@ app_ui = ui.page_fluid(
     ),
     ui.HTML("<hr> <h1><b>Infographics</b></h1>"),
     ui.row(
+        ui.HTML("""<hr>"""),
         ui.column(10, ui.output_plot("infographics1")),
         ui.column(2, ui.HTML("<br><br>Need other county data? Download the full table "), ui.download_link("download_info1", "here."))
     ),
 
     ui.row(
+        ui.HTML("""<hr>"""),
         ui.column(10, ui.output_plot("infographics2")),
         ui.column(2, ui.HTML("<br><br>More rent values "), ui.HTML("""<a href="/all-mhc-rents.csv" download>here.</a>""")
         )),
 
     ui.HTML("""
         <h2 style="text-align: left; margin-bottom: 10px;
-        font-size: 16px; "><i>NOTE: Black numbers next to the bars represent the number of MHC's included in the calculated average, based on availability of data on MHVillage. For example, the average rent across the 22 reported MHC's in Oakland County is approximately $575.</i></h2>
+        font-size: 16px; "><i>NOTE: Black numbers next to the bars represent the number of MHC's included in the calculated average, based on availability of data on MHVillage. For example, the average rent across the 14 reported MHC's in Oakland County is approximately $575.</i></h2>
     """),
 
     ui.HTML("<hr> <h1><b>Tables</b></h1>"),
@@ -515,8 +536,6 @@ def server(input, output, session):
     @render.plot
     def infographics2():
         build_infographics2()
-
-
 
     @reactive.Calc
     def reactive_site_list():
