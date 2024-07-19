@@ -227,30 +227,19 @@ def build_marker_layer(LARA_C):
     return
 
 def build_infographics1():
-    total_sites_by_name = lara_df[['County', "Total_#_Sites"]].dropna().groupby('County').sum()
-    total_sites_by_name = total_sites_by_name.sort_values(by="Total_#_Sites", ascending=False)
+    #def modify(string):
+    #    return string[0] + string[1:].lower()
+    # Calculating the total number of sites for each unique name
+    total_sites_by_name = lara_df[['County',"Total_#_Sites"]].dropna().groupby('County').sum()
+    total_sites_by_name = total_sites_by_name.sort_values(by="Total_#_Sites",ascending=False)
     totnum = 20
-    total_sites_by_name = total_sites_by_name.iloc[:totnum, :]
-
-    # Start plotting using matplotlib
-    fig, ax = plt.subplots(figsize=(10, 8))
-
-    # Create the bar plot
-    ax.barh(total_sites_by_name.index, total_sites_by_name["Total_#_Sites"], color='skyblue', edgecolor='w')
-
-    # Set the x-axis formatter to include commas in numbers for thousands
+    total_sites_by_name = total_sites_by_name.iloc[:totnum,:]
+    sns.set_color_codes("pastel")
+    ax = sns.barplot(x="Total_#_Sites", y="County", data=total_sites_by_name,
+                color="b")
+    ax.set(xlabel="Total Number of Sites", title = 'Top 20 Michigan Counties by number of manufactured home sites (LARA)')
     ax.xaxis.set_major_formatter(FuncFormatter(lambda x, _: f'{x:,.0f}'))
-
-    # Set labels and title
-    ax.set_xlabel("Total Number of Sites")
-    ax.set_title('Top 20 Michigan Counties by number of manufactured home sites (LARA)')
-
-    # Invert y-axis so that the county with the highest number of sites is at the top
-    ax.invert_yaxis()
-
-    # Show the plot
-    plt.tight_layout()
-    return ax
+    return
 
 def build_infographics2():
     total_sites_by_name = mhvillage_df.groupby('County')['Average_rent'].mean().dropna()
@@ -266,25 +255,17 @@ def build_infographics2():
 
     total_sites_by_name_count = total_sites_by_name_count.sort_values(by="count", ascending=False)
     total_sites_by_name_20 = total_sites_by_name_count[:20]
-    total_sites_by_name_20.sort_values('Average_rent', ascending=True, inplace=True)
+    total_sites_by_name_20.sort_values('Average_rent', ascending=False, inplace=True)
 
-    plt.figure(figsize=(10, 8))
+    ax = sns.barplot(x="Average_rent", y="County", data=total_sites_by_name_20,
+                color="b")
+    ax.set(xlabel='Average rent', title = "Average rent by county (MHVillage)")
+    count0 = total_sites_by_name_20['count']
 
-# Create a bar chart - horizontal bars might fit better if there are many counties
-    plt.barh(total_sites_by_name_20['County'], total_sites_by_name_20['Average_rent'], color='skyblue')
-
-# Add titles and labels
-    plt.title('Average Rent by County (MHVillage) - Top 20 Counties', fontsize=12)
-    plt.xlabel('Average Rent ($)')
-    plt.ylabel('County')
-
-# Optionally, add the count as text inside the bars
-    for index, value in enumerate(total_sites_by_name_20['Average_rent']):
-        plt.text(value, index, str(total_sites_by_name_20['count'].iloc[index]))
-
-# Show the plot
-    plt.tight_layout()
+    ax.bar_label(ax.containers[0], labels=[f'{c:.0f}' for c in count0],
+              label_type = 'center', color='w', fontsize=10)
     return
+
 
 basemaps = {
   "OpenStreetMap": L.basemaps.OpenStreetMap.Mapnik,
@@ -348,7 +329,7 @@ app_ui = ui.page_fluid(
     ui.row(
         ui.HTML("""<hr>"""),
         ui.column(10, ui.output_plot("infographics2")),
-        ui.column(2, ui.HTML("<br><br>More rent values "), ui.HTML("""<a href="/all-mhc-rents.csv" download>here.</a>""")
+        ui.column(2, ui.HTML("<br><br>More rent values "), ui.download_link("download_info2", "here.")
         )),
 
     ui.HTML("""
@@ -536,6 +517,31 @@ def server(input, output, session):
     @render.plot
     def infographics2():
         build_infographics2()
+
+    @output
+    @render.download(filename=lambda: f"all-mhc-rents.csv")
+    def download_info2():
+        df = mhvillage_df[['County', 'Average_rent']].dropna()
+        total_sites_by_name = mhvillage_df.groupby('County')['Average_rent'].mean().dropna()
+
+        total_sites_by_name = total_sites_by_name.sort_values(ascending=True)
+
+        total_sites_by_name = total_sites_by_name.to_frame().reset_index()
+        df_clean = mhvillage_df[['County', "Average_rent"]].dropna()
+        county_counts = df_clean['County'].value_counts()
+        county_counts = county_counts.to_frame().reset_index()
+
+        total_sites_by_name_count = pd.merge(total_sites_by_name, county_counts, on='County')
+
+        total_sites_by_name_count = total_sites_by_name_count.sort_values(by="count", ascending=False)
+        total_sites_by_name_20 = total_sites_by_name_count[:20]
+        total_sites_by_name_20.sort_values('Average_rent', ascending=True, inplace=True)
+
+        output = io.StringIO()
+        total_sites_by_name_count.to_csv(output, index=False)
+        output.seek(0)
+
+        return output.getvalue(), ""
 
     @reactive.Calc
     def reactive_site_list():
