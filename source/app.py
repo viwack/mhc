@@ -60,8 +60,6 @@ def check_legislative_district(lat, lng, districts_geojson):
 
     return None
 
-
-
 # path2folder = r"./data/" # fill in the path to your folder here.
 # assert len(path2folder) > 0
 
@@ -84,34 +82,26 @@ mklist_lara = []
 upper_layers = []
 lower_layers = []
 
-labels_df =  pd.DataFrame(range(1, 51), columns=['Numbers'])
 
-def find_geojson_centroid(geojson_feature):
+def find_geojson_centroid(geojson_feature): # Function to find the centroid of a GeoJSON feature
     geom = shape(geojson_feature['geometry'])
     return geom.centroid.coords[0]  # Return as tuple (lon, lat)
 
 def build_district_layers(upper=0):
     layer_group = LayerGroup()
-    label = Label(layout=Layout(width="100%"))
+    label = Label(layout=Layout(width="100%")) # Create a label widget to display the layer name
 
-    if upper == 1:
+    if upper == 1: # If upper is 1, then we are working with the Michigan State Senate districts
         color = 'green'
         geojson_path = senate_districts_geojson_path
-    else:
+    else: # Otherwise, we are working with the Michigan State House districts
         color = 'purple'
         geojson_path = house_districts_geojson_path
 
-    with open(here.parent / geojson_path, 'r') as f:
+    with open(here.parent / geojson_path, 'r') as f: # Open the GeoJSON file
         michigan_districts_data = json.load(f)
 
-    def hover_handler(event=None, feature=None, id=None, properties=None):
-        if "NAME" in properties:
-            label.value = properties["NAME"]
-        else:
-            label.value = ''
-
-
-    layerk = GeoJSON(
+    layerk = GeoJSON( # Create a GeoJSON layer
         data=michigan_districts_data,
         name=f'Michigan {"Senate" if upper == 1 else "House"} Legislative Districts',
         style={
@@ -124,7 +114,6 @@ def build_district_layers(upper=0):
             'weight': 3
         }
     )
-    layerk.on_hover(hover_handler)
 
     layer_group.add_layer(layerk)  # Add the GeoJSON to the layer group
 
@@ -167,47 +156,51 @@ def build_marker_layer(LARA_C):
             else:
                 mhsites = round(mhvillage_df['Sites'].iloc[ind]) #round the number of sites
     ########Make markers
-            icon1 = AwesomeIcon(
-                name='home',
-                marker_color='green',
-                icon_color='black',
-                spin=False
-            )
-
-            popup_content = HTML()
-            popup_content.value = (
-                f"Name: {mhvillage_df['Name'].iloc[ind]}<br>"
-                f"Sites: {mhsites}<br>"
-                f"House district: {house_mh}<br>"
-                f"Senate district: {senate_mh}<br>"
-                f"Source: MHVillage"
-            )
-
-            markeri = L.Marker( #create a marker for each location of MHVillage data
-                icon=icon1,
-                location=(lat,lon),
-                draggable=False,
+            try:
+                icon1 = AwesomeIcon( #create an icon for the marker
+                    name='home',
+                    marker_color='green',
+                    icon_color='black',
+                    spin=False
                 )
-            markeri = L.Popup(location=(lat,lon),
-                            child=popup_content,
-                            auto_close=True,
-                            close_button=True,
-                            close_on_escape_key=False,
-                            close_on_click=False)
 
-            circleMHi = L.Circle(location=(lat,lon),
-                                 radius=1,
-                                 color="orange",
-                                 fill_color= "orange")
+                popup_content = HTML()
+                popup_content.value = (
+                    f"Name: {mhvillage_df['Name'].iloc[ind]}<br>"
+                    f"Sites: {mhsites}<br>"
+                    f"House district: {house_mh}<br>"
+                    f"Senate district: {senate_mh}<br>"
+                    f"Source: MHVillage"
+                )
 
-            circlelist_mh.append(circleMHi)
+                markeri = L.Marker( #create a marker for each location of MHVillage data
+                    icon=icon1,
+                    location=(lat,lon),
+                    draggable=False,
+                    )
+                popup = L.Popup(location=(lat,lon), #create a popup for each marker
+                    child=popup_content,
+                    auto_close=True,
+                    close_button=True,
+                    close_on_escape_key=False,
+                    close_on_click=False)
 
-            markeri.popup = popup_content
-            mklist_mh.append((markeri))
+                circleMHi = L.Circle(location=(lat,lon), #create a circle for each marker
+                    radius=1,
+                    color="orange",
+                    fill_color= "orange")
+
+                circlelist_mh.append(circleMHi) #add the circle to the circle list
+
+                markeri.popup = popup_content #add the popup to the marker
+
+            except:
+                continue
+            mklist_mh.append((markeri)) #
 
 
     else:
-        if len(circlelist_lara) >0  and len(mklist_lara)>0:
+        if len(circlelist_lara) >0  and len(mklist_lara)>0: #if the circlelist and mklist are not empty, then we have already built the markers
             return
         for ind in range(len(lara_df)):
             lon = float(lara_df['longitude'].iloc[ind])
@@ -259,8 +252,8 @@ def build_marker_layer(LARA_C):
 
                 circlei = L.Circle(location=(lat,lon),
                                  radius=1,
-                                 color="orange",
-                                 fill_color= "orange")
+                                 color="blue",
+                                 fill_color= "blue")
 
                 circlelist_lara.append(circlei)
 
@@ -271,7 +264,7 @@ def build_marker_layer(LARA_C):
                 continue
 
 
-            mklist_lara.append(markeri)
+            mklist_lara.append(markeri) #add the marker to the marker list
     return
 
 def build_infographics1():
@@ -289,7 +282,7 @@ def build_infographics1():
     ax.xaxis.set_major_formatter(FuncFormatter(lambda x, _: f'{x:,.0f}'))
     return
 
-def build_infographics2():
+def build_infographics2(): #function to build the second infographic
     total_sites_by_name = mhvillage_df.groupby('County')['Average_rent'].mean().dropna()
 
     total_sites_by_name = total_sites_by_name.sort_values(ascending=True)
@@ -311,11 +304,11 @@ def build_infographics2():
     count0 = total_sites_by_name_20['count']
 
     ax.bar_label(ax.containers[0], labels=[f'{c:.0f}' for c in count0],
-              label_type = 'center', color='w', fontsize=10)
+              label_type = 'center', color='black', fontsize=10)
     return
 
 
-basemaps = {
+basemaps = { #dictionary of basemaps, either open or satellite
   "OpenStreetMap": L.basemaps.OpenStreetMap.Mapnik,
   "Satellite": L.basemaps.Gaode.Satellite
 }
@@ -328,8 +321,8 @@ geographic_regions = [
 ]
 
 
-layernames = ["Marker MHVillage (name, address, # sites, source)",
-"Marker LARA (name, address, # sites, source)",
+layernames = ["Marker MHVillage",
+    "Marker LARA",
     "Circle MHVillage (location only)", #"Circle (MHVillage location only)",
     "Circle LARA (location only)",
     "Legislative districts (Michigan State Senate)",
@@ -362,7 +355,7 @@ app_ui = ui.page_fluid(
                     <h2 style="font-size: 18px;"><br>Add Map Layers</h2>
                 """),
                   ui.input_select("basemap", "Choose a basemap:", choices=list(basemaps.keys())),
-                  ui.input_selectize("layers", "Layers to visualize:", layernames, multiple=True, selected=None)
+                  ui.input_selectize("layers", "Layers to visualize:", layernames, multiple=True, selected=None),
                   ),
         ui.column(7, output_widget("map", width="auto", height="600px",),
             ui.HTML("</h3> <p style='text-align: center; font-size: 16px;'><i> NOTE: Blue circles are MHC's reported by LARA, orange circles are reported by MHVillage.</i></p>"),),
@@ -405,8 +398,8 @@ app_ui = ui.page_fluid(
         )
     ),
     #ui.tags.div(ui.output_html("district_map"))
-
-    ui.HTML("""
+    ui.row(
+        ui.column(6,ui.HTML("""
         <hr>
         <h1 style="text-align: left; margin-bottom: 10px;"><b>Credits</b></h1>
         <h2 style="text-align: left; margin-bottom: 10px;
@@ -416,30 +409,32 @@ app_ui = ui.page_fluid(
         Web design: Vicky Wang <br>
         Data scraping and collection: Bingqing Xiang<br>
         In partnership with <a href="https://informs.engin.umich.edu/"
-        target="_blank">INFORMS</a> at the University of Michigan.</h2>
-    """),
-
-    ui.HTML("""
+        target="_blank">INFORMS</a> at the University of Michigan.</h2><hr>
+        """)),
+        ui.column(6,ui.HTML("""
         <hr>
         <h1 style="text-align: left; margin-bottom: 10px;"><b>Reference Files</b></h1>
-    """),
-    ui.download_link("download_mhvillage", "Raw data: MHVillage with coordinates and legislative district .csv"),
-    ui.HTML("""
-        <br>
-    """),
-    ui.download_link("download_lara", "Raw data: LARA with coordinates and legislative distric .csv"),
-    ui.HTML("""
-        <br>
-    """),
-    ui.download_link("download_house_districts", "Michigan State House Districts 2021 .GeoJSON"),
-    ui.HTML("""
-        <br>
-    """),
-    ui.download_link("download_senate_districts", "Michigan State Senate Districts 2021 .GeoJSON"),
+        """),
+        ui.download_link("download_mhvillage", "Raw data: MHVillage with coordinates and legislative district .csv"),
+        ui.HTML("""
+            <br>
+        """),
+        ui.download_link("download_lara", "Raw data: LARA with coordinates and legislative distric .csv"),
+        ui.HTML("""
+            <br>
+        """),
+        ui.download_link("download_house_districts", "Michigan State House Districts 2021 .GeoJSON"),
+        ui.HTML("""
+            <br>
+        """),
+        ui.download_link("download_senate_districts", "Michigan State Senate Districts 2021 .GeoJSON"),
 
-    ui.HTML("""
-        <hr>
-    """),
+        ui.HTML("""
+            <hr>
+        """)
+        )
+    ),
+
     #ui.row(
     #    ui.column(4, ui.output_image("mhaction_logo"), align="center"), 
     #    ui.column(4, ui.output_image("ctac_logo"), align="center"),
@@ -456,8 +451,8 @@ app_ui = ui.page_fluid(
 
 def server(input, output, session):
 # Use a reactive expression to determine the subcategory options
-    @reactive.Calc
-    def sub_category_options():
+    @reactive.Calc # Use the Calc decorator to create a reactive expression
+    def sub_category_options(): # Define a function to return the subcategory options based on the main category
         main_category = input.main_category()
         df_name = input.datasource()
         if main_category and df_name == 'MHVillage':
@@ -468,8 +463,7 @@ def server(input, output, session):
             else:
                 return lara_df[main_category].dropna().unique().tolist()
 
-        return []
-
+        return [] # Return an empty list if no main category is selected
     # Use render functions to create UI elements, output_text_verbatim is used here for simplicity to show the results
     @output
     @render.ui
@@ -477,18 +471,26 @@ def server(input, output, session):
         options = sub_category_options()
         options.sort()
         return ui.input_select("sub_category", "Select district/county of interest (Note- only locations with MHC data will generate a table):",
-            options)
+            options) # Create a select input with the subcategory options
 
 
     def create_map(basemap, layerlist):
-        the_map = L.Map(basemap=basemap,
+        the_map = L.Map(basemap=basemap, # Create a map with the selected basemap
                         center=[44.44343571548758, -84.36155640717737],
                         zoom=6,
+                        min_zoom=4,
                         layout=Layout(width="100%", height="100%"),
                         scroll_wheel_zoom=True)
         markerorcircle = False
 
-        if "Marker MHVillage (name, address, # sites, source)" in layerlist:
+        if "Legislative districts (Michigan State Senate)" in layerlist: #if the legislative districts are in the layer list, then build the district layers
+            build_district_layers(upper = 1)
+            the_map.add_layer(upper_layers[0])
+        if "Legislative districts (Michigan State House of Representatives)" in layerlist:
+            build_district_layers(upper = 0)
+            the_map.add_layer(lower_layers[0])
+
+        if "Marker MHVillage" in layerlist:
             build_marker_layer(LARA_C = 0)
             marker_cluster = L.MarkerCluster(
                 name='location markers',
@@ -496,7 +498,7 @@ def server(input, output, session):
                 )
             the_map.add_layer(marker_cluster)
             markerorcircle = True
-        if "Marker LARA (name, address, # sites, source)" in layerlist:
+        if "Marker LARA" in layerlist:
             build_marker_layer(LARA_C = 1)
             marker_cluster = L.MarkerCluster(
                 name='location markers',
@@ -516,12 +518,6 @@ def server(input, output, session):
             layergroup = L.LayerGroup(name = 'location circles MH',layers=circlelist_lara)
             the_map.add_layer(layergroup)
             markerorcircle = True
-        if "Legislative districts (Michigan State Senate)" in layerlist:
-            build_district_layers(upper = 1)
-            the_map.add_layer(upper_layers[0])
-        if "Legislative districts (Michigan State House of Representatives)" in layerlist:
-            build_district_layers(upper = 0)
-            the_map.add_layer(lower_layers[0])
 
         lara_layer_group = L.LayerGroup()
         mhvillage_layer_group = L.LayerGroup()
@@ -536,7 +532,6 @@ def server(input, output, session):
         layerlist = input.layers()
 
         return create_map(basemap, layerlist)
-
 
 # # Define server logic
 # def server(input, output, session):
