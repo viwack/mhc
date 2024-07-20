@@ -188,20 +188,23 @@ def build_marker_layer(LARA_C):
                 location=(lat,lon),
                 draggable=False,
                 )
+            markeri = L.Popup(location=(lat,lon),
+                            child=popup_content,
+                            auto_close=True,
+                            close_button=True,
+                            close_on_escape_key=False,
+                            close_on_click=False)
+
             circleMHi = L.Circle(location=(lat,lon),
                                  radius=1,
                                  color="orange",
                                  fill_color= "orange")
-            popup = L.Popup(location=(lat,lon),
-                            child=popup_content,
-                            auto_close=False,
-                            close_button=False,
-                            close_on_escape_key=False,
-                            close_on_click=False)
+
             circlelist_mh.append(circleMHi)
-            mklist_mh.append(popup)
-            mklist_mh.append(markeri)
+
             markeri.popup = popup_content
+            mklist_mh.append((markeri))
+
 
     else:
         if len(circlelist_lara) >0  and len(mklist_lara)>0:
@@ -232,18 +235,36 @@ def build_marker_layer(LARA_C):
                 marker_color='blue',
                 icon_color='black',
                 spin=False
-            )
-                markeri = L.Marker(
+                )
+                popup_content = HTML()
+                popup_content.value = (
+                    f"Name: {lara_df['Owner / Community_Name'].iloc[ind]}<br>"
+                    f"Sites: {larasites}<br>"
+                    f"House district: {house_lara}<br>"
+                    f"Senate district: {senate_lara}<br>"
+                    f"Source: LARA"
+                )
+
+                markeri = L.Marker( #create a marker for each location of MHVillage data
                     icon=icon2,
                     location=(lat,lon),
                     draggable=False,
-                    title=str(lara_df['Owner / Community_Name'].iloc[ind])+
-                    ' , number of sites: '+str(round(lara_df['Total_#_Sites'].iloc[ind]))+
-                    ' , House district: '+ str(house_lara)+
-                    ' , Senate district: '+ str(senate_lara)+
-                    ', LARA')
-                circlei = L.Circle(location=(lat,lon), radius=1, color="blue", fill_color="blue")
+                    )
+                popup = L.Popup(location=(lat,lon),
+                            child=popup_content,
+                            auto_close=False,
+                            close_button=False,
+                            close_on_escape_key=False,
+                            close_on_click=False)
+
+                circlei = L.Circle(location=(lat,lon),
+                                 radius=1,
+                                 color="orange",
+                                 fill_color= "orange")
+
                 circlelist_lara.append(circlei)
+
+                markeri.popup = popup_content
 
             except:
                 #print(lon,lat)
@@ -515,6 +536,7 @@ def server(input, output, session):
         layerlist = input.layers()
 
         return create_map(basemap, layerlist)
+
 
 # # Define server logic
 # def server(input, output, session):
