@@ -375,7 +375,7 @@ app_ui = ui.page_fluid(
 
     ui.HTML("""
         <h2 style="text-align: left; margin-bottom: 10px;
-        font-size: 16px; "><i>NOTE: Black numbers next to the bars represent the number of MHC's included in the calculated average, based on availability of data on MHVillage. For example, the average rent across the 14 reported MHC's in Oakland County is approximately $575.</i></h2>
+        font-size: 16px; "><i>NOTE: Black numbers in the bars represent the number of MHC's included in the calculated average, based on availability of data on MHVillage. For example, the average rent across the 14 reported MHC's in Oakland County is approximately $575.</i></h2>
     """),
 
     ui.HTML("<hr> <h1><b>Tables</b></h1>"),

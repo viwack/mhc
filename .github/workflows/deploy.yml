@@ -23,6 +23,9 @@ jobs:
         # Note that you can also specify a version of shinylive, as in:
         #   pip install shinylive==0.0.8
 
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
       - name: Make shinylive deployment in docs/
         run: shinylive export source docs
 
