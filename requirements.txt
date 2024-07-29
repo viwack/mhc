@@ -57,7 +57,6 @@ ipywidgets==7.7.0
 isoduration==20.11.0
 jedi==0.19.1
 Jinja2==3.1.4
-json5==0.9.25
 jsonpointer==3.0.0
 jsonschema==4.22.0
 jsonschema-specifications==2023.12.1
@@ -77,7 +76,6 @@ linkify-it-py==2.0.3
 lzstring==1.0.4
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
-matplotlib==3.8.4
 matplotlib-inline==0.1.7
 mdit-py-plugins==0.4.0
 mdurl==0.1.2
@@ -92,12 +90,10 @@ numpy==1.26.4
 openpyxl==3.1.2
 overrides==7.7.0
 packaging==24.0
-pandas==2.2.2
 pandocfilters==1.5.1
 parso==0.8.4
 pexpect==4.9.0
 pillow==10.3.0
-platformdirs==4.2.1
 plotly==5.22.0
 prometheus_client==0.20.0
 prompt-toolkit==3.0.36
