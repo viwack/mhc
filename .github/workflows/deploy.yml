@@ -16,10 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.11.5"
-
-      - name: Install dependencies from requirements.txt
-        run: pip install -r requirements.txt
+          python-version: "3.10"
 
       - name: Install shinylive
         run: pip install shinylive
