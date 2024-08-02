@@ -24,16 +24,13 @@ jobs:
       - name: List installed packages
         run: pip list
 
-      - name: Install dependencies
-        run: pip install -r source/requirements.txt
-
       - name: Install shinylive
         run: pip install shinylive
         # Note that you can also specify a version of shinylive, as in:
         #   pip install shinylive==0.0.8
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r source/requirements.txt
 
       - name: Make shinylive deployment in docs/
         run: shinylive export source docs
