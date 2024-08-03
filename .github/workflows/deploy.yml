@@ -14,23 +14,21 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v2
         with:
           python-version: "3.10"
+
+      - name: Install dependencies
+        run: pip install -r source/requirements.txt
+
+      - name: Install shinylive
+        run: pip install shinylive
 
       - name: Check Python version
         run: python --version
 
       - name: List installed packages
         run: pip list
-
-      - name: Install shinylive
-        run: pip install shinylive
-        # Note that you can also specify a version of shinylive, as in:
-        #   pip install shinylive==0.0.8
-
-      - name: Install dependencies
-        run: pip install -r source/requirements.txt
 
       - name: Make shinylive deployment in docs/
         run: shinylive export source docs
