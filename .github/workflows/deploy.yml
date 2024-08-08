@@ -21,8 +21,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r source/requirements.txt
 
+      - name: Verify ipywidgets and ipyleaflet versions
+        run: |
+          pip show ipywidgets
+          pip show ipyleaflet
+          pip show widgetsnbextension
+
       - name: Install shinylive
         run: pip install shinylive
+
+      - name: Enable widgetsnbextension
+        run: jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
       - name: Check Python version
         run: python --version
