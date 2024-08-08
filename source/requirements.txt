@@ -1,5 +1,5 @@
-ipywidgets==7.7.0
 pandas
 geopandas
 numpy
 plotly
+ipywidgets==7.7.0
