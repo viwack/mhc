@@ -1,4 +1,4 @@
-name: Deploy Jupyter Notebook application
+name: Deploy Python Shiny application
 
 on:
   push:
@@ -21,21 +21,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r source/requirements.txt
 
-      - name: Install Jupyter and Jupyter nbconvert
-        run: |
-          pip install jupyter jupyterlab nbconvert
-
-      - name: Validate and export Jupyter Notebooks
-        run: |
-          jupyter nbconvert --to notebook --execute source/*.ipynb --output-dir docs
+      - name: Execute app.py
+        run: python source/app.py
 
       - name: List installed packages
         run: pip list
 
-      - name: Generate HTML from Jupyter Notebooks
+      # Assuming app.py generates HTML files in the 'docs' directory
+      - name: Copy generated HTML files to docs
         run: |
           mkdir -p docs
-          jupyter nbconvert --to html source/*.ipynb --output-dir docs
+          cp -r source/output/* docs/
 
       - name: Upload website artifact
         if: github.ref == 'refs/heads/main'
