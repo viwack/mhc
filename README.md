@@ -1,10 +1,11 @@
 # Manufactured Housing Communities Michigan Mapping Tool
 ***This app is a visualization tool designed to visualize the distribution of manufactured housing communities across Michigan. LARA data was obtained in January 2024 from the Michigan Department of Licensing and Regulatory Affairs via a Freedom of Information Act (FOIA) Request. MHVillage data was scraped in December 2023. For more information, visit MHAction.org.***
 
-More Information can be found here: https://docs.google.com/document/d/1PZt_hd0850CFEg6GZ_geTwBHNFyVdqa5gHThRhLMWuU/edit#heading=h.l2y3wkmaxqo3
+## Remaining issues
+- ipywidgets and ipyleaflet versioning leads to issues with marker cluster/popup function.
+- Create a table download with all counties, house district, or senate district rows.
 
-
-References:
+## References
 - Using deploy.yml for shinylive: https://github.com/wch/shinylive-example/blob/main/.github/workflows/deploy.yml
 - IpyLeaflet Documentation: https://ipyleaflet.readthedocs.io/en/latest/
 - IpyLeaflet GeoJSON Handling: https://github.com/jupyter-widgets/ipyleaflet/blob/master/examples/CountriesGeoJSON.ipynb
