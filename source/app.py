@@ -68,6 +68,11 @@ mhvillage_df['Sites'] = pd.to_numeric(mhvillage_df['Sites'], downcast='integer')
 lara_df = pd.read_csv(Path(__file__).parent / "LARA_with_coord_and_legislativedistrict1.csv")
 lara_df['County'] = lara_df['County'].str.title()
 
+mhvillage_basic = pd.read_csv(Path(__file__).parent / "mhvillage_base.csv")
+mhvillage_basic['Sites'] = pd.to_numeric(mhvillage_basic['Sites'], downcast='integer')
+lara_basic = pd.read_csv(Path(__file__).parent / "lara_base.csv")
+lara_basic['County'] = lara_basic['County'].str.title()
+
 
 # Path to your legislative districts GeoJSON file
 house_districts_geojson_path = r"Michigan_State_House_Districts_2021.json"
