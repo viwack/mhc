@@ -162,12 +162,6 @@ def build_marker_layer(LARA_C):
                 mhsites = round(mhvillage_df['Sites'].iloc[ind]) #round the number of sites
     ########Make markers
             try:
-                icon1 = AwesomeIcon( #create an icon for the marker
-                    name='home',
-                    marker_color='green',
-                    icon_color='black',
-                    spin=False
-                )
 
                 markeri = L.Marker( #create a marker for each location of MHVillage data
                     icon=icon1,
@@ -211,12 +205,6 @@ def build_marker_layer(LARA_C):
             if lon == 0 and lat == 0:
                 continue
             try:
-                icon2 = AwesomeIcon(
-                name='home',
-                marker_color='blue',
-                icon_color='black',
-                spin=False
-                )
 
                 markeri = L.Marker( #create a marker for each location of MHVillage data
                     icon=icon2,
