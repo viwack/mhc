@@ -169,26 +169,11 @@ def build_marker_layer(LARA_C):
                     spin=False
                 )
 
-                popup_content = HTML()
-                popup_content.value = (
-                    f"Name: {mhvillage_df['Name'].iloc[ind]}<br>"
-                    f"Sites: {mhsites}<br>"
-                    f"House district: {house_mh}<br>"
-                    f"Senate district: {senate_mh}<br>"
-                    f"Source: MHVillage"
-                )
-
                 markeri = L.Marker( #create a marker for each location of MHVillage data
                     icon=icon1,
                     location=(lat,lon),
                     draggable=False,
                     )
-                popup = L.Popup(location=(lat,lon), #create a popup for each marker
-                    child=popup_content,
-                    auto_close=True,
-                    close_button=True,
-                    close_on_escape_key=False,
-                    close_on_click=False)
 
                 circleMHi = L.Circle(location=(lat,lon), #create a circle for each marker
                     radius=1,
@@ -196,8 +181,6 @@ def build_marker_layer(LARA_C):
                     fill_color= "orange")
 
                 circlelist_mh.append(circleMHi) #add the circle to the circle list
-
-                markeri.popup = popup_content #add the popup to the marker
 
             except:
                 continue
@@ -234,26 +217,12 @@ def build_marker_layer(LARA_C):
                 icon_color='black',
                 spin=False
                 )
-                popup_content = HTML()
-                popup_content.value = (
-                    f"Name: {lara_df['Owner / Community_Name'].iloc[ind]}<br>"
-                    f"Sites: {larasites}<br>"
-                    f"House district: {house_lara}<br>"
-                    f"Senate district: {senate_lara}<br>"
-                    f"Source: LARA"
-                )
 
                 markeri = L.Marker( #create a marker for each location of MHVillage data
                     icon=icon2,
                     location=(lat,lon),
                     draggable=False,
                     )
-                popup = L.Popup(location=(lat,lon),
-                            child=popup_content,
-                            auto_close=False,
-                            close_button=False,
-                            close_on_escape_key=False,
-                            close_on_click=False)
 
                 circlei = L.Circle(location=(lat,lon),
                                  radius=1,
@@ -261,8 +230,6 @@ def build_marker_layer(LARA_C):
                                  fill_color= "blue")
 
                 circlelist_lara.append(circlei)
-
-                markeri.popup = popup_content
 
             except:
                 #print(lon,lat)
