@@ -135,10 +135,10 @@ def build_marker_layer(LARA_C):
     #if len(circlelist) >0  and len(mklist)>0:
     #    return
     leng = 0
-    if not LARA_C: #if LARA_C is 0, then we are working with MHVillage data
-        if len(circlelist_mh) >0  and len(mklist_mh)>0: #if the circlelist and mklist are not empty, then we have already built the markers
+    if not LARA_C:
+        if len(circlelist_mh) >0  and len(mklist_mh)>0:
             return
-        for ind in range(len(mhvillage_df)): #iterate through the rows of the dataframe
+        for ind in range(len(mhvillage_df)):
             lon = float(mhvillage_df['longitude'].iloc[ind])
             lat = float(mhvillage_df['latitude'].iloc[ind])
 
@@ -146,43 +146,37 @@ def build_marker_layer(LARA_C):
             if pd.isna(lara_df['House district'].iloc[ind]) or pd.isna(lara_df['Senate district'].iloc[ind]):
                 house_lara = "missing"
                 senate_lara = "missing"
-            else: #if the house or senate district is not missing, then round the value
+            else:
                 house_lara = round(lara_df['House district'].iloc[ind])
                 senate_lara = round(lara_df['Senate district'].iloc[ind])
             if pd.isna(mhvillage_df['House district'].iloc[ind]) or pd.isna(mhvillage_df['Senate district'].iloc[ind]):
                 house_mh = "missing"
                 senate_mh = "missing"
-            else: #if the house or senate district is not missing, then round the value
+            else:
                 house_mh = round(mhvillage_df['House district'].iloc[ind])
                 senate_mh = round(mhvillage_df['Senate district'].iloc[ind])
 
             if pd.isna(mhvillage_df['Sites'].iloc[ind]):
                 mhsites = "missing"
             else:
-                mhsites = round(mhvillage_df['Sites'].iloc[ind]) #round the number of sites
+                mhsites = round(mhvillage_df['Sites'].iloc[ind])
     ########Make markers
-            try:
-
-                markeri = L.Marker( #create a marker for each location of MHVillage data
-                    icon=icon1,
-                    location=(lat,lon),
-                    draggable=False,
-                    )
-
-                circleMHi = L.Circle(location=(lat,lon), #create a circle for each marker
-                    radius=1,
-                    color="orange",
-                    fill_color= "orange")
-
-                circlelist_mh.append(circleMHi) #add the circle to the circle list
-
-            except:
-                continue
-            mklist_mh.append((markeri)) #
-
+            markeri = L.Marker(
+                location=(lat,lon),
+                draggable=False,
+                title=str(mhvillage_df['Name'].iloc[ind])+
+                ' , number of sites: '+str(mhsites)+
+                ' , average rent: '+str(mhvillage_df['Average_rent'].iloc[ind])+
+                ' , House district: '+str(house_mh)+
+                ' , Senate district: '+str(senate_mh)+
+                ' , url: %s'%str(mhvillage_df['Url'].iloc[ind]) +
+                ' , MHVillage')
+            circleMHi = L.Circle(location=(lat,lon), radius=1, color="orange", fill_color= "orange")
+            circlelist_mh.append(circleMHi)
+            mklist_mh.append(markeri) 
 
     else:
-        if len(circlelist_lara) >0  and len(mklist_lara)>0: #if the circlelist and mklist are not empty, then we have already built the markers
+        if len(circlelist_lara) >0  and len(mklist_lara)>0:
             return
         for ind in range(len(lara_df)):
             lon = float(lara_df['longitude'].iloc[ind])
@@ -205,27 +199,24 @@ def build_marker_layer(LARA_C):
             if lon == 0 and lat == 0:
                 continue
             try:
-
-                markeri = L.Marker( #create a marker for each location of MHVillage data
-                    icon=icon2,
+                markeri = L.Marker(
                     location=(lat,lon),
                     draggable=False,
-                    )
-
-                circlei = L.Circle(location=(lat,lon),
-                                 radius=1,
-                                 color="blue",
-                                 fill_color= "blue")
-
+                    title=str(lara_df['Owner / Community_Name'].iloc[ind])+
+                    ' , number of sites: '+str(round(lara_df['Total_#_Sites'].iloc[ind]))+
+                    ' , House district: '+ str(house_lara)+
+                    ' , Senate district: '+ str(senate_lara)+
+                    ', LARA')
+                circlei = L.Circle(location=(lat,lon), radius=1, color="blue", fill_color="blue")
                 circlelist_lara.append(circlei)
 
             except:
                 #print(lon,lat)
                 continue
 
-
-            mklist_lara.append(markeri) #add the marker to the marker list
+            mklist_lara.append(markeri)
     return
+
 
 def build_infographics1():
     #def modify(string):
